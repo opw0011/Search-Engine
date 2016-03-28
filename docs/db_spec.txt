@@ -1,0 +1,27 @@
+--- Database Spec ---
+
+@Page Forward Indexes
+(PAGE_ID -> [WORD_ID ... WORD_ID])
+
+@Page Body Inverted Indexes
+(WORD_ID -> [[PAGE_ID, [WORD_POSITION .. WORD_POSITION]], ... [PAGE_ID, [WORD_POSITION .. WORD_POSITION]])
+FORMAT: 
+("2" -> "5:2,3,7;10:86;")
+
+@Page Title Inverted Indexes
+//Same as Page Body Inverted Indexes
+
+@WORDS
+(WORD_ID -> WORD)
+FORMAT: 
+("1" -> "apple")
+
+@PAGES
+(DOCUMENT_ID -> [URL, TITLE, SIZE, LAST_MODIFIED_DATE])
+FORMAT: 
+("2" -> "http://www.google.com,Google Search,243(In byte),143922299(In Unix TimeStamp)")
+
+@Parent-Child Link
+(PAGE_ID -> [CHILD_PAGE_ID ... CHILD_PAGE_ID])
+FORMAT: 
+("1" -> "2,125,5")
