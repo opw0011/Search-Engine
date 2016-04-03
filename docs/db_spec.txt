@@ -25,3 +25,49 @@ FORMAT:
 (PAGE_ID -> [CHILD_PAGE_ID ... CHILD_PAGE_ID])
 FORMAT: 
 ("1" -> "2,125,5")
+
+
+//-- Mapping Indexes --//
+CLASS: MappingIndex
+Key -> Value
+- key: String
+- value: int
+ 
+	INSTANCE: WordMappingIndex
+	Word -> Word-ID
+	- word: String
+	- wordID: int
+	
+	INSTANCE: URLMappingIndex
+	URL -> Page-ID
+	- url: String
+	- pageID: int
+
+//-- Inverted Indexes --//
+CLASS: InvertedIndex
+Word-ID -> {Page-ID, <word positions>}
+- wordID: int
+- pageID: int
+- postingList: ArrayList<Posting>
+
+//-- Posting Object--//
+CLASS: Posting
+- pageID: int
+- wordPosList: List<int>
+
+//-- Page Properties --//
+CLASS: PageProperty
+Page-ID -> title, URL, last-date-of-modification, size etc.
+- pageID: int
+- title: String
+- url: String
+- modDate: Date
+- size: int
+
+//-- Forward Indexe --//
+CLASS: ForwardIndex
+Page-ID -> {Keywords}
+
+
+
+
