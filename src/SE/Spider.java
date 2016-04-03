@@ -1,25 +1,49 @@
 package SE;
 
+import org.htmlparser.util.ParserException;
+
 import java.io.IOException;
+import java.util.Vector;
+import jdbm.*;
 
 /**
  * Created by opw on 27/3/2016.
  */
 public class Spider {
+    private static RecordManager recman;
+    private static final String DB_PATH = "data/database";
+
     public static void main(String[] args)
     {
         System.out.println("SPIDER START...");
         final long startTime = System.currentTimeMillis();
 
+        Crawler crawler = new Crawler("http://www.cs.ust.hk/~dlee/4321/");
+        Vector<String> words = null;
+        Vector<String> links = null;
         try {
-            MappingIndex urlIndex = new MappingIndex("urlIndex", "urlIndex");
-            urlIndex.insert("Word");
+            links = crawler.extractLinks();
+        } catch (ParserException e) {
+            e.printStackTrace();
+        }
+
+        // Indexer
+        try {
+            recman = RecordManagerFactory.createRecordManager(DB_PATH);
+            MappingIndex urlIndex = new MappingIndex(recman, "URLIndex");
+
+            System.out.println("Words in "+crawler.getUrl()+":");
+
+            // insert the words to word-id mapping index
+            // insert the links to url-pageid mapping index
+            for(int i = 0; i < links.size(); i++)
+            {
+                System.out.println(links.get(i)+" ");
+                urlIndex.insert(links.get(i));
+            }
 
             urlIndex.printAll();
-            int s = urlIndex.getValue("Peter");
-            System.out.println(s);
             urlIndex.finalize();
-
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -18,14 +18,14 @@ public class MappingIndex {
 
     private RecordManager recman;
     private HTree hashtable;
-    private static final String DB_ROOT_FOLDER = "data/";
 
     private long recid;
     private long lastIDRecid;
 
-    public MappingIndex(String recordmanager, String objectname) throws IOException
+    public MappingIndex(RecordManager recordmanager, String objectname) throws IOException
     {
-        recman = RecordManagerFactory.createRecordManager(DB_ROOT_FOLDER + recordmanager);
+//        recman = RecordManagerFactory.createRecordManager(DB_ROOT_FOLDER + recordmanager);
+        recman = recordmanager;
         recid = recman.getNamedObject(objectname);
         lastIDRecid = recman.getNamedObject(objectname+"ID");
 
@@ -82,7 +82,7 @@ public class MappingIndex {
 
     public void finalize() throws IOException
     {
-        System.out.println(lastIDRecid);
+//        System.out.println(lastIDRecid);
         recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
         recman.commit();
         recman.close();

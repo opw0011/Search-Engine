@@ -45,6 +45,7 @@ Key -> Value
 
 //-- Inverted Indexes --//
 CLASS: InvertedIndex
+(Body Text, Title)
 Word-ID -> {Page-ID, <word positions>}
 - wordID: int
 - pageID: int

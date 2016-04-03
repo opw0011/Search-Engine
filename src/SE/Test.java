@@ -1,6 +1,10 @@
 package SE;
 
+import jdbm.RecordManager;
+import jdbm.RecordManagerFactory;
+
 import java.io.IOException;
+import java.util.Date;
 
 /**
  * Created by opw on 27/3/2016.
@@ -13,17 +17,13 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Test Start");
         try {
-            InvertedIndex index = new InvertedIndex("test","ht_test");
-//            Posting doc1 = new Posting("1", 1);
-//            System.out.println(doc1);
-//            index.addEntry("ggg", "2" , 10);
+            RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
+            PageProperty p = new PageProperty(recman, "test");
+//            p.insert(1, "test title", "url", new Date(), 1);
+//            p.delete(1);
 
-
-//            doc1.setFreq(5);
-//            System.out.println(doc1);
-
-            index.printAll();
-            index.finalize();
+            p.printAll();
+            p.finalize();
 
 
         } catch (IOException e) {

@@ -43,7 +43,7 @@ public class Crawler
         sb.setLinks (false);
         sb.setReplaceNonBreakingSpaces (true);
         sb.setCollapse (true);
-        sb.setURL ("http://www.cs.ust.hk/~dlee/4321/");
+        sb.setURL (url);
 
         String s = sb.getStrings ();
 
