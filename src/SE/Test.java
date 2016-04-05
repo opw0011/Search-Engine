@@ -19,13 +19,18 @@ public class Test {
         try {
 
             RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
+            // Page property Insert Test
+            /*
             PageProperty p = new PageProperty(recman, "test");
-//            p.insert(1, "test title", "url", new Date(), 1);
-//            p.delete(1);
-
+            System.out.println(p.isContains(2));
+            p.insert(1, "test title", "url", new Date(), 1);
+            p.insert(2, "test title 2", "www.google.com", new Date(), 1024);
+            Properties ppt = p.get(2);
+            System.out.printf("TEST OUTPUT: %s %s %s %s\n", ppt.getUrl(), ppt.getTitle(), ppt.getModDate(), ppt.getSize());
+            p.delete(2);
             p.printAll();
             p.finalize();
-
+            */
 
         } catch (IOException e) {
             e.printStackTrace();

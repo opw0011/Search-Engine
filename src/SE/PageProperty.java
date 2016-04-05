@@ -9,17 +9,18 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 /**
  * Created by opw on 3/4/2016.
  */
 
-class properties implements Serializable {
+class Properties implements Serializable {
     private String title;
     private String url;
     private Date modDate;
     private int size;
 
-    public properties(String title, String url, Date modDate, int size) {
+    public Properties(String title, String url, Date modDate, int size) {
         this.title = title;
         this.url = url;
         this.modDate = modDate;
@@ -34,6 +35,22 @@ class properties implements Serializable {
                 ", modDate=" + modDate +
                 ", size=" + size +
                 '}';
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public Date getModDate() {
+        return modDate;
+    }
+
+    public int getSize() {
+        return size;
     }
 }
 
@@ -63,16 +80,36 @@ public class PageProperty {
         }
     }
 
-    public void insert(int pageID, String title, String url, Date modDate, int size) throws IOException {
-        properties p = new properties(title, url, modDate, size);
-        if(hashtable.get(pageID)==null)
+    // KEY: pageID, VALUE: Properties(Object)
+    public boolean insert(int pageID, String title, String url, Date modDate, int size) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        if(!isContains(pageID))
         {
-            hashtable.put(Integer.toString(pageID), p);
+            Properties p = new Properties(title, url, modDate, size);
+            hashtable.put(key, p);
+            return true;
         }
+        return false;
+    }
+
+    // check exist using the key
+    public boolean isContains(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        return (hashtable.get(key) != null);
+    }
+
+    // get the Properties obj using the key
+    public Properties get(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        return (Properties) hashtable.get(key);
     }
 
     public void delete(int pageID) throws IOException {
-        hashtable.remove(Integer.toString(pageID));
+        String key = Integer.toString(pageID);
+        hashtable.remove(key);
     }
 
     public void finalize() throws IOException
