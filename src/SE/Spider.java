@@ -3,8 +3,8 @@ package SE;
 import org.htmlparser.util.ParserException;
 
 import java.io.IOException;
-import java.util.Vector;
 import jdbm.*;
+import java.util.*;
 
 /**
  * Created by opw on 27/3/2016.
