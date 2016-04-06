@@ -6,6 +6,7 @@ Section:
 Email:
 */
 
+import java.io.IOException;
 import java.util.Vector;
 import org.htmlparser.beans.StringBean;
 import java.util.*;
@@ -16,11 +17,13 @@ import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.NodeClassFilter;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
+import java.net.HttpURLConnection;
 import org.htmlparser.util.ParserException;
 import java.util.StringTokenizer;
 import org.htmlparser.beans.LinkBean;
-import java.net.URL;
-
+import java.net.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Crawler
 {
@@ -32,6 +35,23 @@ public class Crawler
 
     public String getUrl() {
         return url;
+    }
+    //extract title, url]
+    //parents and child
+    //date, size
+
+    public int getPageSize() throws IOException
+    {
+        URL inputLink = new URL(url);
+        URLConnection linkConnect = inputLink.openConnection();
+        BufferedReader newIn = new BufferedReader(new InputStreamReader(linkConnect.getInputStream()));
+        String inputln, temp = "";
+
+        while ((inputln = newIn.readLine()) != null){
+            temp += inputln;
+        }
+        newIn.close();
+        return temp.length();
     }
 
     public Vector<String> extractWords() throws ParserException
@@ -78,6 +98,9 @@ public class Crawler
         {
             Crawler crawler = new Crawler("http://www.cs.ust.hk/~dlee/4321/");
 
+            int  NumPages = crawler.getPageSize();
+            System.out.println("It has number of pages: "+ NumPages);
+
             Vector<String> words = crawler.extractWords();
             System.out.println("Words in "+crawler.getUrl()+":");
             for(int i = 0; i < words.size(); i++)
@@ -89,10 +112,15 @@ public class Crawler
             for(int i = 0; i < links.size(); i++)
                 System.out.println(links.get(i));
             System.out.println("");
+
+
         }
         catch (ParserException e)
         {
             e.printStackTrace ();
+        }
+        catch (IOException e){
+            e.printStackTrace();
         }
     }
 

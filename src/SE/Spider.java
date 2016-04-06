@@ -21,11 +21,19 @@ public class Spider {
         Crawler crawler = new Crawler("http://www.cs.ust.hk/~dlee/4321/");
         Vector<String> words = null;
         Vector<String> links = null;
+        int pagesize = 0;
+
         try {
             links = crawler.extractLinks();
+            words = crawler.extractWords();
+            pagesize = crawler.getPageSize();
+
         } catch (ParserException e) {
             e.printStackTrace();
+        } catch (IOException e){
+            e.printStackTrace();
         }
+
 
         // Indexer
         try {
