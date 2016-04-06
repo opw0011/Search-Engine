@@ -32,6 +32,25 @@ public class Test {
             p.finalize();
             */
 
+            // Mapping Index Test
+            /*
+            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
+            int id = urlIndex.getLastID();
+            System.out.println("LastID: " + id);
+//            urlIndex.insert("website.com");
+//            urlIndex.insert("google.com");
+            int r = urlIndex.getValue("website.com");
+            String s = urlIndex.getKey(1);
+            String t = urlIndex.getKey(2);
+            System.out.println(r);
+            System.out.println(s);
+            System.out.println(t);
+            urlIndex.printAll();
+            urlIndex.finalize();    // to save all the changes into db
+            */
+
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }

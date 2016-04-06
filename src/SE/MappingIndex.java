@@ -79,6 +79,20 @@ public class MappingIndex {
             return -1;
     }
 
+    public String getKey(int value) throws IOException
+    {
+        // iterate through all keys
+        FastIterator iter = hashtable.keys();
+        String key;
+        while( (key = (String)iter.next())!=null)
+        {
+            if(hashtable.get(key) != null && (int) hashtable.get(key) == value)
+            {
+                return key;
+            }
+        }
+        return null;
+    }
 
     public void finalize() throws IOException
     {
