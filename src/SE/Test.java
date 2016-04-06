@@ -19,9 +19,13 @@ public class Test {
         try {
 
             RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
+
+            PageProperty p = new PageProperty(recman, "test");
+            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
+            MappingIndex wordIndex = new MappingIndex(recman, "testWordIndex");
+
             // Page property Insert Test
             /*
-            PageProperty p = new PageProperty(recman, "test");
             System.out.println(p.isContains(2));
             p.insert(1, "test title", "url", new Date(), 1);
             p.insert(2, "test title 2", "www.google.com", new Date(), 1024);
@@ -34,7 +38,6 @@ public class Test {
 
             // Mapping Index Test
             /*
-            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
             int id = urlIndex.getLastID();
             System.out.println("LastID: " + id);
 //            urlIndex.insert("website.com");
@@ -49,6 +52,23 @@ public class Test {
             urlIndex.finalize();    // to save all the changes into db
             */
 
+            // Inverted File Test
+            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
+//            index.insert(1, 9, 12345);
+            urlIndex.insert("www.google.com.hk");
+            wordIndex.insert("google");
+            wordIndex.insert("yahoo");
+            urlIndex.printAll();
+            wordIndex.printAll();
+            index.insert(wordIndex.getValue("yahoo"), urlIndex.getValue("www.google.com.hk"), 2);
+//            index.insert(19, 6,  9);
+//            index.insert(19, 6,  10);
+//            index.insert(19, 8,  10);
+            index.delete(19, 6);
+
+
+            index.printAll();
+            index.finalize();
 
 
         } catch (IOException e) {

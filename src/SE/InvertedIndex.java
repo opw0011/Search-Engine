@@ -7,44 +7,56 @@ Email:
 */
 
 import jdbm.RecordManager;
-import jdbm.RecordManagerFactory;
 import jdbm.htree.HTree;
 import jdbm.helper.FastIterator;
+import jdk.nashorn.internal.ir.IdentNode;
+
 import java.util.*;
 import java.util.ArrayList;
-import java.util.Vector;
 import java.io.IOException;
 import java.io.Serializable;
 
 class Posting implements Serializable
 {
-    private int docID;
-    private int freq;
+    //  wordID -> {pageID, [word position]}
+    private int pageID;
+    private Vector<Integer> wordPosList;
+    private static final long serialVersionUID = 1L;    // define serialVersionUID
 
-    Posting(int docID, int freq)
-    {
-        this.docID = docID;
-        this.freq = freq;
+    public Posting(int pageID) {
+        this.pageID = pageID;
+        this.wordPosList = new Vector<Integer>();
     }
 
     @Override
     public String toString() {
         return "Posting{" +
-                "doc='" + docID + '\'' +
-                ", freq=" + freq +
+                "pageID=" + pageID +
+                ", wordPosList=" + wordPosList +
                 '}';
     }
 
-    public void setFreq(int freq) {
-        this.freq = freq;
+    public boolean insert(int wordPos) {
+        if(wordPos >= 0){
+            wordPosList.add(wordPos);
+            return true;
+        }
+        return false;
     }
 
-    public int getFreq() {
-        return freq;
+    public boolean contains(int wordPos) {
+        if(wordPos >= 0){
+            return wordPosList.contains(wordPos);
+        }
+        return false;
     }
 
-    public int getDocID() {
-        return docID;
+    public boolean remove(int wordPos) {
+        if(wordPos >= 0){
+            wordPosList.remove((Integer) wordPos);
+            return true;
+        }
+        return false;
     }
 }
 
@@ -52,11 +64,11 @@ public class InvertedIndex
 {
     private RecordManager recman;
     private HTree hashtable;
-    private static final String DB_ROOT_FOLDER = "data/";
+//    private static final String DB_ROOT_FOLDER = "data/";
 
-    InvertedIndex(String recordmanager, String objectname) throws IOException
+    InvertedIndex(RecordManager recordmanager, String objectname) throws IOException
     {
-        recman = RecordManagerFactory.createRecordManager(DB_ROOT_FOLDER + recordmanager);
+        recman = recordmanager;
         long recid = recman.getNamedObject(objectname);
 
         if (recid != 0)
@@ -78,85 +90,91 @@ public class InvertedIndex
         recman.close();
     }
 
-    public void addEntry(String word, int docId, int freq) throws IOException
+    //  wordID -> {pageID, [word position]}
+    public void insert(int wordID, int pageID, int wordPos) throws IOException
     {
-        ArrayList<Posting> postingList = null;
-        Posting newPosting = new Posting(docId, freq);
+        // pageID -> wordPosList
+        String key = Integer.toString(wordID);
 
-        // if the index word does not exist
-        if(hashtable.get(word)==null)
+        if (hashtable.get(key) == null)
         {
-            postingList = new ArrayList();
-            postingList.add(newPosting);
-            hashtable.put(word, postingList);
+            // initial new map and wordPosList
+            Posting p = new Posting(pageID);
+            p.insert(wordPos);
+
+            HashMap<Integer, Posting> map = new HashMap<Integer, Posting>();
+            map.put(pageID, p);
+            hashtable.put(key, map);
         }
         else
         {
-            System.out.println("new word key insert");
-            postingList = (ArrayList<Posting>) hashtable.get(word);
-
-            // unsure unique(DOCID) insert : update the frequency if doc id found, otherwise just insert into list
-            boolean duplicateFound = false;
-            for(Posting p : postingList){
-                if( p.getDocID() == docId)
-                {
-                    p.setFreq(freq);
-                    duplicateFound = true;
-                    break;
-                }
-            }
-            if(!duplicateFound)
+            // append the new word pos to existing word posting list
+            HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+            if(contains(wordID, pageID))
             {
-                postingList.add(newPosting);
+                System.out.println("New Pos with existing pageid");
+                // get the posting of specific pageID
+                Posting posting = map.get(pageID);
+
+                // ensure unique insert of wordPos
+                if(! posting.contains(wordPos))
+                    posting.insert(wordPos);
             }
-
-            hashtable.put(word, postingList);
-//            String cur_posting = hashtable.get(word).toString();
-//
-//            // ensure unique insert
-//            if(! cur_posting.contains(posting))
-//            {
-//                // append the new entry to the last of posting list
-//                hashtable.put(word, cur_posting + ' ' + new_posting);
-//            }
+            else
+            {
+                // have the wordID, but new pageID
+                Posting posting = new Posting(pageID);
+                posting.insert(wordPos);
+                map.put(pageID, posting);
+            }
         }
-
     }
 
+    public boolean contains(int wordID, int pageID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) != null)
+        {
+            HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+            return map.containsKey(pageID);
+        }
+        return false;
+    }
 
-
-//    public void addEntry(String word, int x, int y) throws IOException
-//    {
-//        // Add a "docX Y" entry for the key "word" into hashtable
-//        // ADD YOUR CODES HERE
-//
-//        String new_posting = String.format("doc%d %d", x, y);
-//
-//        // if the index word does not exist
-//        if(hashtable.get(word)==null)
-//        {
-//            hashtable.put(word, new_posting);
-//        }
-//        else
-//        {
-//            String cur_posting = hashtable.get(word).toString();
-//
-//            // ensure unique insert
-//            if(! cur_posting.contains(new_posting))
-//            {
-//                // append the new entry to the last of posting list
-//                hashtable.put(word, cur_posting + ' ' + new_posting);
-//            }
-//        }
-//
-//    }
-    public void delEntry(String word) throws IOException
+    public boolean delete(int wordID) throws IOException
     {
         // Delete the word and its list from the hashtable
-        // ADD YOUR CODES HERE
         // remove the index word and its posting list
-        hashtable.remove(word);
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return false;
+        hashtable.remove(key);
+        return true;
     }
+
+    // Delete the posting(including all the wordpos) with specific pageID
+    public boolean delete(int wordID, int pageID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return false;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        map.remove(pageID);
+        return true;
+    }
+
+    // Delete wordpost of specifc pageid
+    public boolean delete(int wordID, int pageID, int wordPos) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return false;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        posting.remove(wordPos);
+        return true;
+    }
+
     public void printAll() throws IOException
     {
         // Print all the data in the hashtable
@@ -166,18 +184,25 @@ public class InvertedIndex
         FastIterator iter = hashtable.keys();
 
         String key;
+        System.out.println("Inverted Index:");
+
         while( (key = (String)iter.next())!=null)
         {
             // get and print the content of each key
 //            System.out.println(key + " = " + hashtable.get(key));
-            System.out.println("printing");
 //            Posting posting = (Posting) hashtable.get(key);
-            ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(key);
-            System.out.print(key + " = ");
-            for(Posting p : postingList){
-                System.out.print(p + " ");
+//            ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(key);
+            HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+            Set<Integer> keys = map.keySet();  //get all keys
+            for(Integer i: keys)
+            {
+                System.out.println(key + " " + map.get(i));
             }
-            System.out.println();
+//            System.out.print(key + " = ");
+//            for(Posting p : postingList){
+//                System.out.print(p + " ");
+//            }
+//            System.out.println();
         }
 
     }
