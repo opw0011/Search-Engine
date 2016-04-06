@@ -23,6 +23,8 @@ public class Test {
             PageProperty p = new PageProperty(recman, "test");
             MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
             MappingIndex wordIndex = new MappingIndex(recman, "testWordIndex");
+            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
+            ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
 
             // Page property Insert Test
             /*
@@ -53,23 +55,47 @@ public class Test {
             */
 
             // Inverted File Test
-            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
+            /*
 //            index.insert(1, 9, 12345);
-            urlIndex.insert("www.google.com.hk");
-            wordIndex.insert("google");
-            wordIndex.insert("yahoo");
-            urlIndex.printAll();
-            wordIndex.printAll();
-            index.insert(wordIndex.getValue("yahoo"), urlIndex.getValue("www.google.com.hk"), 2);
+//            urlIndex.insert("www.google.com.hk");
+//            wordIndex.insert("google");
+//            wordIndex.insert("yahoo");
+//            urlIndex.printAll();
+//            wordIndex.printAll();
+//            index.insert(wordIndex.getValue("yahoo"), urlIndex.getValue("www.google.com.hk"), 2);
 //            index.insert(19, 6,  9);
 //            index.insert(19, 6,  10);
 //            index.insert(19, 8,  10);
-            index.delete(19, 6);
-
-
+//            index.delete(19, 6);
+//            index.insert(10, 2,  50);
+//            index.insert(10, 1,  2000);
+//            index.insert(10, 2,  9000);
+//            index.insert(10, 1,  3000);
+//            index.delete(10,2,50);
+//            index.delete(10,2);
+//            index.delete(10);
+//            index.insert(10, 1,  4000);
+//            int f = index.getTermFrequency(10, 1);
+//            System.out.println(f);
             index.printAll();
-            index.finalize();
 
+            index.finalize();
+            */
+
+            // Test Parent Child index
+            /*
+            PCIndex.insert(1, 3);
+            PCIndex.delete(1,3);
+            PCIndex.delete(1);
+            PCIndex.insert(2,3);
+            PCIndex.insert(2,4);
+            PCIndex.insert(2,9);
+            PCIndex.insert(6,9);
+            PCIndex.insert(6,2);
+
+            PCIndex.printAll();
+            PCIndex.finalize();
+            */
 
         } catch (IOException e) {
             e.printStackTrace();
