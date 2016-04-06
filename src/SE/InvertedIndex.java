@@ -58,6 +58,10 @@ class Posting implements Serializable
         }
         return false;
     }
+
+    public int getWordFrequency() {
+        return wordPosList.size();
+    }
 }
 
 public class InvertedIndex
@@ -118,7 +122,12 @@ public class InvertedIndex
 
                 // ensure unique insert of wordPos
                 if(! posting.contains(wordPos))
+                {
                     posting.insert(wordPos);
+//                    hashtable.remove(key);
+                    hashtable.put(key, map);
+                }
+
             }
             else
             {
@@ -126,6 +135,7 @@ public class InvertedIndex
                 Posting posting = new Posting(pageID);
                 posting.insert(wordPos);
                 map.put(pageID, posting);
+                hashtable.put(key, map);
             }
         }
     }
@@ -174,6 +184,18 @@ public class InvertedIndex
         posting.remove(wordPos);
         return true;
     }
+
+    // get the term frequency by counting # of wordPos in posting
+    public int getTermFrequency(int wordID, int pageID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return -1;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        return posting.getWordFrequency();
+    }
+
 
     public void printAll() throws IOException
     {
