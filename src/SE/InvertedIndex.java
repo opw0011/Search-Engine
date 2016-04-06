@@ -170,6 +170,7 @@ public class InvertedIndex
             return false;
         HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
         map.remove(pageID);
+        hashtable.put(key, map);    // commit changes
         return true;
     }
 
@@ -182,6 +183,7 @@ public class InvertedIndex
         HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
         Posting posting = map.get(pageID);
         posting.remove(wordPos);
+        hashtable.put(key, map);    // commit changes
         return true;
     }
 
