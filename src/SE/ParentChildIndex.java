@@ -40,7 +40,7 @@ public class ParentChildIndex {
     public void finalize() throws IOException
     {
         recman.commit();
-        recman.close();
+//        recman.close();
     }
 
     public void insert(int pageID1, int pageID2) throws IOException

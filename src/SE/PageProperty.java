@@ -115,7 +115,7 @@ public class PageProperty {
     public void finalize() throws IOException
     {
         recman.commit();
-        recman.close();
+//        recman.close();
     }
 
     public void printAll() throws IOException

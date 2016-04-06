@@ -19,12 +19,12 @@ public class Test {
         try {
 
             RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
-
-            PageProperty p = new PageProperty(recman, "test");
-            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
-            MappingIndex wordIndex = new MappingIndex(recman, "testWordIndex");
-            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
-            ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
+//
+//            PageProperty p = new PageProperty(recman, "test");
+//            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
+//            MappingIndex wordIndex = new MappingIndex(recman, "testWordIndex");
+//            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
+//            ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
 
             // Page property Insert Test
             /*
@@ -96,6 +96,19 @@ public class Test {
             PCIndex.printAll();
             PCIndex.finalize();
             */
+
+            Indexer indexer = new Indexer("data/database");
+//            indexer.insertTitle("HI");
+//            indexer.insertTitle("Working");
+//            indexer.insertTitle("What the fuck");
+//            indexer.insertTitle("liking");
+//            indexer.insertTitle("a");
+//            indexer.insertTitle("sdfsdf");
+            indexer.insertTitle("banana123", 19);
+//            indexer.insertTitle("cake");
+
+            indexer.printWordMappingIndex();
+            indexer.finalize();
 
         } catch (IOException e) {
             e.printStackTrace();

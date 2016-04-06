@@ -91,7 +91,7 @@ public class InvertedIndex
     public void finalize() throws IOException
     {
         recman.commit();
-        recman.close();
+//        recman.close();
     }
 
     //  wordID -> {pageID, [word position]}

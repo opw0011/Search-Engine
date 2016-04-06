@@ -99,7 +99,7 @@ public class MappingIndex {
 //        System.out.println(lastIDRecid);
         recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
         recman.commit();
-        recman.close();
+//        recman.close();
     }
 
     public void printAll() throws IOException
