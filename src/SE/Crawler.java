@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.util.Vector;
 import org.htmlparser.beans.StringBean;
 import java.util.*;
+import java.text.*;
+
 import org.htmlparser.Node;
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
@@ -18,6 +20,9 @@ import org.htmlparser.filters.NodeClassFilter;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import java.net.HttpURLConnection;
+import org.htmlparser.nodes.TagNode;
+import org.htmlparser.tags.*;
+
 import org.htmlparser.util.ParserException;
 import java.util.StringTokenizer;
 import org.htmlparser.beans.LinkBean;
@@ -25,17 +30,32 @@ import java.net.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Crawler
-{
+public class Crawler {
     private String url;
     Crawler(String _url)
     {
         url = _url;
     }
 
+    Crawler(){
+        url = null;
+    }
+
+
     public String getUrl() {
         return url;
     }
+
+    public Parser getParser() throws ParserException{
+        try{
+        return (new Parser(url));
+        }
+        catch(ParserException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     //extract title, url]
     //parents and child
     //date, size
@@ -52,6 +72,45 @@ public class Crawler
         }
         newIn.close();
         return temp.length();
+    }
+
+    public String lastUpdate() throws IOException{
+        String[] temp = url.split("://");
+        URL inputLink = new URL("http", temp[1], 80, "/");
+        URLConnection linkConnect = inputLink.openConnection();
+
+        Date lastModified = new Date(linkConnect.getLastModified());
+
+        if (lastModified != null) {
+            //nothing
+        }
+        else {
+            Date today = new Date();
+            lastModified = today;
+        }
+
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
+        return (ft.format(lastModified));
+    }
+
+    public Vector<String> extractTitle() throws ParserException{
+        Parser parser = getParser();
+        NodeFilter filter = new NodeClassFilter(TitleTag.class);
+        NodeList nodelist = parser.parse(filter);
+        Node[] nodes = nodelist.toNodeArray();
+        String line ="";
+        for(int i = 0;i< nodes.length;i++){
+            Node node = nodes[i];
+            if(node instanceof TitleTag)
+            {
+                TitleTag tn = (TitleTag) node;
+                line = tn.getTitle();
+            }
+        }
+        String[] str = line.split(" ");
+        Vector<String> vector = new Vector<>();
+        for(int i = 0; i < str.length;i++) vector.add(str[i]);
+        return vector;
     }
 
     public Vector<String> extractWords() throws ParserException
@@ -96,10 +155,13 @@ public class Crawler
     {
         try
         {
-            Crawler crawler = new Crawler("http://www.cs.ust.hk/~dlee/4321/");
+            Crawler crawler = new Crawler("http://home.cse.ust.hk/faculty/dlee/4321/");
 
             int  NumPages = crawler.getPageSize();
             System.out.println("It has number of pages: "+ NumPages);
+
+            String lastDate = crawler.lastUpdate();
+            System.out.println("Lat update on: "+ lastDate);
 
             Vector<String> words = crawler.extractWords();
             System.out.println("Words in "+crawler.getUrl()+":");
@@ -112,6 +174,12 @@ public class Crawler
             for(int i = 0; i < links.size(); i++)
                 System.out.println(links.get(i));
             System.out.println("");
+
+            Vector<String> title = crawler.extractTitle();
+            System.out.println("Words in "+crawler.getUrl()+":");
+            System.out.print("title: ");
+            for(int i = 0; i < title.size(); i++)
+                System.out.print(title.get(i)+" ");
 
 
         }
