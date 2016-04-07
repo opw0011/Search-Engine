@@ -12,63 +12,47 @@ import java.util.*;
 public class Spider {
     private static RecordManager recman;
     private static final String DB_PATH = "data/database";
+    private static int numOfPage = 0;
+    private static Vector<String> DoneList = new Vector<String>();
+    private static Vector<String> TaskList = new Vector<String>();
+    private static Queue<String> task = new LinkedList();
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("SPIDER START...");
         final long startTime = System.currentTimeMillis();
 
-        Crawler crawler = new Crawler("http://www.cs.ust.hk/~dlee/4321/");
-        Vector<String> words = null;
-        Vector<String> links = null;
-        int pagesize = 0;
-
         try {
-            links = crawler.extractLinks();
-            words = crawler.extractWords();
-            pagesize = crawler.getPageSize();
-
+            fetch("http://www.cs.ust.hk/~dlee/4321/");
         } catch (ParserException e) {
             e.printStackTrace();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-
-
-        // Indexer
-        try {
-            recman = RecordManagerFactory.createRecordManager(DB_PATH);
-            MappingIndex urlIndex = new MappingIndex(recman, "URLIndex");
-
-            System.out.println("Words in "+crawler.getUrl()+":");
-
-            // insert the words to word-id mapping index
-            // insert the links to url-pageid mapping index
-            for(int i = 0; i < links.size(); i++)
-            {
-                System.out.println(links.get(i)+" ");
-                urlIndex.insert(links.get(i));
-            }
-
-            urlIndex.printAll();
-            urlIndex.finalize();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        // start fetching page from root index
-
-        // extract all the links
-
-        // extract keywords and do indexing
-
-        // extract page info, e.g. title, last udpate date, size of page
-
-
-
-
-        System.out.printf("PROGRAM RUN FOR %s s\n" , (System.currentTimeMillis() - startTime) / 1000d);
+        System.out.printf("PROGRAM RUN FOR %s s\n", (System.currentTimeMillis() - startTime) / 1000d);
         System.out.println("SPIDER END");
     }
+
+    public static void fetch(String url) throws ParserException, IOException{
+        System.out.println(url);
+        if(DoneList.size()<30)
+        {
+            Crawler crawler = new Crawler(url);
+            Vector<String> links = crawler.extractLinks();
+            int pagesize = crawler.getPageSize();
+            Date lastupdate = crawler.lastUpdate();
+            Vector<String> title = crawler.extractTitle();
+            Vector<String> word = crawler.extractTitle();
+
+            for(int i=0; i<links.size(); i++)
+            {
+                task.add(links.elementAt(i));
+            }
+            DoneList.add(url);
+            task.remove();
+            fetch(task.peek());
+        }
+
+    }
+
 
 }
