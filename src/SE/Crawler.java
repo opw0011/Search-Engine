@@ -12,16 +12,21 @@ import org.htmlparser.beans.StringBean;
 import java.util.*;
 import java.text.*;
 
-import org.htmlparser.Node;
+
 import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
 import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.NodeClassFilter;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
+import org.htmlparser.Node;
+
+//import org.w3c.dom.NodeList;
+//import org.w3c.dom.Node;
 import java.net.HttpURLConnection;
 import org.htmlparser.nodes.TagNode;
 import org.htmlparser.tags.*;
+
 
 import org.htmlparser.util.ParserException;
 import java.util.StringTokenizer;
@@ -95,22 +100,24 @@ public class Crawler {
 
     public Vector<String> extractTitle() throws ParserException{
         Parser parser = getParser();
+
         NodeFilter filter = new NodeClassFilter(TitleTag.class);
-        NodeList nodelist = parser.parse(filter);
-        Node[] nodes = nodelist.toNodeArray();
-        String line ="";
-        for(int i = 0;i< nodes.length;i++){
-            Node node = nodes[i];
-            if(node instanceof TitleTag)
-            {
-                TitleTag tn = (TitleTag) node;
-                line = tn.getTitle();
+        NodeList nodelist =  parser.parse(filter);
+        String str ="";
+
+        for(int i = 0; i < nodelist.size(); i++){
+            Node node = nodelist.elementAt(i);
+            if(node instanceof TitleTag) {
+                TitleTag titletag = (TitleTag) node;
+                str = titletag.getTitle();
             }
         }
-        String[] str = line.split(" ");
-        Vector<String> vector = new Vector<>();
-        for(int i = 0; i < str.length;i++) vector.add(str[i]);
-        return vector;
+        String[] strsplit = str.split(" ");
+
+        Vector<String> title = new Vector<>();
+        for(int i = 0; i < strsplit.length;i++) title.add(strsplit[i]);
+
+        return title;
     }
 
     public Vector<String> extractWords() throws ParserException
@@ -155,7 +162,7 @@ public class Crawler {
     {
         try
         {
-            Crawler crawler = new Crawler("http://home.cse.ust.hk/faculty/dlee/4321/");
+            Crawler crawler = new Crawler("http://www.cse.ust.hk/");
 
             int  NumPages = crawler.getPageSize();
             System.out.println("It has number of pages: "+ NumPages);
