@@ -4,11 +4,13 @@ import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Vector;
 
 /**
  * Created by opw on 4/6/16.
  */
+
 public class Indexer {
     // Open Global Mapping Index (pageid & docid mapping)
     // Remove stop words and do stemming
@@ -97,7 +99,7 @@ public class Indexer {
     // Helper function: remove stop words + stemming, insert to mapping index and return word ID, wordID: -1 = stop word
     private int insertWordToMappingIndex(String word)
     {
-        if(word.length() <= 0 || word.equals(""))
+        if(word == null || word.length() <= 0 || word.equals(""))
         {
             System.out.println("ERROR: Insert Title invalid word");
             return -2;
@@ -112,6 +114,11 @@ public class Indexer {
         // retrieve the stemmed word
         String stem = stopStem.stem(word);
         //System.out.println("stem: \"" + stem +"\"");
+        if(stem == null || stem.length() <= 0 || stem.equals(""))
+        {
+//            System.out.println("ERROR: null char");
+            return -2;
+        }
 
         try {
             // insert into word mapping indexer
@@ -127,7 +134,8 @@ public class Indexer {
     }
 
     // Remove stop word, stemming, insert to forward indexer and inverted index
-    public void insertToForwardIndex(Vector<String> words) throws IOException
+    // TODO: isert word to title/body db
+    public void insertWords(Vector<String> words) throws IOException
     {
         if(words.isEmpty())
             return;
@@ -147,6 +155,27 @@ public class Indexer {
                 bodyInvertedIndex.insert(wordID, this.pageID, wordPos);
             }
         }
+    }
+
+    // insert properties into properyIndex
+    public void insertPageProperty(String title, String url, Date modDate, int size) throws IOException
+    {
+        properyIndex.insert(this.pageID, title, url, modDate, size);
+    }
+
+    // return true if page last mod date is changed -> need to crawl the page again
+    public boolean pageLastModDateIsUpdated(Date newDate) throws IOException
+    {
+        Properties p = properyIndex.get(this.pageID);
+        System.out.println(newDate);
+        System.out.println(p.getModDate());
+        return (! newDate.equals(p.getModDate()));
+    }
+
+    // return true if page url exist in url mapping index
+    public boolean pageIsContains() throws IOException
+    {
+        return (urlIndex.getValue(this.url) > 0);
     }
 
     public void printWordMappingIndex() throws IOException

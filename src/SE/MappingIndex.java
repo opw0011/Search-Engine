@@ -73,6 +73,7 @@ public class MappingIndex {
         return false;
     }
 
+    // -1 : value not found
     public int getValue(String key) throws IOException
     {
         if(hashtable.get(key) != null)
