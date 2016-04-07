@@ -13,13 +13,14 @@ import java.util.*;
 import java.text.*;
 
 
-import org.htmlparser.NodeFilter;
+//import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
 import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.NodeClassFilter;
 import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.Node;
+import org.htmlparser.filters;
 
 //import org.w3c.dom.NodeList;
 //import org.w3c.dom.Node;
@@ -34,6 +35,7 @@ import org.htmlparser.beans.LinkBean;
 import java.net.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.sql.Date;
 
 public class Crawler {
     private String url;
@@ -75,27 +77,31 @@ public class Crawler {
         while ((inputln = newIn.readLine()) != null){
             temp += inputln;
         }
+
         newIn.close();
         return temp.length();
     }
 
     public String lastUpdate() throws IOException{
-        String[] temp = url.split("://");
-        URL inputLink = new URL("http", temp[1], 80, "/");
-        URLConnection linkConnect = inputLink.openConnection();
+       // String[] urlstr = url.split("://");
+        //URL inputLink = new URL("http", urlstr[1], 80, "/");
 
-        Date lastModified = new Date(linkConnect.getLastModified());
+        URL u = new URL(getUrl());
+        URLConnection linkConnect = u.openConnection();
 
-        if (lastModified != null) {
-            //nothing
-        }
-        else {
-            Date today = new Date();
-            lastModified = today;
-        }
 
-        SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
-        return (ft.format(lastModified));
+        Date date;
+        date = new Date(linkConnect.getLastModified());
+        //SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
+
+        if (date != null) {
+           return (date.toString());
+       }
+
+        date.setTime(linkConnect.getDate());
+        return (date.toString());
+
+
     }
 
     public Vector<String> extractTitle() throws ParserException{
@@ -136,9 +142,16 @@ public class Crawler {
         String s = sb.getStrings ();
 
         Vector<String> v_word = new Vector<String>();
+
         StringTokenizer st = new StringTokenizer(s);
+
+        Parser parser = getParser();
+        NodeFilter filter = new StringFilter(":");
+        NodeList nodes = parser.extractAllNodesThatMatch(filter);
+
         while (st.hasMoreTokens()) {
             v_word.add(st.nextToken());
+
         }
         return v_word;
     }
@@ -162,7 +175,7 @@ public class Crawler {
     {
         try
         {
-            Crawler crawler = new Crawler("http://www.cse.ust.hk/");
+            Crawler crawler = new Crawler("http://course.cse.ust.hk/comp3021/");
 
             int  NumPages = crawler.getPageSize();
             System.out.println("It has number of pages: "+ NumPages);
@@ -197,6 +210,7 @@ public class Crawler {
         catch (IOException e){
             e.printStackTrace();
         }
+
     }
 
 
