@@ -16,6 +16,7 @@ public class Spider {
     private static Vector<String> DoneList = new Vector<String>();
     private static Vector<String> TaskList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
+    private static int MAXPAGE = 15;
 
     public static void main(String[] args) {
         System.out.println("SPIDER START...");
@@ -34,22 +35,49 @@ public class Spider {
 
     public static void fetch(String url) throws ParserException, IOException{
         System.out.println(url);
-        if(DoneList.size()<30)
+        if(DoneList.size()<MAXPAGE-1)
         {
             Crawler crawler = new Crawler(url);
             Vector<String> links = crawler.extractLinks();
+            System.out.println(links);
             int pagesize = crawler.getPageSize();
+            System.out.println(pagesize);
             Date lastupdate = crawler.lastUpdate();
+            System.out.println(lastupdate);
             Vector<String> title = crawler.extractTitle();
+            System.out.println(title);
             Vector<String> word = crawler.extractTitle();
+            System.out.println(word);
+            Indexer indexer = new Indexer(DB_PATH,url);
 
             for(int i=0; i<links.size(); i++)
             {
                 task.add(links.elementAt(i));
             }
-            DoneList.add(url);
-            task.remove();
-            fetch(task.peek());
+            if(!indexer.pageIsContains())
+            {
+                indexer.insertWords(word);
+                indexer.insertPageProperty(title.toString(),url,lastupdate,pagesize);
+                DoneList.add(url);
+                task.remove();
+            }
+            else
+            {
+                if(indexer.pageLastModDateIsUpdated(lastupdate))
+                {
+                    indexer.insertWords(word);
+                    indexer.insertPageProperty(title.toString(),url,lastupdate,pagesize);
+                    DoneList.add(url);
+                    task.remove();
+                }
+            }
+            indexer.finalize();
+          try{
+              fetch(task.peek());
+          }catch (Exception e){
+              task.remove();
+              fetch(task.peek());
+          }
         }
 
     }

@@ -66,13 +66,14 @@ public class MappingIndex {
             // increase the last id before insert
             lastID++;
             hashtable.put(key, lastID);
-//            recman.commit();
-//            recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
+            recman.commit();
+            recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
             return true;
         }
         return false;
     }
 
+    // -1 : value not found
     public int getValue(String key) throws IOException
     {
         if(hashtable.get(key) != null)

@@ -5,6 +5,7 @@ import jdbm.RecordManagerFactory;
 import org.htmlparser.util.ParserException;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Vector;
 
 /**
@@ -137,16 +138,23 @@ public class Test {
 
             Crawler crawler = new Crawler("http://www.cse.ust.hk/");
             Vector<String> words = crawler.extractWords();
-            System.out.println(words);
-            System.out.println(words.get(6));
-            System.exit(-1);
-            indexer.insertToForwardIndex(words);
+//            System.out.println(words);
+//            System.out.println(words.get(6));
 
-            indexer.printUrlMappingIndex();
-            indexer.printWordMappingIndex();
-            indexer.printForwardIndex();
+//            indexer.insertWords(words);
+//            Boolean s = indexer.pageIsContains("www.bing.com.hk");
+//            System.out.printf("BOOL: %s", s);
+//            indexer.printUrlMappingIndex();
+//            indexer.printWordMappingIndex();
+//            indexer.printForwardIndex();
 //            indexer.printTitleInvertedIndex();
-            indexer.printBodyInvertedIndex();
+//            indexer.printBodyInvertedIndex();
+            indexer.insertPageProperty("tes", "url", new Date(1), 100);
+            Boolean b = indexer.pageLastModDateIsUpdated(new Date(12));
+            System.out.print(b);
+//            indexer.insertWords(words);
+//            indexer.printWordMappingIndex();
+//            indexer.printBodyInvertedIndex();
             indexer.finalize(); // must call to write to db
 
 
