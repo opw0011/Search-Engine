@@ -93,8 +93,9 @@ public class Crawler {
 
         Date date = new Date(linkConnect.getLastModified());
         //SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
-
-        if(date.toString().equals("1970-01-01"))
+        if(date == null)
+            date.setTime(linkConnect.getDate());
+        else if(date.toString().equals("1970-01-01"))
             date.setTime(linkConnect.getDate());
 
            return date;
