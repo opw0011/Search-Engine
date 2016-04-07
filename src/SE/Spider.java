@@ -38,10 +38,15 @@ public class Spider {
         {
             Crawler crawler = new Crawler(url);
             Vector<String> links = crawler.extractLinks();
+            System.out.println(links);
             int pagesize = crawler.getPageSize();
+            System.out.println(pagesize);
             Date lastupdate = crawler.lastUpdate();
+            System.out.println(lastupdate);
             Vector<String> title = crawler.extractTitle();
+            System.out.println(title);
             Vector<String> word = crawler.extractTitle();
+            System.out.println(word);
 
             for(int i=0; i<links.size(); i++)
             {
