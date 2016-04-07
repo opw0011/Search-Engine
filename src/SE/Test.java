@@ -4,7 +4,7 @@ import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
 
 import java.io.IOException;
-import java.util.Date;
+import java.util.Vector;
 
 /**
  * Created by opw on 27/3/2016.
@@ -24,7 +24,17 @@ public class Test {
 //            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
 //            MappingIndex wordIndex = new MappingIndex(recman, "testWordIndex");
 //            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
-//            ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
+            ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
+            ForwardIndex wordForwardIndex = new ForwardIndex(recman, "testForwardIndex");
+
+            // ParentChildIndex Test
+//            wordForwardIndex.insert(2, 8);
+//            wordForwardIndex.insert(2, 82);
+//            wordForwardIndex.insert(2, 82);
+//            wordForwardIndex.finalize();
+//            Vector v = wordForwardIndex.getList(2);
+//            System.out.println(v);
+//            wordForwardIndex.printAll();
 
             // Page property Insert Test
             /*
@@ -97,18 +107,35 @@ public class Test {
             PCIndex.finalize();
             */
 
-            Indexer indexer = new Indexer("data/database");
+
+            Indexer indexer = new Indexer("data/database", "www.yahoo.com.hk");
 //            indexer.insertTitle("HI");
 //            indexer.insertTitle("Working");
 //            indexer.insertTitle("What the fuck");
 //            indexer.insertTitle("liking");
 //            indexer.insertTitle("a");
 //            indexer.insertTitle("sdfsdf");
-            indexer.insertTitle("banana123", 19);
+//            indexer.insertTitle("banana123", 19);
 //            indexer.insertTitle("cake");
+            Vector<String> txt = new Vector<String>();
+            txt.add("hi");
+            txt.add("happy");
+            txt.add("the");
+            txt.add("apple");
 
+            Vector<String> txt2 = new Vector<String>();
+            txt2.add("Good");
+            txt2.add("Morning!");
+            txt2.add("how");
+            txt2.add("are");
+            txt2.add("you");
+
+            indexer.insertToForwardIndex(txt2);
+            indexer.printUrlMappingIndex();
             indexer.printWordMappingIndex();
+            indexer.printForwardIndex();
             indexer.finalize();
+
 
         } catch (IOException e) {
             e.printStackTrace();

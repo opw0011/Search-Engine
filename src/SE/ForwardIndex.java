@@ -14,13 +14,13 @@ import java.util.Vector;
 
 // ParentPageID -> (ChildPageID1 ... ChildPageIDN)
 // ChildPageID -> (ParentPageID1 ... ParentPageIDN)
-
-public class ParentChildIndex {
+// PageID -> (WordID1 ... wordIDN)
+public class ForwardIndex {
 
     private RecordManager recman;
     private HTree hashtable;
 
-    ParentChildIndex(RecordManager recordmanager, String objectname) throws IOException
+    ForwardIndex(RecordManager recordmanager, String objectname) throws IOException
     {
         recman = recordmanager;
         long recid = recman.getNamedObject(objectname);
@@ -44,10 +44,11 @@ public class ParentChildIndex {
 //        recman.close();
     }
 
-    public void insert(int pageID1, int pageID2) throws IOException
+    // allow duplicated wordIDs, e.g. 2 -> (2, 4, 3, 7)
+    public void insert(int pageID, int wordID) throws IOException
     {
         // pageID -> wordPosList
-        String key = Integer.toString(pageID1);
+        String key = Integer.toString(pageID);
         Vector<Integer> pages = null;
 
         if (hashtable.get(key) == null)
@@ -55,35 +56,21 @@ public class ParentChildIndex {
         else
             pages = (Vector<Integer>) hashtable.get(key);
 
-        // ensure unique insert
-        if (! pages.contains(pageID2))
-        {
-            pages.add(pageID2);
-        }
+        pages.add(wordID);
 
         hashtable.put(key, pages);  // commit changes
     }
 
-    public void delete(int pageID1) throws IOException
+    public void delete(int pageID) throws IOException
     {
-        String key = Integer.toString(pageID1);
+        String key = Integer.toString(pageID);
         hashtable.remove(key);
     }
 
-    public void delete(int pageID1, int pageID2) throws IOException
-    {
-        String key = Integer.toString(pageID1);
-        if (hashtable.get(key) != null)
-        {
-            Vector<Integer> pages = (Vector<Integer>) hashtable.get(key);
-            pages.remove((Integer) pageID2);
-            hashtable.put(key, pages);  // commit changes
-        }
-    }
 
-    public Vector<Integer> getList(int pageID1) throws IOException
+    public Vector<Integer> getList(int pageID) throws IOException
     {
-        String key = Integer.toString(pageID1);
+        String key = Integer.toString(pageID);
         Vector<Integer> list = new Vector<Integer>();
         if (hashtable.get(key) != null)
         {
@@ -101,7 +88,7 @@ public class ParentChildIndex {
         String key;
         while( (key = (String)iter.next())!=null)
         {
-            System.out.printf("KEY= %s, PAGES= %s\n" , key, hashtable.get(key));
+            System.out.printf("PAGEID= %s, WORDIDS= %s\n" , key, hashtable.get(key));
         }
 
     }
