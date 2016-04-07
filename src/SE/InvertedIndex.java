@@ -116,7 +116,7 @@ public class InvertedIndex
             HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
             if(contains(wordID, pageID))
             {
-                System.out.println("New Pos with existing pageid");
+//                System.out.println("New Pos with existing pageid");
                 // get the posting of specific pageID
                 Posting posting = map.get(pageID);
 

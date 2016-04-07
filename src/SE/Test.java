@@ -2,6 +2,7 @@ package SE;
 
 import jdbm.RecordManager;
 import jdbm.RecordManagerFactory;
+import org.htmlparser.util.ParserException;
 
 import java.io.IOException;
 import java.util.Vector;
@@ -108,7 +109,7 @@ public class Test {
             */
 
 
-            Indexer indexer = new Indexer("data/database", "www.yahoo.com.hk");
+            Indexer indexer = new Indexer("data/database", "www.bing.com.hk");
 //            indexer.insertTitle("HI");
 //            indexer.insertTitle("Working");
 //            indexer.insertTitle("What the fuck");
@@ -129,15 +130,29 @@ public class Test {
             txt2.add("how");
             txt2.add("are");
             txt2.add("you");
+            txt2.add("Good");
 
-            indexer.insertToForwardIndex(txt2);
+
+//            indexer.insertToForwardIndex(txt2);
+
+            Crawler crawler = new Crawler("http://www.cse.ust.hk/");
+            Vector<String> words = crawler.extractWords();
+            System.out.println(words);
+            System.out.println(words.get(6));
+            System.exit(-1);
+            indexer.insertToForwardIndex(words);
+
             indexer.printUrlMappingIndex();
             indexer.printWordMappingIndex();
             indexer.printForwardIndex();
-            indexer.finalize();
+//            indexer.printTitleInvertedIndex();
+            indexer.printBodyInvertedIndex();
+            indexer.finalize(); // must call to write to db
 
 
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParserException e) {
             e.printStackTrace();
         }
 

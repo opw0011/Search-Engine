@@ -66,6 +66,8 @@ public class MappingIndex {
             // increase the last id before insert
             lastID++;
             hashtable.put(key, lastID);
+//            recman.commit();
+//            recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
             return true;
         }
         return false;

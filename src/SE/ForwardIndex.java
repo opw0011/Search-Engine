@@ -59,12 +59,14 @@ public class ForwardIndex {
         pages.add(wordID);
 
         hashtable.put(key, pages);  // commit changes
+//        recman.commit();
     }
 
     public void delete(int pageID) throws IOException
     {
         String key = Integer.toString(pageID);
         hashtable.remove(key);
+//        recman.commit();
     }
 
 

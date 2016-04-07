@@ -47,11 +47,12 @@ public class Indexer {
 
         this.url = url;
         urlIndex.insert(url);
-        urlIndex.finalize();
+//        urlIndex.finalize();
         this.pageID = urlIndex.getValue(url);
         System.out.printf("Indexer: url:'%s' mapping to '%s' \n", url, urlIndex.getValue(url));
     }
 
+    /*
     // input the title string one by one, insert the word into word mapping index and title inverted index
     public void insertTitle(String word, int wordPos)
     {
@@ -63,18 +64,18 @@ public class Indexer {
 
         if (stopStem.isStopWord(word))
         {
-            System.out.printf("\"%s\" is a stop word" , word);
+//            System.out.printf("\"%s\" is a stop word" , word);
             return;
         }
 
         // retrieve the stemmed word
         String stem = stopStem.stem(word);
-        System.out.println("stem: \"" + stem +"\"");
+//        System.out.println("stem: \"" + stem +"\"");
 
         try {
             // insert into word mapping indexer
             wordIndex.insert(stem);
-            wordIndex.finalize();
+//            wordIndex.finalize();
 
             int stemWordID = wordIndex.getValue(stem);
 
@@ -84,32 +85,37 @@ public class Indexer {
             // insert into inverted file
             titleInvertedIndex.insert(stemWordID, 2, wordPos);
             titleInvertedIndex.printAll();
-            titleInvertedIndex.finalize();
+//            titleInvertedIndex.finalize();
 
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+    */
 
-    // remove stop words + stemming, insert to mapping index and return word ID, wordID: -1 = stop word
+    // Helper function: remove stop words + stemming, insert to mapping index and return word ID, wordID: -1 = stop word
     private int insertWordToMappingIndex(String word)
     {
+        if(word.length() <= 0 || word.equals(""))
+        {
+            System.out.println("ERROR: Insert Title invalid word");
+            return -2;
+        }
         // skip stop words
         if (stopStem.isStopWord(word))
         {
-            System.out.printf("\"%s\" is a stop word \n" , word);
+            //System.out.printf("\"%s\" is a stop word \n" , word);
             return -1;
         }
 
         // retrieve the stemmed word
         String stem = stopStem.stem(word);
-        System.out.println("stem: \"" + stem +"\"");
+        //System.out.println("stem: \"" + stem +"\"");
 
         try {
             // insert into word mapping indexer
             wordIndex.insert(stem);
-            wordIndex.finalize();
 
             int stemWordID = wordIndex.getValue(stem);
             return stemWordID;
@@ -117,9 +123,10 @@ public class Indexer {
             e.printStackTrace();
         }
 
-        return -2;  // ERROR
+        return -3;  // ERROR
     }
 
+    // Remove stop word, stemming, insert to forward indexer and inverted index
     public void insertToForwardIndex(Vector<String> words) throws IOException
     {
         if(words.isEmpty())
@@ -128,13 +135,17 @@ public class Indexer {
         forwardIndex.delete(this.pageID);   // clear the old content first
 
         // loop through the input Vector
-        for(String word : words)
+        for(int wordPos = 0; wordPos < words.size(); wordPos ++)
         {
-            int wordID = insertWordToMappingIndex(word);    // put new word to mapping index
+            int wordID = insertWordToMappingIndex(words.get(wordPos));    // put new word to mapping index
 
             // ignore stop word
             if(wordID > 0)
+            {
                 forwardIndex.insert(this.pageID, wordID);
+                // TODO: add to title inverted index
+                bodyInvertedIndex.insert(wordID, this.pageID, wordPos);
+            }
         }
     }
 
@@ -156,6 +167,11 @@ public class Indexer {
     public void printTitleInvertedIndex() throws IOException
     {
         titleInvertedIndex.printAll();
+    }
+
+    public void printBodyInvertedIndex() throws IOException
+    {
+        bodyInvertedIndex.printAll();
     }
 
     public void finalize() throws IOException
