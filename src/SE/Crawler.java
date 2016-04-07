@@ -13,14 +13,16 @@ import java.util.*;
 import java.text.*;
 
 
-//import org.htmlparser.NodeFilter;
+//import org.htmlparser.filters.*;
 import org.htmlparser.Parser;
-import org.htmlparser.filters.AndFilter;
+import org.htmlparser.filters.RegexFilter;
+//import org.htmlparser.filters.AndFilter;
 import org.htmlparser.filters.NodeClassFilter;
-import org.htmlparser.tags.LinkTag;
+//import org.htmlparser.tags.LinkTag;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.Node;
-import org.htmlparser.filters;
+import org.htmlparser.NodeFilter;
+
 
 //import org.w3c.dom.NodeList;
 //import org.w3c.dom.Node;
@@ -82,24 +84,20 @@ public class Crawler {
         return temp.length();
     }
 
-    public String lastUpdate() throws IOException{
+    public Date lastUpdate() throws IOException{
        // String[] urlstr = url.split("://");
         //URL inputLink = new URL("http", urlstr[1], 80, "/");
 
         URL u = new URL(getUrl());
         URLConnection linkConnect = u.openConnection();
 
-
-        Date date;
-        date = new Date(linkConnect.getLastModified());
+        Date date = new Date(linkConnect.getLastModified());
         //SimpleDateFormat ft = new SimpleDateFormat("yyyy.MM.dd");
 
-        if (date != null) {
-           return (date.toString());
-       }
+        if(date.toString().equals("1970-01-01"))
+            date.setTime(linkConnect.getDate());
 
-        date.setTime(linkConnect.getDate());
-        return (date.toString());
+           return date;
 
 
     }
@@ -131,6 +129,7 @@ public class Crawler {
         // extract words in url and return them
         // use StringTokenizer to tokenize the result from StringBean
         // ADD YOUR CODES HERE
+        Vector<String> v_word = new Vector<String>();
         StringBean sb = new StringBean();
 
         // StringBean settings
@@ -139,20 +138,13 @@ public class Crawler {
         sb.setCollapse (true);
         sb.setURL (url);
 
-        String s = sb.getStrings ();
-
-        Vector<String> v_word = new Vector<String>();
-
+        String s = sb.getStrings();
         StringTokenizer st = new StringTokenizer(s);
 
-        Parser parser = getParser();
-        NodeFilter filter = new StringFilter(":");
-        NodeList nodes = parser.extractAllNodesThatMatch(filter);
 
-        while (st.hasMoreTokens()) {
+        while (st.hasMoreTokens())
             v_word.add(st.nextToken());
 
-        }
         return v_word;
     }
 
@@ -165,7 +157,7 @@ public class Crawler {
         URL[] URL_array = lb.getLinks();
 
         Vector<String> v_link = new Vector<String>();
-        for(int i=0; i<URL_array.length; i++){
+        for(int i = 0; i < URL_array.length; i++){
             v_link.add(URL_array[i].toString());
         }
         return v_link;
@@ -175,12 +167,12 @@ public class Crawler {
     {
         try
         {
-            Crawler crawler = new Crawler("http://course.cse.ust.hk/comp3021/");
+            Crawler crawler = new Crawler("http://course.cse.ust.hk/comp4321");
 
             int  NumPages = crawler.getPageSize();
             System.out.println("It has number of pages: "+ NumPages);
 
-            String lastDate = crawler.lastUpdate();
+            Date lastDate = crawler.lastUpdate();
             System.out.println("Lat update on: "+ lastDate);
 
             Vector<String> words = crawler.extractWords();
