@@ -139,6 +139,9 @@ public class Crawler {
         sb.setURL (url);
 
         String s = sb.getStrings();
+        s = s.replaceAll("[,:!/.%|()-+&^#@*']", "");
+
+        System.out.print(s);
         StringTokenizer st = new StringTokenizer(s);
 
 
@@ -163,11 +166,11 @@ public class Crawler {
         return v_link;
     }
 
-    public static void main(String[] args)
+   public static void main(String[] args)
     {
         try
         {
-            Crawler crawler = new Crawler("http://course.cse.ust.hk/comp4321");
+            Crawler crawler = new Crawler("http://course.cse.ust.hk/comp3021");
 
             int  NumPages = crawler.getPageSize();
             System.out.println("It has number of pages: "+ NumPages);
