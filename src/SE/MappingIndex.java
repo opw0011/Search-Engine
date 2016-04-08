@@ -19,8 +19,10 @@ public class MappingIndex {
 
     private RecordManager recman;
     private HTree hashtable;
+    private HTree hashtable_r;
 
     private long recid;
+    private long recid_r;
     private long lastIDRecid;
 
     public MappingIndex(RecordManager recordmanager, String objectname) throws IOException
@@ -28,12 +30,16 @@ public class MappingIndex {
 //        recman = RecordManagerFactory.createRecordManager(DB_ROOT_FOLDER + recordmanager);
         recman = recordmanager;
         recid = recman.getNamedObject(objectname);
+        recid_r = recman.getNamedObject(objectname+"Reverted");
+
         lastIDRecid = recman.getNamedObject(objectname+"ID");
 
         if (recid != 0)
         {
             // if hashtable exist, load it
             hashtable = HTree.load(recman, recid);
+            hashtable_r = HTree.load(recman, recid_r);
+
             lastID = (Integer)recman.fetch(lastIDRecid);
         }
         else
@@ -41,7 +47,10 @@ public class MappingIndex {
             System.out.println("Initial hastable");
             // initial hashtables
             hashtable = HTree.createInstance(recman);
+            hashtable_r = HTree.createInstance(recman);
+
             recman.setNamedObject(objectname, hashtable.getRecid());
+            recman.setNamedObject(objectname+"Reverted", hashtable_r.getRecid());
             recman.setNamedObject(objectname+"ID", recman.insert(new Integer(0)));
             lastIDRecid = recman.getNamedObject(objectname+"ID");
             lastID = 0;
@@ -67,8 +76,10 @@ public class MappingIndex {
             // increase the last id before insert
             lastID++;
             hashtable.put(key, lastID);
-            recman.commit();
+            hashtable_r.put(lastID, key);
             recman.update(lastIDRecid, new Integer(lastID)); // write the last id to db
+//            recman.commit();
+
             return true;
         }
         return false;
@@ -83,20 +94,30 @@ public class MappingIndex {
             return -1;
     }
 
+    // -1 : value not found
     public String getKey(int value) throws IOException
     {
-        // iterate through all keys
-        FastIterator iter = hashtable.keys();
-        String key;
-        while( (key = (String)iter.next())!=null)
-        {
-            if(hashtable.get(key) != null && (int) hashtable.get(key) == value)
-            {
-                return key;
-            }
-        }
-        return null;
+//        String valueStr = Integer.toString(value);
+        if(hashtable_r.get(value) != null)
+            return (String) hashtable_r.get(value);
+        else
+            return "NO STRING";
     }
+
+//    public String getKey(int value) throws IOException
+//    {
+//        // iterate through all keys
+//        FastIterator iter = hashtable.keys();
+//        String key;
+//        while( (key = (String)iter.next())!=null)
+//        {
+//            if(hashtable.get(key) != null && (int) hashtable.get(key) == value)
+//            {
+//                return key;
+//            }
+//        }
+//        return null;
+//    }
 
     public void finalize() throws IOException
     {
