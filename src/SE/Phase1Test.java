@@ -25,6 +25,7 @@ public class Phase1Test {
                 Indexer index = new Indexer("data/database", url);
                 System.out.println(url);
                 index.printPageTermFrequency();
+                index.finalize();
             }
 
 
