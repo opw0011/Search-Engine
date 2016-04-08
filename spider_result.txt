@@ -1,6 +1,6 @@
-[Department, of, Computer, Science, and, Engineering,, HKUST]
+Department of Computer Science and Engineering, HKUST
 http://www.cse.ust.hk/
-2016-04-08 Size:22621
+2016-04-08 Size:22622
 depart:5; comput:3; scienc:5; engin:4; hkust:9; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:3; achiev:3; event:3; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:3; staff:1; commun:1; tutor:1; postgradu:3; student:6; alumni:3; recruit:4; editorinchief:1; appoint:2; undergradu:2; ug:4; program:8; net:4; 4yr:1; 3yr:1; pg:4; cse:6; admis:3; destin:1; research:5; career:2; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:3; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; hackathonhkust:1; 2015:7; android:1; applic:2; design:2; contest:1; tea:2; gather:2; professor:4; samuel:1; chanson:1; scholarship:2; award:3; 2014:1; var:3; bannerlinkarr:1; httpalumnicseusthkmentorshiphtml:1; httphackusthk:1; newsaadc2014:1; newsscsa2014:1; option:1; caption:1; note:1; the:7; must:1; 0:8; normal:1; with:3; background:3; font:2; 1:2; larger:2; text:2; 2:1; special:1; no:2; bannermod:1; bannercaptioncolor:1; white:6; æççæç:1; ç:1; ççæç:1; global:1; celebr:1; san:1; francisco:1; qian:1; zhang:1; tencent:1; chair:1; phd:5; graduat:1; receiv:1; hong:5; kong:5; young:1; scientist:1; big:9; data:12; master:1; fill:1; skill:1; shortag:1; moemsra:1; inform:2; technologi:6; kei:2; laboratori:1; ai:2; workshop:2; soft:1; club:1; formal:1; establish:6; msc:2; offici:1; approv:1; launch:2; dec:1; 9th:1; famili:1; homecom:1; dai:1; wechat:2; joint:2; artifici:1; intellig:1; creat:1; predict:1; futur:1; googl:1; anita:1; borg:1; memori:1; imagin:1; camp:1; featur:1; innov:1; digit:1; world:2; rongxin:1; wu:1; xiao:2; publish:1; popl:1; paper:1; univers:2; more:1; spotlight:1; institut:2; bdi:2; effect:1; feb:1; 2016:8; over:1; past:1; relat:1; initi:1; these:1; includ:3; center:2; what:1; bigdata:1; biointellig:1; bdbi:1; bdt:1; wish:1; knowledg:1; transfer:1; educ:1; umbrella:1; we:1; hope:1; plai:1; major:1; role:1; develop:1; region:1; platform:2; effort:1; activ:1; field:1; largescal:1; industri:1; project:1; a:2; versatil:1; allow:1; intim:1; connect:1; practic:1; talk:2; finalyear:1; 13:1; april:7; wed:2; 5307pm:1; lg7:1; milano:1; fresh:1; comp:1; 4900:1; 201617:1; fypfyt:2; seminar:5; 6:1; 67pm:1; ltb:1; 20152016:1; poster:1; 11:1; mon:2; 1030am1200noon:1; rm6568:1; unifi:1; framework:1; error:1; bound:1; structur:1; convex:1; optim:1; problem:1; theori:1; group:1; 8:3; fri:3; 1100am:1; rm3501:1; make:1; sens:1; softwar:1; document:1; natur:1; languag:1; process:1; 18:1; 400pm:1; ltf:1; thesi:3; defens:2; qualifi:1; examin:1; mr:1; fengchao:1; peng:1; propos:1; defenc:1; miss:1; qing:1; liao:1; all:1; video:1; last:1; updat:1; 20160407:1; email:1; clear:1; water:1; bai:1; kowloon:1; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/?lang=hk
@@ -80,7 +80,7 @@ http://www.cse.ust.hk/pg/defenses/
 http://www.cse.ust.hk/pg/defenses/S16/fpengaa-08-04-2016.html
 http://www.cse.ust.hk/pg/defenses/S16/qnature-08-04-2016.html
 ------------------------------
-[é¦æ¸¯ç§æå¤§å­¸è¨ç®æ©ç§å­¸åå·¥ç¨å­¸ç³»]
+é¦æ¸¯ç§æå¤§å­¸è¨ç®æ©ç§å­¸åå·¥ç¨å­¸ç³»
 http://www.cse.ust.hk/?lang=hk
 2016-04-08 Size:20891
 depart:2; comput:1; scienc:2; engin:2; hkust:4; äæçä:1; postgradu:1; student:2; alumni:1; appoint:1; undergradu:1; ug:2; program:4; cse:5; admis:2; research:4; lab:1; myport:1; hackathonhkust:1; 2015:6; android:1; applic:2; design:2; contest:1; tea:2; gather:2; professor:4; samuel:1; chanson:1; scholarship:2; award:2; 2014:1; var:3; bannerlinkarr:1; httpalumnicseusthkmentorshiphtml:1; httphackusthk:1; newsaadc2014:1; newsscsa2014:1; option:1; caption:1; note:1; the:4; must:1; 0:8; normal:1; with:3; background:3; font:2; 1:2; larger:2; text:2; 2:1; special:1; no:2; bannermod:1; bannercaptioncolor:1; white:6; æççæç:1; ç:9; ççæç:2; global:1; celebr:1; san:1; francisco:1; qian:1; zhang:1; tencent:1; chair:1; phd:4; hong:2; kong:2; big:7; data:10; inform:1; technologi:2; kei:1; ai:1; workshop:1; establish:4; msc:1; launch:1; famili:1; homecom:1; dai:1; wechat:1; joint:1; creat:1; predict:1; futur:1; googl:1; anita:1; borg:1; memori:1; imagin:1; camp:1; featur:1; innov:1; digit:1; world:2; rongxin:1; wu:1; xiao:2; publish:1; popl:1; paper:1; univers:1; institut:2; bdi:2; effect:1; feb:1; 2016:8; over:1; past:1; relat:1; initi:1; these:1; includ:3; center:2; what:1; bigdata:1; biointellig:1; bdbi:1; bdt:1; wish:1; knowledg:1; transfer:1; educ:1; umbrella:1; we:1; hope:1; plai:1; major:1; role:1; develop:1; region:1; platform:2; effort:1; activ:1; field:1; largescal:1; industri:1; project:1; a:2; versatil:1; allow:1; intim:1; connect:1; practic:1; talk:1; finalyear:1; 13:1; april:7; wed:2; 5307pm:1; lg7:1; milano:1; fresh:1; comp:1; 4900:1; 201617:1; fypfyt:2; seminar:3; 6:1; 67pm:1; ltb:1; 20152016:1; poster:1; 11:1; mon:2; 1030am1200noon:1; rm6568:1; unifi:1; framework:1; error:1; bound:1; structur:1; convex:1; optim:1; problem:1; theori:1; group:1; 8:3; fri:3; 1100am:1; rm3501:1; make:1; sens:1; softwar:1; document:1; natur:1; languag:1; process:1; 18:1; 400pm:1; ltf:1; thesi:1; qualifi:1; examin:1; mr:1; fengchao:1; peng:1; propos:1; defenc:1; miss:1; qing:1; liao:1; éæçæååèçæçåååçåç:1; english:1; çä:1; æèè:1; éææå:1; åçèæ:1; æèåæå:1; æå:2; èªç:1; äè:1; åå:1; èçµæå:1; åçæå:1; èå:2; èªèæå:1; çç:2; æ:2; å:2; æè:2; æåççèèå:1; æçç:1; æççåèç:2; ååå:1; äåå:1; ççèªç:1; ççåèç:1; ççæåæç:1; ççåå:1; çé:2; åæ:2; åçåçèå:1; åäèè:1; åææåçééçµ:1; èæååæåæç:1; åéåæéè:1; çææå:1; åçççµé:1; éçµ:1; ééµççµ:1; æèååèç:1; çåèèé:1; åçæ:1; çççå:1; æèæå:1; åçæèåæå:1; éæéåçååç:1; çåéèçåèªçæéæ:1; æèéåèéæçåééèååéåäººåæºèç:1; èæåçååèåçäæéæåæç:1; åææçæçåçåèªç:1; éæçæååèåäåºçäººåæºèèååéå:1; æåæèåæå:1; æååèåº:1; èåº:2; èæçè:2; æææå:1; åç:1; æåææææï20160407:1; ééµï:1; éæäéææç:1; éæçæåå:1; èçæçåååçåç:1; 
@@ -162,7 +162,7 @@ http://www.cse.ust.hk/pg/defenses/
 http://www.cse.ust.hk/pg/defenses/S16/fpengaa-08-04-2016.html
 http://www.cse.ust.hk/pg/defenses/S16/qnature-08-04-2016.html
 ------------------------------
-[é¦æ¸¯ç§æå¤§å­¦è®¡ç®æºç§å­¦åå·¥ç¨å­¦ç³»]
+é¦æ¸¯ç§æå¤§å­¦è®¡ç®æºç§å­¦åå·¥ç¨å­¦ç³»
 http://www.cse.ust.hk/?lang=cn
 2016-04-08 Size:20890
 depart:2; comput:1; scienc:2; engin:2; hkust:4; äæçé:1; postgradu:1; student:2; alumni:1; appoint:1; undergradu:1; ug:2; program:4; cse:5; admis:2; research:4; lab:1; myport:1; hackathonhkust:1; 2015:6; android:1; applic:2; design:2; contest:1; tea:2; gather:2; professor:4; samuel:1; chanson:1; scholarship:2; award:2; 2014:1; var:3; bannerlinkarr:1; httpalumnicseusthkmentorshiphtml:1; httphackusthk:1; newsaadc2014:1; newsscsa2014:1; option:1; caption:1; note:1; the:4; must:1; 0:8; normal:1; with:3; background:3; font:2; 1:2; larger:2; text:2; 2:1; special:1; no:2; bannermod:1; bannercaptioncolor:1; white:6; æççæç:1; ç:9; ççæç:2; global:1; celebr:1; san:1; francisco:1; qian:1; zhang:1; tencent:1; chair:1; phd:4; hong:2; kong:2; big:7; data:10; inform:1; technologi:2; kei:1; ai:1; workshop:1; establish:4; msc:1; launch:1; famili:1; homecom:1; dai:1; wechat:1; joint:1; creat:1; predict:1; futur:1; googl:1; anita:1; borg:1; memori:1; imagin:1; camp:1; featur:1; innov:1; digit:1; world:2; rongxin:1; wu:1; xiao:2; publish:1; popl:1; paper:1; univers:1; institut:2; bdi:2; effect:1; feb:1; 2016:8; over:1; past:1; relat:1; initi:1; these:1; includ:3; center:2; what:1; bigdata:1; biointellig:1; bdbi:1; bdt:1; wish:1; knowledg:1; transfer:1; educ:1; umbrella:1; we:1; hope:1; plai:1; major:1; role:1; develop:1; region:1; platform:2; effort:1; activ:1; field:1; largescal:1; industri:1; project:1; a:2; versatil:1; allow:1; intim:1; connect:1; practic:1; talk:1; finalyear:1; 13:1; april:7; wed:2; 5307pm:1; lg7:1; milano:1; fresh:1; comp:1; 4900:1; 201617:1; fypfyt:2; seminar:3; 6:1; 67pm:1; ltb:1; 20152016:1; poster:1; 11:1; mon:2; 1030am1200noon:1; rm6568:1; unifi:1; framework:1; error:1; bound:1; structur:1; convex:1; optim:1; problem:1; theori:1; group:1; 8:3; fri:3; 1100am:1; rm3501:1; make:1; sens:1; softwar:1; document:1; natur:1; languag:1; process:1; 18:1; 400pm:1; ltf:1; thesi:1; qualifi:1; examin:1; mr:1; fengchao:1; peng:1; propos:1; defenc:1; miss:1; qing:1; liao:1; english:1; çä:1; æèè:1; æå:2; äè:1; åå:1; åçæå:1; èå:3; çç:3; æ:2; å:1; æè:2; æçç:1; æççåèç:2; ååå:1; äåå:1; ççåèç:1; ççæåæç:1; ççåå:1; çææå:1; æèååèç:1; çåèèé:1; çççå:1; æèæå:1; æååèåº:1; èåº:2; æææå:1; åç:1; æåææææï20160407:1; éæçæåå:1; éæçæååèçæºçåååçåç:1; åææä:1; åçèµæ:1; æéåæå:1; èç:2; èçæä:1; èèæå:1; æåæçèèå:1; ççèç:1; çéå:1; åä:2; åçåä:1; éäèµè:1; åäæåçåèç:1; èæååäåæç:1; åéªåæéè:1; åçççé:1; çµéçç:1; åçä:1; åçæéåæå:1; éæéåçååå:1; çåéåçåèçåºéæ:1; æèéåèéæçåéçèååéªåäººåæºèç:1; èäåçååèåçääéæåæç:1; åææçæçåçåèç:1; éæçæååäåäåºçäººåæºèèååéªå:1; æåæéåæå:1; èºæçè:2; çµéï:1; éæäéæææ:1; èçæºçåååçåç:1; 
@@ -244,7 +244,7 @@ http://www.cse.ust.hk/pg/defenses/
 http://www.cse.ust.hk/pg/defenses/S16/fpengaa-08-04-2016.html
 http://www.cse.ust.hk/pg/defenses/S16/qnature-08-04-2016.html
 ------------------------------
-[HKUST, -, Hong, Kong, University, of, Science, and, Technology]
+HKUST - Hong Kong University of Science and Technology
 http://www.ust.hk/
 2016-04-08 Size:116151
 tell:3; cover:2; vice:2; scienc:3; corner:1; engin:1; biographi:1; hkust:33; speech:1; articl:2; column:1; about:8; photo:1; galleri:1; us:3; elett:1; fact:1; nobel:1; laureat:1; new:1; chemistri:1; dr:1; eric:1; event:2; qualiti:2; betzig:1; speak:1; safeti:3; imag:1; high:1; contact:1; peopl:1; spatiotempor:1; faculti:3; partner:1; staff:2; feder:1; commun:12; youth:1; nurtur:1; postgradu:12; talent:1; student:38; announc:1; alumni:8; prof:1; nanci:1; y:1; appoint:1; ip:1; undergradu:17; highlight:1; ug:3; explor:1; program:19; x:1; give:1; jobshkust:1; access:1; pg:5; privaci:1; menumegamenu:1; admis:3; subcontainercsstopmenumegamenuheightpx:1; hover:1; research:40; fullwidth:1; career:3; true:1; opportun:9; servic:13; facil:10; polici:1; system:3; myport:4; site:1; map:2; scholarship:6; award:6; text:1; global:12; graduat:9; hong:2; kong:2; young:1; inform:6; technologi:8; kei:1; laboratori:1; club:4; googl:1; innov:4; publish:3; univers:12; more:1; institut:12; relat:3; center:18; what:2; knowledg:3; transfer:3; educ:4; develop:3; platform:3; activ:3; a:9; group:1; video:1; prospect:2; current:2; donor:2; visitor:2; media:7; search:1; scholarli:1; public:7; 简体:1; 繁體:1; plu:1; revert:1; minu:1; print:1; glanc:3; mileston:1; mission:1; vision:1; figur:1; motion:1; govern:3; court:4; council:4; senat:4; ordin:1; statut:1; press:1; releas:1; other:2; sai:2; strateg:3; plan:6; senior:3; administr:9; rank:3; directori:3; multimedia:3; organ:3; chart:3; campu:14; direc:1; amen:6; space:4; job:3; academ:9; offic:66; execut:6; vicepresid:17; provost:6; studi:22; jockei:4; advanc:8; calendar:6; cours:3; continu:3; profession:3; librari:7; school:9; busi:4; manag:4; human:4; social:1; interdisciplinari:1; fok:4; ying:4; tung:4; teach:3; learn:12; registri:1; regul:1; integr:1; feedback:1; questionnair:1; presid:6; institu:6; dean:3; resourc:3; financ:3; affair:6; secretariat:3; health:3; environ:3; art:3; purchas:3; researchhkust:2; strategi:1; cluster:1; state:1; central:3; mainland:13; china:13; open:3; collabor:6; network:6; entrepreneurship:3; financi:6; aid:6; insur:6; summer:6; visit:8; coursebas:2; exchang:6; connec:6; truli:3; intern:7; partnership:3; closeknit:3; contribu:2; highest:2; level:2; shenzhen:1; ledfpd:1; rd:1; zhejiang:1; manufactur:1; lifehkust:3; first:3; year:3; success:3; life:4; experi:3; counsel:3; well:6; hous:3; sport:3; aesthet:3; cultur:3; engag:3; recreat:4; cater:1; sustain:3; live:3; good:3; stori:5; 
@@ -431,14 +431,14 @@ http://facebook.com/HKUST
 http://www.ust.hk/accessibility/
 http://www.ust.hk/privacy-policy/
 ------------------------------
-[HKUST, -, School, of, Engineering,, HKUST]
+HKUST - School of Engineering, HKUST
 http://www.seng.ust.hk/
 2011-09-19 Size:170
 school:1; engin:1; hkust:2; 
 ------------------------------
-[About]
+About
 http://www.cse.ust.hk/admin/sitemap/?map=About
-2016-04-08 Size:8799
+2016-04-08 Size:8798
 depart:1; comput:1; technologi:1; scienc:2; engin:1; äæçé:1; äæçä:1; about:5; welcom:2; us:5; fact:2; sheet:2; new:2; achiev:2; event:2; qualiti:2; assur:2; safeti:2; contact:2; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:2; clear:1; student:3; water:1; alumni:2; bai:1; recruit:3; kowloon:1; editorinchief:1; appoint:1; undergradu:1; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; 20151030:1; univers:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; the:1; hong:2; kong:2; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/admin/sitemap/?lang=hk&amp;map=About
@@ -491,7 +491,7 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[Welcome, from, Head, of, Department]
+Welcome from Head of Department
 http://www.cse.ust.hk/admin/welcome/
 2016-04-08 Size:13363
 depart:11; comput:19; scienc:14; engin:12; hkust:2; äæçé:1; äæçä:1; about:2; welcom:5; us:3; fact:1; sheet:1; new:2; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:5; staff:3; commun:4; tutor:1; postgradu:3; student:14; alumni:3; prof:1; recruit:3; editorinchief:1; appoint:1; undergradu:4; ug:3; program:6; net:4; 4yr:1; 3yr:1; pg:4; cse:3; admis:1; destin:1; research:11; career:4; internship:1; head:4; opportun:1; info:1; qiang:2; employ:2; yang:2; link:2; behalf:1; servic:2; excit:1; facil:2; time:1; committe:1; disciplin:3; polici:1; wide:1; lab:1; recogn:2; schedul:1; essenti:1; user:1; sourc:1; guid:1; tool:1; cs:1; techniqu:1; system:1; nearli:1; webmail:1; sphere:1; myport:1; endeavor:1; team:2; our:2; societi:4; found:1; associ:1; 1991:1; site:2; now:1; map:1; grown:1; 40:1; roughli:1; 180:1; 50:1; applic:2; mphil:1; design:2; 500:1; numer:1; support:1; beng:2; professor:2; jointli:1; administ:1; electron:1; ec:1; bsc:1; provid:7; broad:2; rang:1; choic:2; there:1; popular:1; mscit:1; researchori:1; studentcent:1; some:1; the:2; drive:1; principl:1; goal:1; embodi:1; follow:2; statem:3; to:8; prepar:3; product:1; academia:2; excel:3; in:1; particular:2; aim:1; produc:1; highli:1; wellround:1; possess:1; fundament:1; leadership:1; pursu:1; creativ:2; serv:1; scientif:1; expand:1; contribut:2; chair:1; phd:1; bodi:2; graduat:2; strong:3; agenc:1; hong:6; local:1; kong:6; leader:2; impact:1; scientist:1; target:1; attract:1; worldwid:1; catalyst:1; term:1; knowledgebas:1; skill:1; hub:1; assist:1; inform:3; relev:1; technologi:9; government:1; object:2; outstand:1; promot:1; philosophi:1; divers:1; scienceengin:1; specif:1; profes:1; multidisciplinari:1; stimul:1; individu:2; pioneer:1; benefit:1; demonstr:1; technic:1; compet:1; analysi:1; consist:1; specialist:1; perspect:1; generalist:1; variou:1; combin:1; classroom:1; hallmark:1; conduct:1; ethic:1; confid:1; lead:1; transmit:1; idea:1; instil:1; lifelong:1; world:1; mean:1; discoveri:1; implement:1; dynam:1; brows:1; department:1; web:1; univers:2; whether:1; parent:1; colleagu:1; hear:1; your:1; effect:1; comment:1; sugges:1; help:1; move:1; encourag:1; maintain:1; bright:1; these:1; 20150102:1; includ:1; knowledg:4; transfer:1; educ:4; we:3; develop:5; region:2; activ:1; field:1; industri:5; project:1; practic:2; theori:1; natur:1; qualifi:1; last:1; updat:1; email:1; clear:1; water:1; bai:1; kowloon:1; mission:1; vision:1; govern:3; organ:1; academ:2; studi:2; advanc:2; cours:1; profession:3; human:1; teach:1; learn:3; environ:2; china:2; intern:1; partnership:1; level:1; 
@@ -547,9 +547,9 @@ https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 http://www.cse.ust.hk/~qyang/
 ------------------------------
-[About, Us]
+About Us
 http://www.cse.ust.hk/admin/about/
-2016-04-08 Size:13098
+2016-04-08 Size:13097
 cover:1; natur:1; depart:3; comput:18; scienc:9; engin:4; hkust:2; äæçé:1; äæçä:1; about:4; welcom:1; us:5; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:2; clear:1; student:8; water:1; alumni:2; bai:1; recruit:3; kowloon:1; editorinchief:1; appoint:1; undergradu:1; ug:3; program:6; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:3; career:2; internship:1; opportun:2; info:1; employ:1; link:2; servic:1; excit:1; facil:2; committe:1; disciplin:1; polici:1; lab:1; schedul:1; user:1; guid:1; tool:1; cs:1; system:3; webmail:1; myport:1; team:1; societi:2; associ:1; site:1; map:1; applic:1; mphil:1; design:1; numer:1; beng:1; broad:1; rang:1; the:4; prepar:1; special:1; highli:1; phd:1; hong:2; kong:2; impact:2; data:1; knowledgebas:1; assist:1; inform:5; technologi:7; individu:1; artifici:1; intellig:1; creat:1; plan:1; multimedia:1; lead:1; digit:3; web:1; studi:2; univers:2; advanc:3; cours:2; profession:1; librari:1; help:1; move:1; past:1; encourag:1; function:1; interconnec:1; topic:1; foundat:1; graphic:1; dedic:1; learn:1; growth:1; through:1; evolv:1; integr:1; slow:1; educ:1; expens:1; fast:1; afford:1; ordinari:1; virtual:1; resourc:1; plai:1; everyon:1; humancomput:1; develop:1; interfac:1; region:1; ubiquit:1; todai:1; environ:2; effort:1; workplac:1; home:1; literaci:1; field:1; requir:1; industri:2; although:1; wit:1; begin:1; revolu:2; potenti:1; realiz:1; midst:1; network:2; explicit:1; interac:2; disconnect:1; devic:1; implicit:1; pervas:1; interconnect:1; embed:1; deep:1; challeng:1; bring:1; offer:1; meet:1; own:2; it:1; degre:1; asid:1; take:1; tailor:1; 20060627:1; life:1; structur:1; cultur:2; live:3; softwar:1; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/admin/about/?lang=hk
@@ -602,9 +602,9 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[Fact, Sheet]
+Fact Sheet
 http://www.cse.ust.hk/admin/factsheet/
-2016-04-08 Size:11094
+2016-04-08 Size:11093
 junior:1; depart:3; addition:1; comput:10; typic:1; scienc:8; short:1; engin:5; period:1; databas:1; äæçé:1; theoret:1; äæçä:1; earn:1; about:2; renown:1; welcom:1; regard:1; us:3; 20150909:1; fact:3; sheet:3; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; all:1; peopl:1; faculti:9; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:3; clear:1; student:4; water:1; alumni:2; bai:1; recruit:3; kowloon:1; editorinchief:1; appoint:1; undergradu:2; ug:3; program:7; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:2; career:2; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; time:1; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; our:1; societi:1; associ:2; site:1; map:1; beng:5; professor:3; electron:1; bsc:1; rang:1; the:1; in:1; highli:1; phd:1; hong:2; kong:2; worldwid:1; master:2; term:1; assist:1; inform:2; technologi:3; philosophi:2; vision:1; artifici:1; intellig:1; senior:1; world:1; univers:2; busi:2; manag:2; human:1; teach:1; graphic:1; we:1; field:1; network:1; interac:1; visit:2; degre:2; level:2; 20152016:1; number:1; bba:2; gener:2; dual:2; 594:1; 110:2; anoth:1; credit:1; experi:1; 115:1; 32:1; doctor:1; 169:1; worldclass:1; prestig:1; peer:2; total:1; 46:1; board:1; repres:1; fair:1; mix:1; softwar:1; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/admin/factsheet/?lang=hk
@@ -657,9 +657,9 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[News, &amp;, Achievements]
+News &amp; Achievements
 http://www.cse.ust.hk/News/?type=news|achievement
-2016-04-08 Size:51408
+2016-04-08 Size:51409
 depart:7; comput:32; scienc:34; engin:20; hkust:46; äæçé:1; äæçä:1; about:2; welcom:1; us:4; fact:1; sheet:1; new:12; achiev:9; event:2; qualiti:2; assur:1; safeti:1; contact:1; peopl:1; faculti:9; staff:1; commun:7; tutor:1; postgradu:11; student:66; alumni:5; recruit:3; editorinchief:3; appoint:6; undergradu:9; ug:19; program:52; net:4; 4yr:1; 3yr:1; pg:11; cse:42; admis:1; destin:1; research:47; career:4; internship:1; opportun:1; info:1; employ:1; link:2; servic:3; facil:2; committe:1; polici:1; lab:5; schedul:1; user:1; guid:1; cs:1; system:5; webmail:1; myport:1; team:15; societi:3; associ:3; site:1; map:2; hackathonhkust:4; 2015:19; android:6; applic:9; design:8; contest:24; professor:22; samuel:11; chanson:11; scholarship:21; award:156; 2014:22; the:39; 1:3; no:4; global:4; celebr:1; san:2; francisco:1; qian:11; zhang:13; tencent:1; chair:2; phd:40; graduat:13; receiv:24; hong:24; kong:30; young:9; scientist:6; big:8; data:12; master:3; fill:1; skill:2; shortag:1; moemsra:1; inform:12; technologi:19; kei:2; laboratori:3; ai:2; workshop:7; soft:13; club:1; formal:1; establish:3; msc:2; offici:1; approv:1; launch:8; dec:1; 9th:3; famili:1; homecom:1; dai:7; wechat:1; joint:11; artifici:1; intellig:2; creat:3; predict:1; futur:1; googl:10; anita:3; borg:3; memori:5; imagin:3; camp:3; featur:4; innov:11; digit:4; world:17; rongxin:1; wu:3; xiao:2; publish:2; popl:1; paper:38; univers:17; institut:3; 2016:1; knowledg:1; educ:8; major:1; develop:9; region:10; industri:4; project:18; practic:1; april:1; 6:1; poster:1; framework:1; group:2; 8:2; make:1; softwar:5; natur:4; languag:1; process:3; thesi:1; mr:8; all:1; video:1; last:1; updat:1; 20160407:1; email:1; clear:1; water:1; bai:1; kowloon:1; english:1; media:1; search:1; vision:3; council:1; plan:2; rank:14; multimedia:1; campu:1; job:1; academ:13; advanc:3; cours:4; continu:3; school:7; busi:1; manag:1; social:1; teach:6; learn:2; presid:3; institu:1; state:2; china:19; open:3; collabor:1; network:4; entrepreneurship:1; summer:6; intern:17; contribu:1; rd:1; first:10; year:12; success:1; experi:2; sustain:1; vice:1; articl:2; dr:25; speak:1; high:1; feder:1; youth:2; talent:2; announc:1; prof:41; highlight:1; access:3; head:2; qiang:8; yang:8; time:3; recogn:2; sourc:1; techniqu:1; found:2; mphil:2; support:1; electron:2; mscit:2; excel:14; in:3; creativ:1; scientif:2; local:1; leader:1; worldwid:1; outstand:7; demonstr:2; lead:2; idea:2; dynam:1; web:2; help:1; maintain:4; foundat:3; graphic:4; ubiquit:1; challeng:4; meet:1; it:11; gener:1; doctor:1; total:1; board:1; junior:1; databas:1; entri:1; sign:1; agreem:1; build:1; smart:1; citi:1; terrenc:1; tsang:1; share:2; madhead:1; ltd:1; onlin:2; full:2; stack:1; coursera:1; careerrelev:1; lei:4; chen:9; coeditorinchief:1; vldb:3; journal:1; champion:6; robocon:1; domest:1; competi:23; won:31; top:6; mate:1; rov:2; honour:4; fred:1; lochovski:1; retir:1; tech:1; ke:2; yi:2; lu:2; wang:3; best:42; sigmod:4; acm:30; test:1; runnerup:7; mobisi:1; kai:1; confer:11; usenix:1; nsdi:1; huamin:1; qu:1; higher:3; technolog:1; progress:2; second:3; class:4; ministri:2; coverag:4; sing:1; tao:1; daili:1; mai:2; supervis:2; brian:1; mak:1; cup:5; david:4; rossit:4; gold:3; 1st:9; acmw:1; chapter:4; greater:9; asia:9; qs:4; recogni:2; visual:1; analyt:2; elearn:1; behavior:1; vismooc:1; hkict:3; rae:1; wen:1; wei:2; po:1; 26:1; march:1; bo:7; li:7; prestigi:7; ieee:21; infocom:1; testoftim:1; tkde:1; hkustucla:4; studentshong:4; ripshk:3; ewr:1; steaci:1; fellowship:20; nserc:1; yanjiao:2; seng:5; 20142015:2; next:1; mine:3; repositori:1; 2nd:5; hkustusc:2; tc:1; pong:1; place:5; whartonq:1; reimagin:2; honor:5; mention:1; vast:1; instructor:1; 10:6; lectur:7; elec:5; transac:3; 201314:1; elect:6; endow:1; truste:1; ambassador:9; 1000:1; european:1; commis:1; ha:1; fund:1; pan:2; hui:1; cloud:3; sigsoft:5; distinguish:7; min:1; xie:1; submis:2; silver:4; valu:1; panpearl:6; river:6; delta:6; tse:1; cheuk:1; ng:2; tai:1; prize:11; naiyan:1; long:3; quan:3; breakthrough:3; app:2; bestow:3; startupshk:1; session:1; start:1; cseaa:1; mentorship:2; programm:2; significantli:1; improv:2; hunt:1; postdoctor:1; fellow:6; nation:3; output:1; 2013:19; 2627:1; final:9; 20132014:1; position:3; jogesh:2; muppala:4; failur:1; 4th:5; annual:1; forum:4; msra:1; 201213:4; sunghun:3; kim:4; appreci:4; epflhkust:1; tsinghuahkust:1; three:2; medal:2; arwu:3; hubei:1; provinc:1; â500000:1; deutsch:1; telekom:1; set:1; up:1; hkustdt:1; fyp:2; championship:5; acmhk:3; bi:1; junfeng:1; sigma:1; xi:1; jeff:1; huang:2; sigplan:2; pldi:2; nan:1; cao:2; dissert:1; aaai:1; handson:1; held:1; select:4; notabl:1; review:1; 2012:21; ics:1; four:1; accolad:1; 201112:2; alumnu:2; icpad:1; armin:3; lillian:3; kitchel:3; 3rd:3; ibm:7; db2:3; db:1; di:1; jiang:1; kenneth:1; leung:4; wilfr:1; dasfaa:2; solomon:2; systech:2; dimitri:1; papadia:1; aadc:2; scmp:1; candid:4; guoli:1; ye:1; iscslp2012:1; spoken:1; translat:1; aaa:1; mobil:2; tv:1; channel:1; power:1; streamphoni:1; lavinet:2; apicta:1; two:4; globecom:3; fangm:1; liu:5; 11th:1; tpami12:1; astar:1; singapor:1; pattern:1; kaishun:1; winner:2; ho:2; lee:1; common:1; hyunmin:1; seo:1; 27th:1; ieeeacm:1; as:1; qifeng:2; broke:1; record:1; code:2; jam:2; nokia:1; zhu:1; yin:2; shaom:1; enter:2; chines:2; volunt:1; implem:1; mãdecin:1; frontiãr:1; msf:1; hp:1; investig:1; respons:1; ict:4; acmicpc:2; 2011:14; jie:1; join:2; siggraph:4; dekai:1; author:1; linguist:1; yu:2; cheung:4; ka:2; chun:5; wong:3; yim:1; yuen:2; siu:2; hung:2; spirit:1; lenovo:2; gari:1; chan:3; smarter:1; multihop:1; wifi:1; greatli:1; signal:4; strength:1; nathan:2; 20th:1; bin:1; luheng:1; he:1; kddcup:3; grant:2; scheme:3; tim:1; itf:1; 20102011:3; shine:2; abu:1; asiapacif:1; robot:1; s:1; c:1; 201011:1; call:1; lite:1; lok:1; ping:1; eleg:1; fong:1; fu:1; shing:1; enrich:4; yunkwan:1; empris:1; yan:1; da:1; coach:1; multiimag:1; panorama:1; twin:2; win:7; udb:2; interunivers:2; 2010:6; 3:2; jame:1; cheng:1; albert:1; chung:1; sung:1; ten:1; lionel:2; ni:2; yunhao:2; mo:1; pedro:1; sander:1; largest:1; photograph:1; derick:1; wood:1; made:1; recordbreak:1; calcul:1; pi:1; near:1; dityan:1; yeung:1; cognit:1; radio:2; spectrum:1; no1:1; sigart:1; led:1; shenzhenhong:1; 200910:1; gabriel:1; keung:1; wclipper:1; seif:1; scholar:2; 2009:15; raymond:1; cikm:1; mmc:1; elev:1; oversea:3; again:1; hkie:1; engineersresearch:1; hktiit:1; amwai:3; present:3; 200809:1; collegi:6; ceremoni:1; huawei:1; hand:1; boe:3; wireless:3; mainten:1; effici:1; 2008:8; rfid:2; mordecai:1; golin:1; michael:3; g:1; gale:1; îgate:1; portal:1; 200708:2; gift:1; gain:1; stanford:1; 2007:9; nsfcrgc:1; asna:1; symposium:1; hk:4; tsinghua:1; southeast:1; phantom:1; work:1; thirdgrad:1; 20062007:1; newli:1; subsidi:1; jialiu:1; lin:1; kevin:1; keliang:1; zhao:1; got:1; 34th:1; interact:1; rf:1; allianc:1; grfla:1; 20072008:1; 2006:14; eyouth:1; certif:1; merit:1; 48:1; algorithm:1; topcod:1; tccc:1; 200506:3; podcast:1; neural:1; 2004:14; list:2; awarde:2; 20052006:1; grad:1; third:1; heterogen:1; wiredwireless:1; rai:1; reiter:1; name:1; chang:1; server:1; 7th:1; expert:1; croucher:1; robocup:1; nansha:1; sir:1; edward:1; youd:1; brief:1; ydc:2; echalleng:1; 2005:3; ebusi:1; golden:1; penguin:1; 21st:1; centuri:1; centric:1; moxi:1; realtim:1; ink:1; simul:1; nelson:1; chu:1; interview:1; cgvisualcom:1; 20042005:1; enhanc:2; fun:1; hkustwebex:1; hongjun:1; among:1; engineeringit:1; icpc:2; shanghai:1; bronz:1; manila:1; congress:1; moe:1; entrepreneur:1; iitec:2; hang:1; csaa:1; guangzhou:1; observ:1; tour:1; her:1; debut:1; 2003:7; 5th:1; mmcdc:1; internet:1; 2002:3; hki:1; brown:1; eeec:1; bmva:1; sullivan:1; rgc:1; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/News/?lang=hk&amp;type=news|achievement
@@ -1049,7 +1049,7 @@ http://www.cse.ust.hk/News/BMVA2002/
 http://www.cse.ust.hk/News/RGC2002/
 http://www.cse.ust.hk/News/Headship2002/
 ------------------------------
-[Events]
+Events
 http://www.cse.ust.hk/News/?type=event
 2016-04-08 Size:15623
 depart:1; vice:1; comput:7; scienc:5; engin:4; hkust:2; äæçé:1; mobil:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:5; achiev:3; dr:6; event:4; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:2; staff:1; commun:1; youth:3; tutor:1; postgradu:2; student:5; alumni:3; prof:1; recruit:6; editorinchief:1; appoint:1; undergradu:1; ug:4; program:8; net:4; 4yr:1; 3yr:1; pg:4; cse:4; admis:1; destin:1; research:2; career:8; chines:1; internship:1; opportun:1; info:1; employ:1; link:2; servic:3; facil:2; committe:1; polici:1; lab:3; schedul:1; 2011:2; user:2; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; 1991:1; site:1; map:1; hackathonhkust:2; 2015:2; android:6; applic:10; design:4; contest:5; tea:1; gather:1; support:1; chan:1; 2014:3; mscit:1; the:6; leadership:1; tencent:1; 2010:2; 3:1; hong:5; kong:5; big:2; data:2; inform:3; relev:1; technologi:5; workshop:10; soft:2; famili:1; homecom:1; dai:4; analysi:2; joint:2; artifici:1; intellig:1; googl:1; 2009:3; camp:4; digit:1; world:1; present:1; collegi:1; ceremoni:1; huawei:1; univers:2; your:1; 2008:5; rfid:1; 2016:1; 2007:5; knowledg:1; hk:3; fast:1; develop:3; platform:1; industri:1; a:1; talk:18; interac:1; finalyear:1; algorithm:1; challeng:1; comp:7; 4900:6; 201617:1; meet:3; fypfyt:2; seminar:2; it:4; 20152016:1; poster:1; 11:1; robocup:2; group:3; softwar:2; junior:2; natur:2; languag:1; process:1; entri:1; sign:1; build:2; all:2; share:1; ltd:2; last:1; onlin:1; updat:1; 20160407:1; email:1; clear:1; water:1; bai:1; kowloon:1; champion:1; how:2; differ:1; technologist:2; go:1; understand:1; reflec:1; implic:1; lu:1; track:1; forens:1; mantra:1; tomorrow:1; stai:1; test:1; alibaba:2; inc:1; qi:1; societ:1; general:1; against:1; on:1; noah:2; ark:2; recent:1; baidu:1; you:1; further:1; uppsala:1; edvanc:1; limit:1; infrastructur:1; doubl:1; shop:1; festiv:1; transform:1; imposs:1; cathai:1; pacif:1; levi:1; blend:1; reliabl:1; 1st:1; realworld:1; frenzoo:1; hit:1; greater:1; game:1; asia:1; tip:1; jane:1; street:1; ocaml:1; rosaechkust:1; errorfre:1; invit:1; gtug:1; academician:1; iphon:1; wave:1; bing:1; dialog:1; model:1; intent:1; ia:1; laplacian:1; paradigm:1; emerg:1; massiv:1; graph:1; shanghua:1; teng:1; 24:1; novemb:1; host:1; robocupjunior:1; exit:1; outreach:2; benchmark:1; mou:1; 10th:1; seri:1; beauti:1; 2nd:1; mathemat:1; hkustusc:1; lectur:2; distinguish:2; execut:1; session:2; studi:1; programm:1; advanc:1; improv:1; profession:1; busi:1; 2013:4; muppala:4; forum:2; presid:1; dean:1; tsinghuahkust:1; up:1; china:2; summer:3; exchang:1; handson:4; held:3; 2012:2; ibm:1; experi:1; cater:1; aadc:1; 
@@ -1163,7 +1163,7 @@ http://www.cse.ust.hk/News/OutreachDay2007/
 http://www.seng.ust.hk/web/eng/news_detail.php?id=605
 http://www.rcj-hk.org/index/2007_timetable.php
 ------------------------------
-[Quality, Assurance]
+Quality Assurance
 http://www.cse.ust.hk/admin/QA/
 2016-04-08 Size:14268
 depart:4; comput:14; scienc:9; engin:9; hkust:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:10; assur:7; safeti:1; contact:1; peopl:1; faculti:2; staff:1; commun:3; tutor:1; postgradu:2; student:11; common:1; alumni:3; recruit:3; editorinchief:1; appoint:1; undergradu:1; ug:7; program:15; net:4; 4yr:1; 3yr:1; access:4; pg:6; cse:4; admis:1; destin:1; research:4; career:3; internship:1; opportun:1; implem:2; info:1; employ:2; link:3; servic:1; facil:2; committe:6; disciplin:2; respons:1; polici:1; lab:1; schedul:1; user:1; guid:1; tool:2; cs:1; techniqu:1; system:4; webmail:1; myport:1; team:4; our:2; societi:4; associ:2; site:1; map:2; 2015:1; applic:1; design:7; award:1; provid:3; broad:1; rang:1; choic:2; the:6; principl:2; goal:1; follow:2; to:1; prepar:2; academia:1; excel:1; particular:1; global:1; creativ:1; bodi:1; strong:1; local:1; hong:3; leader:1; kong:3; impact:1; skill:2; relev:1; inform:2; technologi:3; object:4; promot:1; philosophi:1; divers:1; scienceengin:1; specif:1; profes:1; multidisciplinari:1; stimul:1; individu:3; pioneer:1; benefit:1; demonstr:2; technic:1; compet:1; analysi:1; consist:1; specialist:1; perspect:1; generalist:1; variou:2; combin:1; classroom:1; hallmark:1; conduct:1; ethic:2; confid:1; lead:1; transmit:1; idea:1; instil:1; hkie:3; innov:1; lifelong:1; mean:1; discoveri:1; implement:1; dynam:1; web:1; univers:2; more:1; effect:3; maintain:1; function:1; includ:2; center:2; foundat:1; knowledg:3; educ:4; develop:6; activ:1; requir:1; industri:1; project:1; practic:3; algorithm:1; offer:1; meet:2; framework:1; theori:1; board:1; repres:2; softwar:1; natur:1; process:2; enhanc:1; last:1; updat:1; email:1; clear:1; water:1; bai:1; kowloon:1; understand:1; recogni:1; model:1; exit:1; mathemat:2; emphas:1; import:1; comprehens:1; procedur:1; ensur:3; current:1; page:1; introduc:1; curriculum:1; outcom:3; bachelor:2; an:10; abil:10; appli:3; appropri:2; analyz:2; identifi:1; defin:1; solution:1; evalu:3; computerbas:2; compon:1; desir:1; accomplish:1; legal:1; secur:1; issu:1; audienc:1; comprehen:1; tradeoff:1; involv:1; construc:1; vari:1; complex:1; pleas:1; httpobeusthk:1; detail:2; intend:1; strive:1; deliveri:1; complementari:1; organ:1; outofclass:1; progres:1; advis:2; mentor:1; standard:1; provision:1; studentstaff:2; academ:3; liason:1; selfvalid:1; report:2; restrict:3; result:1; studi:2; survei:2; extern:3; advanc:1; accredit:4; improv:1; 3year:1; cours:4; 4year:1; continu:1; undergo:1; profession:4; advisori:1; represent:1; liaison:1; 20150115:1; social:1; teach:2; learn:4; annual:1; feedback:1; appreci:1; institu:1; environ:1; set:1; visit:1; review:1; experi:1; engag:1; 
@@ -1234,11 +1234,11 @@ http://qa.ust.hk/
 http://e2i.ust.hk/
 http://celt.ust.hk/
 ------------------------------
-[
-Safety, Management, for, Computer, Science, and, Engineering, Department
-]
+
+Safety Management for Computer Science and Engineering Department
+
 http://cssystem.cse.ust.hk/UGuides/csd_manage.html
-2016-04-08 Size:3437
+2016-04-08 Size:3420
 depart:4; comput:5; technologi:1; scienc:5; engin:4; about:2; us:4; issu:2; safeti:8; all:2; last:1; other:1; updat:1; pleas:1; postgradu:1; undergradu:1; access:2; offic:1; univers:1; comment:1; facil:2; sugges:1; committe:1; polici:1; remot:2; manag:2; user:2; faq:2; guid:2; form:2; cs:2; facultystaff:1; system:2; guest:1; proceduresmanu:1; inspec:1; accid:1; summari:1; zina:1; yung:1; oct:1; 25:1; send:1; cssystem:1; right:1; reserv:1; the:1; hong:1; kong:1; 2005:1; 
 http://cssystem.cse.ust.hk/UGuides/index.html
 http://cssystem.cse.ust.hk/Facilities/index.html
@@ -1256,7 +1256,7 @@ http://cssystem.cse.ust.hk/UGuides/csd_other_issues.html
 http://www.cse.ust.hk/
 http://www.ust.hk/
 ------------------------------
-[Contact, Us]
+Contact Us
 http://www.cse.ust.hk/admin/contact/
 2016-04-08 Size:9259
 depart:3; comput:2; technologi:2; scienc:4; engin:2; hkust:3; äæçé:1; äæçä:1; about:2; welcom:1; us:5; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:3; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:2; postgradu:2; clear:2; student:3; water:2; alumni:2; bai:2; administr:1; recruit:3; kowloon:2; editorinchief:1; appoint:1; undergradu:1; ug:3; program:3; campu:2; net:4; direc:2; 4yr:1; 3yr:1; pg:4; cse:2; admis:1; offic:1; destin:1; research:1; career:2; internship:1; univers:2; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:2; entranc:1; address:1; room:1; 3528:1; lift:1; 2526:1; websit:1; httpwwwcseusthk:1; tel:1; 852:2; 2358:2; 7000:1; fax:1; 1477:1; 20150910:1; the:2; hong:4; kong:4; 
@@ -1315,7 +1315,7 @@ http://www.ust.hk/about-hkust/about-the-campus/map-directions-2015/
 http://www.cse.ust.hk/~luo/me/directions.html
 http://publish.ust.hk/univ/maps/Campus_Map_Color.pdf
 ------------------------------
-[People]
+People
 http://www.cse.ust.hk/admin/sitemap/?map=People
 2016-04-08 Size:8628
 depart:1; comput:1; technologi:1; scienc:2; engin:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:3; faculti:3; last:1; staff:2; updat:1; commun:2; tutor:2; email:1; postgradu:3; clear:1; student:4; water:1; alumni:3; bai:1; recruit:4; kowloon:1; editorinchief:2; appoint:2; undergradu:1; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; 20151030:1; univers:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; the:1; hong:2; kong:2; 
@@ -1370,7 +1370,7 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[Faculty]
+Faculty
 http://www.cse.ust.hk/admin/people/faculty/
 2016-04-08 Size:32004
 depart:3; comput:3; scienc:3; engin:5; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:2; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:6; staff:1; commun:1; tutor:1; postgradu:2; lee:1; student:3; alumni:2; recruit:3; editorinchief:1; appoint:1; undergradu:1; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:3; career:2; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:2; dekai:2; webmail:1; myport:1; team:1; yu:1; societi:1; cheung:1; associ:19; site:1; map:1; wong:1; gari:1; chan:3; professor:61; note:1; the:1; s:1; c:1; qian:1; zhang:3; tencent:1; chair:5; hong:2; jame:1; kong:2; cheng:1; albert:1; chung:1; data:1; lionel:1; ni:2; pedro:1; inform:1; sander:1; technologi:2; kei:1; ai:9; derick:1; wood:1; dityan:1; yeung:1; artifici:1; intellig:1; raymond:1; wu:1; univers:2; mordecai:1; golin:2; knowledg:1; educ:2; lin:1; certif:1; name:11; softwar:1; last:1; updat:1; email:13; clear:1; water:1; bai:1; kowloon:1; çä:1; æå:1; èå:1; çç:1; vision:1; manag:1; address:1; room:11; websit:1; by:3; area:13; alphabet:1; network:1; order:1; profil:1; extn:11; æ强:1; qyang:1; 8768:1; 3531:1; shingchi:1; åµæå:1; scc:1; 7016:1; 3545:1; st:7; toni:1; f:1; éçæ:2; tfchan:1; 6101:1; 6349:1; åµé:1; qianzh:1; 8766:1; 3533:1; ne:10; shuenghan:1; ééå:2; gchan:1; 6990:1; 3507:1; siuw:1; scheng:1; 6973:1; 3551:1; th:6; chish:1; éåæ:1; achung:1; 8776:1; 3547:1; vg:9; ding:1; cunsheng:1; äåç:2; cding:1; 7021:1; 3518:1; j:1; éåé:1; 6993:1; 3559:1; horner:2; andrew:1; b:1; åºçå:1; 6998:1; 3549:1; kwok:1; tinyau:1; éåä:1; jamesk:1; 7013:1; 3519:1; diklun:1; æèªéº:1; dlee:1; 7017:1; 3534:1; ææ:2; bli:1; 6976:1; y:1; 3524:1; sabbat:1; fangzhen:1; ææç:1; flin:1; 6975:1; 3557:1; çåå:2; 6971:1; 3555:1; tingchuen:1; tcpong:1; 6974:1; 3544:1; head:4; åèæ:1; qiang:1; 6985:1; yang:1; 3503:1; hci:7; æé:1; 7018:1; 3506:1; chiewlan:1; æçè:1; taicl:1; 7020:1; 3515:1; tang:1; chikeung:1; éæºå:1; cktang:1; 8775:1; 3561:1; found:1; ååæ:1; 6989:1; 3539:1; æçä:1; dyyeung:1; 6977:1; 3541:1; nevin:1; lianwen:1; 500:1; åµéæ:1; lzhang:1; 7015:1; 3504:1; adjunct:5; jun:1; zheng:1; éå:2; arya:2; sunil:1; åéä:1; 8769:1; 3514:1; bensaou:1; brahim:1; å卲é:1; csbb:1; 7014:1; 3537:1; éé:2; leichen:1; 6980:1; 3509:1; éæå:1; hunkim:1; 6992:1; 3536:1; luo:2; qiong:1; 6995:1; 3554:1; kanw:1; éºéæ:1; 7012:1; 3513:1; k:1; æäæ:1; 6978:1; 3510:1; siuhung:1; ååé:1; 6979:1; 3505:1; èéå:1; psander:1; 6983:1; 3525:1; chiw:1; éæºæ:1; raywong:1; 6982:1; 3542:1; æç:1; yik:1; 8770:1; 3552:1; charl:1; åµå:1; assist:7; charlesz:1; 6997:1; 3553:1; kaichen:1; 7028:1; 3546:1; panhui:1; 7011:1; 3517:1; ma:1; xiaojuan:1; éºæå:1; mxj:1; 6991:1; 3562:1; çå:1; weiwa:1; 6972:1; 3520:1; ieong:1; ricci:2; ææè:1; paul:1; 8771:2; 3512:2; cecia:1; ki:1; éç:1; kccecia:1; 6994:2; 3535:2; lam:2; gibson:2; æåé:1; ngok:1; lamngok:1; 6986:2; 3548:2; wai:1; ting:1; æçé:1; kwtleung:1; xin:1; lixin:1; tsoi:1; desmond:2; yau:1; chat:1; èåé:1; 6984:1; 3521:1; emeritu:8; chin:1; bright:1; roland:2; t:1; éååº:1; hamdi:2; mounir:1; frederick:1; h:1; graphic:1; æåµåº:1; 6996:1; 3538:1; m:1; åªæé:1; shen:3; helen:2; æåæ:1; vincent:1; æéç:1; x509:1; humancomput:1; unauthor:1; consid:1; consent:1; violat:1; pai:1; fee:1; usd:1; incid:1; 20160309:1; interac:1; theoret:1; lei:1; chen:2; fred:1; lochovski:1; ke:1; yi:1; wang:2; kai:1; huamin:2; qu:1; brian:1; mak:2; david:1; rossit:2; wei:1; bo:1; li:2; pong:1; lectur:7; pan:1; hui:1; ng:1; tai:1; long:1; quan:2; position:13; jogesh:1; muppala:2; sunghun:1; kim:1; db:9; leung:1; wilfr:2; dimitri:2; papadia:1; 
@@ -1504,7 +1504,7 @@ http://www.cse.ust.hk/pg/research/#st
 http://www.cse.ust.hk/pg/research/#th
 http://www.cse.ust.hk/pg/research/#vg
 ------------------------------
-[Staff]
+Staff
 http://www.cse.ust.hk/admin/people/staff/
 2016-04-08 Size:23462
 depart:1; comput:5; scienc:2; engin:2; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; kwok:1; assur:1; safeti:1; contact:1; peopl:1; faculti:2; staff:7; commun:1; tutor:1; ho:1; postgradu:2; student:3; alumni:2; recruit:3; editorinchief:1; appoint:1; undergradu:1; ug:3; program:5; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:2; system:4; webmail:1; myport:1; team:1; yu:1; societi:1; found:1; associ:10; ka:2; site:1; chun:1; map:1; wong:1; chan:3; note:1; the:1; phd:4; hong:2; kong:2; chung:1; assist:10; mo:1; technologi:1; kei:2; ma:1; technic:2; lam:1; digit:2; wai:2; department:1; univers:2; yau:1; vincent:1; x509:2; unauthor:1; develop:1; consid:1; consent:1; violat:1; kevin:1; pai:1; fee:1; incid:1; instruc:9; assistantteach:2; jacquelin:1; jacquelinec:1; 7003:1; lili:1; yl:2; cslili:1; certif:2; 7008:1; clerk:5; sharon:1; sh:2; cssharon:1; 8772:2; vanessa:1; yc:1; csyckwok:1; lau:2; conni:1; wc:1; cswclau:1; 7002:2; lo:2; betti:2; sk:1; 7009:1; name:3; 3532:1; secretari:1; isaac:1; csisaac:1; que:1; yintik:1; csdee:1; tam:2; brenda:1; csbrenda:1; leav:1; eva:1; yw:1; etam:1; 7001:1; ssri:1; angela:2; py:1; 7007:1; id:2; softwar:1; choi:1; vincentchoi:1; 7004:2; 4202:8; technician:2; kwong:1; renfrew:1; ww:1; wwkwong:1; 7022:2; lai:1; domin:2; cy:1; 7005:1; kintak:1; cstak:1; winni:2; pm:1; henri:2; 7025:1; ly:1; yiu:1; 7023:1; last:1; hm:1; updat:1; 7026:1; email:5; homepag:1; chau:1; clear:1; chuck:1; water:1; jee:1; bai:1; cscjchau:1; kowloon:1; 8834:8; 4209:8; lun:1; peter:1; cspeter:1; fung:1; hing:1; yuet:1; kyc:1; man:1; kit:1; lmkia:1; 8838:4; 4214a:4; wing:1; cslukelo:1; ngai:1; wkngai:1; wallacem:1; wang:2; ronmo:1; shek:1; nickoshek:1; kevinw:1; mondal:1; subrota:2; kumar:1; kai:2; xiaoheng:1; xiexiaoheng:1; usd500:1; 20160405:1; mak:1; outreach:1; xie:1; senior:1; administr:3; tse:1; academ:1; offic:7; execut:3; position:3; ying:1; teach:5; zina:2; yung:1; address:1; room:3; 3528:10; websit:1; 7000:2; extn:3; visit:1; th:1; 
@@ -1588,7 +1588,7 @@ http://www.cse.ust.hk/~kevinw/
 http://www.cse.ust.hk/~subrota/
 http://www.cse.ust.hk/~xiexiaoheng/
 ------------------------------
-[HKUST, CSE, CT, Website]
+HKUST CSE CT Website
 http://www.cse.ust.hk/ct/
 2016-04-08 Size:13108
 cover:3; comput:1; hkust:5; interview:3; mobil:1; thesi:1; defens:1; welcom:1; us:1; propos:1; video:1; onlin:1; winner:1; commun:4; tutor:3; postgradu:1; student:2; english:4; undergradu:1; ug:3; pg:3; top:1; cse:7; info:2; link:1; servic:1; investig:1; best:1; schedul:1; tool:1; confer:1; ct:5; toggl:1; our:1; navig:1; grade:1; associ:1; get:1; progress:1; site:2; oral:4; quick:1; class:2; further:1; overview:1; 2015:4; advisor:1; prefer:1; exampl:2; ielm:2; 4110:2; support:2; 4911:1; cv:3; letter:3; proofread:1; checklist:1; toefl:1; award:1; ielt:1; convers:4; word:1; grammar:1; write:3; game:3; quizz:1; tip:2; interest:1; dept:3; recogni:1; written:2; parttim:2; free:1; charg:1; noorliza:2; daveau:1; ted:2; with:1; spaeth:1; statem:4; copi:2; edit:2; purposeperson:1; piec:2; mock:1; shauna:2; dalton:1; purpos:1; proof:1; read:1; 3558:1; telephon:1; x6981:1; check:1; hour:1; type:1; demo:1; gestur:1; augment:1; realiti:1; pan4:1; ust:1; escap:1; ho1:1; airtenni:1; webbas:1; control:1; consol:1; psan1:1; each:1; page:1; cash:1; hkd1000:1; copyright:1; blog:1; templat:1; inform:1; built:1; bootstrap:1; mdo:1; back:1; near:1; motion:1; dai:1; other:2; pleas:1; plan:1; prize:1; job:2; present:4; offic:2; report:9; start:1; paper:1; web:2; survei:1; comment:1; help:3; 2016:1; busi:1; final:1; faq:1; these:1; we:2; room:1; develop:1; lift:1; 2526:1; websit:4; fyp:9; project:2; a:1; practic:2; dissert:2; comp:1; poster:2; success:1; structur:1; 
@@ -1657,7 +1657,7 @@ http://www.cse.ust.hk/ug/fyp/bestfyp/video/
 http://getbootstrap.com/
 https://twitter.com/mdo
 ------------------------------
-[Postgraduate, Students]
+Postgraduate Students
 http://www.cse.ust.hk/admin/people/pg/
 2016-04-08 Size:13834
 depart:1; comput:1; scienc:2; engin:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; liu:2; assur:1; safeti:1; contact:2; peopl:1; faculti:2; staff:1; commun:1; tutor:1; postgradu:6; student:7; alumni:2; recruit:3; editorinchief:1; appoint:1; undergradu:1; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:5; cse:1; zhu:1; admis:1; destin:1; research:1; career:2; internship:1; opportun:1; info:1; employ:1; link:3; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; found:1; associ:1; site:1; map:1; mphil:2; 500:1; zheng:1; bin:1; note:1; the:1; zhang:1; phd:2; hong:2; kong:2; mo:2; inform:1; technologi:1; dai:1; rongxin:1; wu:5; publish:2; univers:2; these:1; unauthor:1; consid:1; consent:1; violat:1; pai:1; fee:1; zhao:1; usd:1; incid:1; lo:1; name:2; qing:1; liao:1; last:1; updat:1; hang:1; email:5; chau:1; clear:1; chuck:1; water:1; bai:2; jee:1; lei:1; chen:2; kowloon:1; lu:1; wang:5; wei:1; bo:1; li:2; upload:2; url:1; agre:1; person:1; chatzopoulo:1; dimitrio:1; dcab:1; chuckje:1; lchenad:1; gu:1; xiaodong:1; xguaa:1; jia:1; xiaoi:1; xjia:1; llibb:1; qnatur:1; bliuab:1; dongyu:1; sai:1; dliuae:1; chi:1; kiu:1; zhongqi:1; zluab:1; meng:1; rui:1; rmeng:1; kachun:1; ron:1; kaixiang:1; qiu:1; shuang:1; sqiuac:1; ahm:1; moham:1; abdelmoniem:1; ama:1; shi:1; qingkai:1; qshiaa:1; terragni:1; valerio:1; vterragni:1; hao:1; hwangaz:1; jinglu:1; jwanga:1; lipeng:1; lwangai:1; ywangbf:1; yong:1; ywangct:1; bwuac:1; ying:1; wurongxin:1; wenchao:1; wwuag:1; yanhong:1; ywubk:1; yao:1; quanm:1; qyaoaa:1; yoo:1; jeehoon:1; zeng:1; gaoxiong:1; ruiliang:1; rzhangaf:1; address:1; pengfei:1; ericzhao:1; yixian:1; yzhengaj:1; siyu:1; websit:1; szhu:1; zuozhuo:1; zdai:1; hwuav:1; 20160408:1; di:1; 
@@ -1746,7 +1746,7 @@ http://www.cse.ust.hk/~yzhengaj/
 http://www.cse.ust.hk/~szhu/
 http://daizuozhuo.github.io
 ------------------------------
-[HKUST, CSE, Alumni]
+HKUST CSE Alumni
 http://www.cse.ust.hk/alumni/
 2016-03-18 Size:16317
 base:1; depart:8; venu:1; comput:6; apr:1; scienc:9; subject:1; engin:6; 8th:1; hkust:11; mobil:4; about:1; welcom:1; us:1; new:1; event:1; contact:1; faculti:2; staff:1; commun:2; student:4; alumni:16; prof:5; as:2; ug:1; program:2; code:1; cse:14; research:5; career:1; link:1; disciplin:1; join:1; system:2; found:1; 1991:1; associ:1; site:1; 40:2; 2015:9; applic:1; tea:1; gather:1; jointli:1; jun:1; award:2; 2014:1; provid:1; popular:1; the:9; 1:1; academia:1; in:2; no:2; global:2; celebr:3; san:3; francisco:3; serv:2; expand:1; phd:2; strong:1; graduat:3; receiv:1; hong:4; kong:4; big:7; data:8; relev:1; inform:2; technologi:4; workshop:3; club:1; establish:1; launch:2; pioneer:1; famili:4; homecom:2; dai:3; led:1; creat:1; 2009:1; lead:1; featur:1; idea:1; world:4; department:1; web:1; paper:1; univers:6; spotlight:1; colleagu:1; feb:1; 2016:1; over:1; past:2; includ:2; dedic:1; knowledg:1; we:1; hope:1; newli:1; develop:3; region:1; platform:3; effort:1; home:1; activ:1; field:2; largescal:1; industri:2; project:1; a:1; versatil:1; allow:1; intim:1; connect:2; practic:1; 13:1; it:1; 8:1; 18:1; databas:2; mr:3; build:1; terrenc:1; tsang:3; share:2; madhead:3; ltd:1; updat:1; won:1; top:1; honour:2; fred:2; lochovski:4; retir:2; stai:1; on:1; 1st:1; hit:2; game:6; asia:3; qs:2; invit:1; model:1; bo:1; li:1; prestigi:3; ieee:1; infocom:1; testoftim:1; ewr:1; novemb:1; hour:1; steaci:1; fellowship:1; nserc:1; current:1; releas:1; pleas:1; rank:6; organ:4; app:1; offic:2; session:1; cseaa:1; continu:1; school:1; busi:1; 2013:1; position:1; affair:1; websit:1; themselv:1; close:1; ti:1; china:1; deliv:1; regular:2; gatewai:1; togeth:1; entrepreneurship:1; grow:1; connector:3; promotion:1; thei:1; if:1; personnam:1; personcurrentjob:1; 25th:1; anniversari:1; held:1; februari:1; nov:1; sundai:1; 22:1; contribu:1; eighti:1; particip:1; twenti:1; enjoi:1; fruit:1; badminton:1; parti:1; sep:1; terenc:1; year:2; founder:1; success:1; chief:1; scope:1; experi:2; facebook:1; smash:1; tower:1; savior:1; taiwan:1; malaysia:1; south:1; east:1; download:1; approxim:1; date:1; jul:1; coauthoredcoedit:1; book:1; 
@@ -1766,7 +1766,7 @@ http://www.cse.ust.hk/News/QSWUR2015
 http://alum.ust.hk/
 http://www.seng.ust.hk/web/eng/
 ------------------------------
-[Recruitment]
+Recruitment
 http://www.cse.ust.hk/admin/recruitment/
 2016-04-08 Size:9039
 depart:1; comput:3; scienc:4; engin:3; deadlin:2; äæçé:1; 20151215:1; äæçä:1; neurosci:2; about:2; division:1; welcom:1; biomed:1; us:3; engineersystem:1; fact:1; 20160203:1; sheet:1; 20160121:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:6; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:2; clear:1; student:3; water:1; alumni:2; bai:1; recruit:5; kowloon:1; editorinchief:1; appoint:1; undergradu:1; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:2; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; the:1; 1:1; 2:1; 3:1; hong:3; kong:3; data:2; search:1; assist:1; technologi:1; joint:1; job:1; univers:2; programm:1; position:3; virtual:1; health:1; project:1; open:1; neural:1; level:1; 
@@ -1825,7 +1825,7 @@ http://www.cse.ust.hk/admin/recruitment/datasci/
 http://www.cse.ust.hk/admin/recruitment/BME/2586.pdf
 http://www.cse.ust.hk/admin/recruitment/HKVU/
 ------------------------------
-[Editor, in, Chiefs, Appointments]
+Editor in Chiefs Appointments
 http://www.cse.ust.hk/admin/people/eic/
 2016-04-08 Size:9163
 depart:1; comput:2; scienc:3; engin:2; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; editor:6; new:1; achiev:1; januari:1; dr:1; event:1; 20092015:1; qualiti:1; septemb:1; assur:1; 31:1; safeti:1; august:1; contact:1; 2021:1; peopl:1; vehicular:1; faculti:2; 20062008:1; last:1; staff:1; updat:1; 20150902:1; commun:1; tutor:1; email:1; postgradu:2; clear:1; student:3; water:1; alumni:2; prof:2; lei:1; bai:1; recruit:3; chen:1; kowloon:1; editorinchief:3; coeditorinchief:1; appoint:3; vldb:1; undergradu:1; journal:3; ug:3; program:3; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; opportun:1; info:1; qiang:1; employ:1; yang:1; link:2; servic:1; facil:2; committe:1; polici:1; acm:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:2; webmail:1; myport:1; team:1; societi:1; found:3; associ:4; site:1; map:1; 2015:3; the:1; 1:2; bo:1; li:1; ieee:2; hong:2; kong:2; big:1; data:2; technologi:4; transac:3; intellig:1; univers:1; 2007:1; knowledg:1; intern:1; 2012:1; chief:5; 
@@ -1885,9 +1885,9 @@ http://jcst.ict.ac.cn:8080/jcst/EN/volumn/home.shtml
 http://vldb.org/vldb_journal/
 http://www.computer.org/web/tkde
 ------------------------------
-[Undergraduate]
+Undergraduate
 http://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
-2016-04-08 Size:8918
+2016-04-08 Size:8917
 depart:1; comput:1; technologi:1; scienc:2; engin:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:2; clear:1; student:3; water:1; alumni:2; bai:1; recruit:3; kowloon:1; editorinchief:1; appoint:1; undergradu:3; ug:6; program:4; net:6; 4yr:2; 3yr:2; pg:4; cse:1; admis:1; destin:1; research:1; career:2; internship:1; 20151030:1; univers:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; the:1; hong:2; kong:2; 
 http://www.cse.ust.hk/
 http://www.cse.ust.hk/admin/sitemap/?lang=hk&amp;map=Undergraduate
@@ -1940,7 +1940,7 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[Undergraduate, Programs]
+Undergraduate Programs
 http://www.cse.ust.hk/ug/
 2016-04-08 Size:12274
 addition:1; depart:2; comput:8; scienc:8; engin:4; hkust:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:2; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; cosc:1; tutor:1; cpeg:1; email:2; postgradu:2; risk:1; clear:2; student:4; rmbi:1; water:2; alumni:2; cogbm:1; bai:2; recruit:3; cpgbm:1; kowloon:2; editorinchief:1; minor:2; appoint:1; coordin:1; undergradu:5; 20150911:1; ug:3; program:12; net:4; 4yr:1; 3yr:1; pg:4; cse:1; admis:2; destin:1; research:1; career:2; internship:2; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; beng:4; professor:1; scholarship:1; bsc:2; the:2; hong:4; kong:4; albert:1; chung:1; inform:2; technologi:4; intellig:1; univers:2; cours:1; busi:3; manag:4; major:1; exchang:1; comp:1; degre:1; bba:2; gener:2; dual:1; chish:1; 
@@ -2008,111 +2008,111 @@ http://sfao.ust.hk/scholarships/
 http://join.ust.hk/
 http://www.cse.ust.hk/~achung/
 ------------------------------
-[Undergraduate, Intranet, (4-Year, Curriculum)]
+Undergraduate Intranet (4-Year Curriculum)
 http://www.cse.ust.hk/ug/hkust_only/4yr/
-2016-04-08 Size:218
+2016-04-08 Size:20677
 addition:1; depart:3; comput:2; scienc:4; engin:2; deadlin:2; hkust:1; äæçé:1; äæçä:1; thesi:1; about:2; welcom:1; us:4; fact:1; entri:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:2; all:3; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; 20160407:1; tutor:1; email:2; postgradu:2; clear:2; student:12; common:2; announc:1; water:2; alumni:2; bai:2; recruit:3; kowloon:2; editorinchief:1; minor:2; appoint:1; coordin:1; undergradu:5; ug:7; week:1; program:17; registr:2; net:6; entrant:4; 4yr:1; 20122013:1; 3yr:1; fulfil:1; pg:4; 120:1; cse:7; suggest:1; admis:1; pathwai:1; destin:1; core:1; research:2; catalog:2; career:2; noncs:1; internship:2; independ:1; opportun:3; direct:1; info:1; advic:1; employ:1; ppt:1; link:3; timet:3; servic:1; projectsthes:2; facil:2; 20162017:1; committe:2; eadvis:1; polici:1; quota:1; lab:3; midterm:1; schedul:4; tent:1; user:1; my:1; guid:2; arr:1; cs:2; 201516:1; system:4; logo:1; webmail:1; myport:1; on:1; team:2; societi:2; associ:1; 1991:1; site:1; map:1; hackathonhkust:1; class:1; applic:1; professor:1; free:1; the:2; 2:1; pursu:1; seng:1; 20142015:1; hong:4; kong:4; albert:1; chung:1; honor:1; curriculum:4; inform:1; technologi:2; elect:1; club:1; glanc:2; ambassador:1; involv:1; other:1; plan:2; advis:2; provision:1; job:2; studentstaff:1; academ:3; present:1; offic:2; mentorship:1; studi:2; univers:2; calendar:2; 4year:4; cours:8; hunt:1; your:1; profession:1; liaison:1; faq:1; final:3; 20132014:1; portal:1; center:1; learn:2; regul:1; transfer:1; work:1; major:1; affair:1; develop:1; requir:2; industri:1; a:1; entrepreneurship:2; exchang:1; comp:7; 4900:1; offer:1; 201617:1; it:1; degre:1; take:1; 20152016:2; first:1; year:4; success:1; credit:1; experi:3; structur:1; chish:1; date:3; repres:1; good:1; 
-https://www.cse.ust.hk/
-https://www.cse.ust.hk/ug/hkust_only/4yr/?lang=hk
-https://www.cse.ust.hk/ug/hkust_only/4yr/?lang=cn
+http://www.cse.ust.hk/
+http://www.cse.ust.hk/ug/hkust_only/4yr/?lang=hk
+http://www.cse.ust.hk/ug/hkust_only/4yr/?lang=cn
 http://www.ust.hk/
 http://www.seng.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=About
-https://www.cse.ust.hk/admin/welcome/
-https://www.cse.ust.hk/admin/about/
-https://www.cse.ust.hk/admin/factsheet/
-https://www.cse.ust.hk/News/?type=news|achievement
-https://www.cse.ust.hk/News/?type=event
-https://www.cse.ust.hk/admin/QA/
+http://www.cse.ust.hk/admin/sitemap/?map=About
+http://www.cse.ust.hk/admin/welcome/
+http://www.cse.ust.hk/admin/about/
+http://www.cse.ust.hk/admin/factsheet/
+http://www.cse.ust.hk/News/?type=news|achievement
+http://www.cse.ust.hk/News/?type=event
+http://www.cse.ust.hk/admin/QA/
 http://cssystem.cse.ust.hk/UGuides/csd_manage.html
-https://www.cse.ust.hk/admin/contact/
-https://www.cse.ust.hk/admin/sitemap/?map=People
-https://www.cse.ust.hk/admin/people/faculty/
-https://www.cse.ust.hk/admin/people/staff/
-https://www.cse.ust.hk/ct/
-https://www.cse.ust.hk/admin/people/pg/
-https://www.cse.ust.hk/alumni/
-https://www.cse.ust.hk/admin/recruitment/
-https://www.cse.ust.hk/admin/people/eic/
-https://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
-https://www.cse.ust.hk/ug/
-https://www.cse.ust.hk/ug/hkust_only/4yr/
-https://www.cse.ust.hk/ug/hkust_only/
-https://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
-https://www.cse.ust.hk/pg/
-https://www.cse.ust.hk/pg/hkust_only/
-https://www.cse.ust.hk/pg/admissions/recruiting/
+http://www.cse.ust.hk/admin/contact/
+http://www.cse.ust.hk/admin/sitemap/?map=People
+http://www.cse.ust.hk/admin/people/faculty/
+http://www.cse.ust.hk/admin/people/staff/
+http://www.cse.ust.hk/ct/
+http://www.cse.ust.hk/admin/people/pg/
+http://www.cse.ust.hk/alumni/
+http://www.cse.ust.hk/admin/recruitment/
+http://www.cse.ust.hk/admin/people/eic/
+http://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
+http://www.cse.ust.hk/ug/
+http://www.cse.ust.hk/ug/hkust_only/4yr/
+http://www.cse.ust.hk/ug/hkust_only/
+http://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
+http://www.cse.ust.hk/pg/
+http://www.cse.ust.hk/pg/hkust_only/
+http://www.cse.ust.hk/pg/admissions/recruiting/
 http://pg.ust.hk/admissions
-https://www.cse.ust.hk/pg/ourgraduates/
-https://www.cse.ust.hk/pg/research/
-https://www.cse.ust.hk/admin/sitemap/?map=Career
-https://www.cse.ust.hk/ug/internship/
-https://www.cse.ust.hk/ug/internship/forEmployer/
-https://www.cse.ust.hk/ug/career/service/
-https://www.cse.ust.hk/admin/sitemap/?map=Facilities
-https://www.cse.ust.hk/admin/facilities/committee/
-https://www.cse.ust.hk/admin/lab/
+http://www.cse.ust.hk/pg/ourgraduates/
+http://www.cse.ust.hk/pg/research/
+http://www.cse.ust.hk/admin/sitemap/?map=Career
+http://www.cse.ust.hk/ug/internship/
+http://www.cse.ust.hk/ug/internship/forEmployer/
+http://www.cse.ust.hk/ug/career/service/
+http://www.cse.ust.hk/admin/sitemap/?map=Facilities
+http://www.cse.ust.hk/admin/facilities/committee/
+http://www.cse.ust.hk/admin/lab/
 http://cssystem.cse.ust.hk/UGuides/index.html
 http://cssystem.cse.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=Links
+http://www.cse.ust.hk/admin/sitemap/?map=Links
 https://imail.cse.ust.hk/sqmail/
-https://www.cse.ust.hk/Restricted/
+http://www.cse.ust.hk/Restricted/
 http://my.ust.hk
-https://www.cse.ust.hk/acm/
+http://www.cse.ust.hk/acm/
 http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
-https://www.cse.ust.hk/admin/sitemap/
-https://www.cse.ust.hk/ug/transfer/
+http://www.cse.ust.hk/admin/sitemap/
+http://www.cse.ust.hk/ug/transfer/
 http://publish.ust.hk/prog_crs/ugprog/
 http://publish.ust.hk/prog_crs/pdf/ug/comp.pdf
 http://ugadmin.ust.hk/curriculum_hb/1516hb/4y/pdf/14-15comp2.pdf
 http://ugadmin.ust.hk/curriculum_hb/1516hb/4y/pdf/13-14comp3.pdf
 http://ugadmin.ust.hk/curriculum_hb/1516hb/4y/pdf/12-13comp4.pdf
-https://www.cse.ust.hk/ug/comp/curriculum_diagram.pdf
+http://www.cse.ust.hk/ug/comp/curriculum_diagram.pdf
 http://publish.ust.hk/prog_crs/ugprog/pathways.html
-https://www.cse.ust.hk/ug/comp/4yr_study_pathways.pdf
+http://www.cse.ust.hk/ug/comp/4yr_study_pathways.pdf
 http://uce.ust.hk/web/courses/course_curriculum.html
 http://publish.ust.hk/prog_crs/ugcourse/
 http://publish.ust.hk/SISCourseCat/ShowUGCourseList.aspx?Subject=COMP&amp;Website=Production
-https://www.cse.ust.hk/ug/additional_major/4yr/
-https://www.cse.ust.hk/ug/minor/4yr/
-https://www.cse.ust.hk/ug/minor/IT/4yr/
-https://www.cse.ust.hk/ug/faq/registration/4yr/
-https://www.cse.ust.hk/ug/faq/honors/
-https://www.cse.ust.hk/ug/faq/direct_entry/4yr/
-https://www.cse.ust.hk/ug/faq/career/
-https://www.cse.ust.hk/ug/ambassadors/
+http://www.cse.ust.hk/ug/additional_major/4yr/
+http://www.cse.ust.hk/ug/minor/4yr/
+http://www.cse.ust.hk/ug/minor/IT/4yr/
+http://www.cse.ust.hk/ug/faq/registration/4yr/
+http://www.cse.ust.hk/ug/faq/honors/
+http://www.cse.ust.hk/ug/faq/direct_entry/4yr/
+http://www.cse.ust.hk/ug/faq/career/
+http://www.cse.ust.hk/ug/ambassadors/
 http://e-club.cse.ust.hk/
 http://one.cse.ust.hk/
-https://www.cse.ust.hk/ug/representatives/
+http://www.cse.ust.hk/ug/representatives/
 http://ihome.ust.hk/~su_csess/cgi-bin/index.php
 https://www.cse.ust.hk/ug/Password_Only/sslc/
 http://tl.ust.hk/conduct/good_learning_experience.pps
-https://www.cse.ust.hk/ug/exchange/
+http://www.cse.ust.hk/ug/exchange/
 http://urop.ust.hk/
 http://urop.ust.hk/cgi-bin/uropos/index.php?dpoption=CSE
-https://www.cse.ust.hk/ug/internship/4yr/
-https://www.cse.ust.hk/ug/internship/4yr/?id=listjob
-https://www.cse.ust.hk/ug/comp1991/
+http://www.cse.ust.hk/ug/internship/4yr/
+http://www.cse.ust.hk/ug/internship/4yr/?id=listjob
+http://www.cse.ust.hk/ug/comp1991/
 http://www.ec.ust.hk/
 http://alumni.cse.ust.hk/mentorship.html
 http://hackathon.cse.ust.hk/
-https://www.cse.ust.hk/ug/advising/
-https://www.cse.ust.hk/ug/comp4900/
-https://www.cse.ust.hk/ug/fyp/?fyp_year=2015-2016
-https://www.cse.ust.hk/ug/fyp/?fyp_year=2016-2017
-https://www.cse.ust.hk/ug/fyt/
+http://www.cse.ust.hk/ug/advising/
+http://www.cse.ust.hk/ug/comp4900/
+http://www.cse.ust.hk/ug/fyp/?fyp_year=2015-2016
+http://www.cse.ust.hk/ug/fyp/?fyp_year=2016-2017
+http://www.cse.ust.hk/ug/fyt/
 http://e-advising.seng.ust.hk/
-https://www.cse.ust.hk/ug/courses/
+http://www.cse.ust.hk/ug/courses/
 https://w5.ab.ust.hk/wcq/cgi-bin/1530/subject/COMP
-https://www.cse.ust.hk/ug/timetable/
+http://www.cse.ust.hk/ug/timetable/
 https://labschedule.cse.ust.hk/
-https://www.cse.ust.hk/ug/timetable/?lab
-https://www.cse.ust.hk/ug/midterm/
+http://www.cse.ust.hk/ug/timetable/?lab
+http://www.cse.ust.hk/ug/midterm/
 https://sisprod.psft.ust.hk/psp/SISPROD/EMPLOYEE/HRMS/h/?tab=DEFAULT
 http://my.ust.hk/
 http://www.seng.ust.hk/web/eng/thirdcat.php?catid=2&amp;subid=11&amp;thirdid=49
-https://www.cse.ust.hk/ug/pcs/
+http://www.cse.ust.hk/ug/pcs/
 http://ugadmin.ust.hk/ug-guide/who/
 http://arr.ust.hk/reg/
 https://sao.ust.hk/
@@ -2121,112 +2121,112 @@ http://publish.ust.hk/acadreg/
 http://tl.ust.hk/calendar_dates/dates15-16confirmed.pdf
 http://tl.ust.hk/calendar_dates/dates16-17prov.pdf
 http://fys.ust.hk/
-https://www.cse.ust.hk/admin/logos/
-https://www.cse.ust.hk/~achung/
+http://www.cse.ust.hk/admin/logos/
+http://www.cse.ust.hk/~achung/
 http://qa.ust.hk/student_feedback.html
 ------------------------------
-[Undergraduate, Intranet, (3-Year, Curriculum)]
+Undergraduate Intranet (3-Year Curriculum)
 http://www.cse.ust.hk/ug/hkust_only/
-2016-04-08 Size:214
+2016-04-08 Size:20838
 depart:3; comput:2; scienc:4; engin:2; deadlin:2; hkust:1; äæçé:1; äæçä:1; thesi:1; about:2; welcom:1; us:4; fact:1; entri:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:2; all:1; peopl:1; faculti:2; pattern:1; last:1; staff:1; updat:1; commun:1; 20160407:1; tutor:1; email:2; postgradu:2; clear:2; student:13; common:2; announc:1; water:2; alumni:2; cogbm:2; bai:2; recruit:3; kowloon:2; editorinchief:1; minor:2; appoint:1; coordin:1; undergradu:5; ug:6; week:1; program:15; registr:3; net:6; entrant:1; 4yr:1; 20122013:1; code:1; 3yr:1; pg:4; cse:6; admis:1; destin:1; core:1; research:2; catalog:2; career:2; internship:2; independ:1; opportun:3; direct:1; info:1; advic:1; employ:1; ppt:1; link:3; timet:3; servic:1; track:1; projectsthes:2; facil:2; 20162017:1; committe:2; polici:1; quota:1; lab:3; midterm:1; schedul:4; tent:1; user:1; my:1; guid:2; arr:1; cs:2; 201516:1; system:3; logo:1; webmail:1; for:3; myport:1; pdf:2; on:1; team:2; nonc:1; societi:2; ge:1; associ:1; doublemajor:1; site:1; conver:1; map:1; tabl:1; 4digit:1; hackathonhkust:1; class:1; 3digit:1; out:1; applic:1; train:1; x900:1; professor:1; the:2; 2:1; hong:4; kong:4; albert:1; chung:1; current:1; honor:2; curriculum:5; inform:1; technologi:2; club:1; glanc:2; ambassador:1; involv:1; other:1; plan:1; advis:3; provision:1; job:2; studentstaff:1; academ:5; present:1; offic:2; studi:3; mentorship:1; univers:2; 3year:3; calendar:2; cours:9; hunt:1; profession:1; liaison:1; faq:1; final:3; portal:1; center:1; learn:2; regul:1; transfer:2; work:1; affair:1; develop:1; requir:1; industri:1; a:1; entrepreneurship:2; exchang:2; comp:6; offer:1; 201617:1; it:1; 20152016:1; first:1; year:5; success:1; credit:1; experi:2; chish:1; date:3; repres:1; good:1; 
-https://www.cse.ust.hk/
-https://www.cse.ust.hk/ug/hkust_only/?lang=hk
-https://www.cse.ust.hk/ug/hkust_only/?lang=cn
+http://www.cse.ust.hk/
+http://www.cse.ust.hk/ug/hkust_only/?lang=hk
+http://www.cse.ust.hk/ug/hkust_only/?lang=cn
 http://www.ust.hk/
 http://www.seng.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=About
-https://www.cse.ust.hk/admin/welcome/
-https://www.cse.ust.hk/admin/about/
-https://www.cse.ust.hk/admin/factsheet/
-https://www.cse.ust.hk/News/?type=news|achievement
-https://www.cse.ust.hk/News/?type=event
-https://www.cse.ust.hk/admin/QA/
+http://www.cse.ust.hk/admin/sitemap/?map=About
+http://www.cse.ust.hk/admin/welcome/
+http://www.cse.ust.hk/admin/about/
+http://www.cse.ust.hk/admin/factsheet/
+http://www.cse.ust.hk/News/?type=news|achievement
+http://www.cse.ust.hk/News/?type=event
+http://www.cse.ust.hk/admin/QA/
 http://cssystem.cse.ust.hk/UGuides/csd_manage.html
-https://www.cse.ust.hk/admin/contact/
-https://www.cse.ust.hk/admin/sitemap/?map=People
-https://www.cse.ust.hk/admin/people/faculty/
-https://www.cse.ust.hk/admin/people/staff/
-https://www.cse.ust.hk/ct/
-https://www.cse.ust.hk/admin/people/pg/
-https://www.cse.ust.hk/alumni/
-https://www.cse.ust.hk/admin/recruitment/
-https://www.cse.ust.hk/admin/people/eic/
-https://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
-https://www.cse.ust.hk/ug/
-https://www.cse.ust.hk/ug/hkust_only/4yr/
-https://www.cse.ust.hk/ug/hkust_only/
-https://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
-https://www.cse.ust.hk/pg/
-https://www.cse.ust.hk/pg/hkust_only/
-https://www.cse.ust.hk/pg/admissions/recruiting/
+http://www.cse.ust.hk/admin/contact/
+http://www.cse.ust.hk/admin/sitemap/?map=People
+http://www.cse.ust.hk/admin/people/faculty/
+http://www.cse.ust.hk/admin/people/staff/
+http://www.cse.ust.hk/ct/
+http://www.cse.ust.hk/admin/people/pg/
+http://www.cse.ust.hk/alumni/
+http://www.cse.ust.hk/admin/recruitment/
+http://www.cse.ust.hk/admin/people/eic/
+http://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
+http://www.cse.ust.hk/ug/
+http://www.cse.ust.hk/ug/hkust_only/4yr/
+http://www.cse.ust.hk/ug/hkust_only/
+http://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
+http://www.cse.ust.hk/pg/
+http://www.cse.ust.hk/pg/hkust_only/
+http://www.cse.ust.hk/pg/admissions/recruiting/
 http://pg.ust.hk/admissions
-https://www.cse.ust.hk/pg/ourgraduates/
-https://www.cse.ust.hk/pg/research/
-https://www.cse.ust.hk/admin/sitemap/?map=Career
-https://www.cse.ust.hk/ug/internship/
-https://www.cse.ust.hk/ug/internship/forEmployer/
-https://www.cse.ust.hk/ug/career/service/
-https://www.cse.ust.hk/admin/sitemap/?map=Facilities
-https://www.cse.ust.hk/admin/facilities/committee/
-https://www.cse.ust.hk/admin/lab/
+http://www.cse.ust.hk/pg/ourgraduates/
+http://www.cse.ust.hk/pg/research/
+http://www.cse.ust.hk/admin/sitemap/?map=Career
+http://www.cse.ust.hk/ug/internship/
+http://www.cse.ust.hk/ug/internship/forEmployer/
+http://www.cse.ust.hk/ug/career/service/
+http://www.cse.ust.hk/admin/sitemap/?map=Facilities
+http://www.cse.ust.hk/admin/facilities/committee/
+http://www.cse.ust.hk/admin/lab/
 http://cssystem.cse.ust.hk/UGuides/index.html
 http://cssystem.cse.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=Links
+http://www.cse.ust.hk/admin/sitemap/?map=Links
 https://imail.cse.ust.hk/sqmail/
-https://www.cse.ust.hk/Restricted/
+http://www.cse.ust.hk/Restricted/
 http://my.ust.hk
-https://www.cse.ust.hk/acm/
+http://www.cse.ust.hk/acm/
 http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
-https://www.cse.ust.hk/admin/sitemap/
-https://www.cse.ust.hk/ug/transfer/
+http://www.cse.ust.hk/admin/sitemap/
+http://www.cse.ust.hk/ug/transfer/
 http://ugadmin.ust.hk/curriculum_hb/1516hb/3y/pdf/12-13cogbm4.pdf
 http://arr.ust.hk/reg/in/pos/12-13COGBM.pdf
 http://ugadmin.ust.hk/curriculum_hb/
 http://arr.ust.hk/reg/
-https://www.cse.ust.hk/ug/minor/IT/
+http://www.cse.ust.hk/ug/minor/IT/
 http://uce.ust.hk/web/courses/course_curriculum.html
 http://publish.ust.hk/prog_crs/ugcourse/
 http://publish.ust.hk/SISCourseCat/ShowUGCourseList.aspx?Subject=COMP&amp;Website=Production
-https://www.cse.ust.hk/ug/double_major/
-https://www.cse.ust.hk/ug/minor/
-https://www.cse.ust.hk/ug/code_conversion/
-https://www.cse.ust.hk/ug/faq/registration/
-https://www.cse.ust.hk/ug/faq/acad_advice/
-https://www.cse.ust.hk/ug/faq/direct_entry/
-https://www.cse.ust.hk/ug/faq/honors_track/
-https://www.cse.ust.hk/ug/faq/honors/
-https://www.cse.ust.hk/ug/exchange/out/
-https://www.cse.ust.hk/ug/faq/career/
-https://www.cse.ust.hk/ug/ambassadors/
+http://www.cse.ust.hk/ug/double_major/
+http://www.cse.ust.hk/ug/minor/
+http://www.cse.ust.hk/ug/code_conversion/
+http://www.cse.ust.hk/ug/faq/registration/
+http://www.cse.ust.hk/ug/faq/acad_advice/
+http://www.cse.ust.hk/ug/faq/direct_entry/
+http://www.cse.ust.hk/ug/faq/honors_track/
+http://www.cse.ust.hk/ug/faq/honors/
+http://www.cse.ust.hk/ug/exchange/out/
+http://www.cse.ust.hk/ug/faq/career/
+http://www.cse.ust.hk/ug/ambassadors/
 http://e-club.cse.ust.hk/
 http://one.cse.ust.hk/
-https://www.cse.ust.hk/ug/representatives/
+http://www.cse.ust.hk/ug/representatives/
 http://ihome.ust.hk/~su_csess/cgi-bin/index.php
 https://www.cse.ust.hk/ug/Password_Only/sslc/
 http://tl.ust.hk/conduct/good_learning_experience.pps
 http://www.seng.ust.hk/web/eng/subcat.php?catid=2&amp;subid=42
 http://urop.ust.hk/
 http://urop.ust.hk/cgi-bin/uropos/index.php?dpoption=CSE
-https://www.cse.ust.hk/ug/internship/?id=listjob
-https://www.cse.ust.hk/ug/comp1999/
+http://www.cse.ust.hk/ug/internship/?id=listjob
+http://www.cse.ust.hk/ug/comp1999/
 http://www.ec.ust.hk/
 http://alumni.cse.ust.hk/mentorship.html
 http://hackathon.cse.ust.hk/
-https://www.cse.ust.hk/ug/advising/
-https://www.cse.ust.hk/ug/compx900/
-https://www.cse.ust.hk/ug/fyp/?fyp_year=2015-2016
-https://www.cse.ust.hk/ug/fyp/?fyp_year=2016-2017
-https://www.cse.ust.hk/ug/fyt/
-https://www.cse.ust.hk/ug/courses/
+http://www.cse.ust.hk/ug/advising/
+http://www.cse.ust.hk/ug/compx900/
+http://www.cse.ust.hk/ug/fyp/?fyp_year=2015-2016
+http://www.cse.ust.hk/ug/fyp/?fyp_year=2016-2017
+http://www.cse.ust.hk/ug/fyt/
+http://www.cse.ust.hk/ug/courses/
 https://w5.ab.ust.hk/wcq/cgi-bin/1530/subject/COMP
-https://www.cse.ust.hk/ug/timetable/
+http://www.cse.ust.hk/ug/timetable/
 https://labschedule.cse.ust.hk/
-https://www.cse.ust.hk/ug/timetable/?lab
-https://www.cse.ust.hk/ug/midterm/
+http://www.cse.ust.hk/ug/timetable/?lab
+http://www.cse.ust.hk/ug/midterm/
 https://sisprod.psft.ust.hk/psp/SISPROD/EMPLOYEE/HRMS/h/?tab=DEFAULT
 http://my.ust.hk/
-https://www.cse.ust.hk/ug/pcs/
+http://www.cse.ust.hk/ug/pcs/
 http://ugadmin.ust.hk/ug-guide/who/
 https://sao.ust.hk/
 http://publish.ust.hk/prog_crs/
@@ -2234,11 +2234,11 @@ http://publish.ust.hk/acadreg/
 http://tl.ust.hk/calendar_dates/dates15-16confirmed.pdf
 http://tl.ust.hk/calendar_dates/dates16-17prov.pdf
 http://fys.ust.hk/
-https://www.cse.ust.hk/admin/logos/
-https://www.cse.ust.hk/~achung/
+http://www.cse.ust.hk/admin/logos/
+http://www.cse.ust.hk/~achung/
 http://qa.ust.hk/student_feedback.html
 ------------------------------
-[Postgraduate]
+Postgraduate
 http://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
 2016-04-08 Size:8705
 depart:1; comput:1; technologi:1; scienc:2; engin:1; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:1; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:1; postgradu:4; clear:1; student:4; water:1; alumni:2; bai:1; recruit:4; kowloon:1; editorinchief:1; appoint:1; undergradu:1; ug:3; program:4; net:5; 4yr:1; 3yr:1; pg:8; cse:2; admis:2; destin:2; research:1; career:2; internship:1; 20151030:1; univers:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:1; webmail:1; myport:1; team:1; societi:1; associ:1; site:1; map:1; the:1; hong:2; kong:2; 
@@ -2293,7 +2293,7 @@ http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
 http://www.cse.ust.hk/admin/sitemap/
 ------------------------------
-[Postgraduate, Programs]
+Postgraduate Programs
 http://www.cse.ust.hk/pg/
 2016-04-08 Size:13506
 depart:2; comput:7; scienc:9; engin:4; äæçé:1; theoret:1; äæçä:1; thesi:4; about:2; defens:2; welcom:1; qualifi:1; us:3; fact:1; sheet:1; new:2; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:2; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:1; tutor:1; email:2; postgradu:10; clear:2; student:5; water:2; alumni:2; bai:2; recruit:4; kowloon:2; editorinchief:1; appoint:1; coordin:1; undergradu:1; ug:3; program:16; net:4; 4yr:1; 3yr:1; pg:5; cse:2; admis:3; destin:1; research:4; catalog:2; career:2; internship:1; opportun:1; go:1; info:1; employ:1; link:2; servic:1; facil:2; committe:1; polici:1; lab:2; schedul:1; user:1; guid:1; cs:1; system:2; webmail:1; myport:1; huamin:1; team:1; our:1; qu:1; societi:1; associ:1; site:1; map:1; mphil:3; philosopli:1; exam:1; guidelin:1; taught:1; professor:1; mscbdt:1; where:1; 20160318:1; mscit:1; the:2; phd:4; graduat:1; hong:4; kong:4; big:1; data:2; master:3; curriculum:2; inform:2; technologi:5; philosophi:1; msc:2; vision:1; other:1; artifici:1; intellig:1; offic:1; department:1; studi:1; univers:2; cours:2; manag:1; human:1; faq:2; center:1; graphic:1; knowledg:1; area:1; network:1; interac:1; seminar:2; gener:2; doctor:1; softwar:1; 
@@ -2378,90 +2378,90 @@ http://www.cse.ust.hk/pg/seminars/
 http://www.cse.ust.hk/pg/defenses/
 http://www.cse.ust.hk/~huamin/
 ------------------------------
-[Postgraduate, Intranet]
+Postgraduate Intranet
 http://www.cse.ust.hk/pg/hkust_only/
-2016-04-08 Size:214
+2016-04-08 Size:12810
 depart:3; comput:2; scienc:4; engin:2; äæçé:1; äæçä:1; thesi:2; about:2; defens:1; welcom:1; qualifi:1; us:3; fact:1; sheet:1; new:2; achiev:1; event:1; qualiti:1; assur:1; safeti:1; contact:2; peopl:1; faculti:2; last:1; staff:1; updat:1; commun:2; tutor:2; email:2; postgradu:8; clear:2; student:7; water:2; alumni:2; bai:2; recruit:3; kowloon:2; editorinchief:1; appoint:1; coordin:1; undergradu:1; ug:3; program:6; registr:1; net:6; 4yr:1; code:1; 3yr:1; pg:8; cse:1; admis:1; destin:1; research:6; catalog:2; career:2; internship:1; opportun:1; info:1; employ:1; link:3; servic:1; facil:2; committe:1; polici:1; quota:1; lab:1; schedul:2; user:1; guid:2; cs:1; 201516:2; system:2; logo:1; webmail:1; myport:1; huamin:1; team:1; qu:1; societi:1; associ:1; site:1; conver:1; map:1; tabl:1; class:2; 4digit:1; 3digit:1; out:1; mphil:2; exam:1; guidelin:1; professor:1; descrip:1; spring:1; curricula:1; convers:1; handbook:1; bibliograph:1; 6911:1; 6912:1; 7990:1; box:1; 20160126:1; the:2; phd:3; hong:4; kong:4; inform:2; technologi:2; provision:1; offic:1; department:2; univers:3; studi:2; calendar:2; cours:5; faq:1; form:1; websit:1; requir:2; area:1; practic:1; comp:7; 201617:1; seminar:2; gener:1; 6990:1; group:1; date:2; repres:1; 
-https://www.cse.ust.hk/
-https://www.cse.ust.hk/pg/hkust_only/?lang=hk
-https://www.cse.ust.hk/pg/hkust_only/?lang=cn
+http://www.cse.ust.hk/
+http://www.cse.ust.hk/pg/hkust_only/?lang=hk
+http://www.cse.ust.hk/pg/hkust_only/?lang=cn
 http://www.ust.hk/
 http://www.seng.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=About
-https://www.cse.ust.hk/admin/welcome/
-https://www.cse.ust.hk/admin/about/
-https://www.cse.ust.hk/admin/factsheet/
-https://www.cse.ust.hk/News/?type=news|achievement
-https://www.cse.ust.hk/News/?type=event
-https://www.cse.ust.hk/admin/QA/
+http://www.cse.ust.hk/admin/sitemap/?map=About
+http://www.cse.ust.hk/admin/welcome/
+http://www.cse.ust.hk/admin/about/
+http://www.cse.ust.hk/admin/factsheet/
+http://www.cse.ust.hk/News/?type=news|achievement
+http://www.cse.ust.hk/News/?type=event
+http://www.cse.ust.hk/admin/QA/
 http://cssystem.cse.ust.hk/UGuides/csd_manage.html
-https://www.cse.ust.hk/admin/contact/
-https://www.cse.ust.hk/admin/sitemap/?map=People
-https://www.cse.ust.hk/admin/people/faculty/
-https://www.cse.ust.hk/admin/people/staff/
-https://www.cse.ust.hk/ct/
-https://www.cse.ust.hk/admin/people/pg/
-https://www.cse.ust.hk/alumni/
-https://www.cse.ust.hk/admin/recruitment/
-https://www.cse.ust.hk/admin/people/eic/
-https://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
-https://www.cse.ust.hk/ug/
-https://www.cse.ust.hk/ug/hkust_only/4yr/
-https://www.cse.ust.hk/ug/hkust_only/
-https://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
-https://www.cse.ust.hk/pg/
-https://www.cse.ust.hk/pg/hkust_only/
-https://www.cse.ust.hk/pg/admissions/recruiting/
+http://www.cse.ust.hk/admin/contact/
+http://www.cse.ust.hk/admin/sitemap/?map=People
+http://www.cse.ust.hk/admin/people/faculty/
+http://www.cse.ust.hk/admin/people/staff/
+http://www.cse.ust.hk/ct/
+http://www.cse.ust.hk/admin/people/pg/
+http://www.cse.ust.hk/alumni/
+http://www.cse.ust.hk/admin/recruitment/
+http://www.cse.ust.hk/admin/people/eic/
+http://www.cse.ust.hk/admin/sitemap/?map=Undergraduate
+http://www.cse.ust.hk/ug/
+http://www.cse.ust.hk/ug/hkust_only/4yr/
+http://www.cse.ust.hk/ug/hkust_only/
+http://www.cse.ust.hk/admin/sitemap/?map=Postgraduate
+http://www.cse.ust.hk/pg/
+http://www.cse.ust.hk/pg/hkust_only/
+http://www.cse.ust.hk/pg/admissions/recruiting/
 http://pg.ust.hk/admissions
-https://www.cse.ust.hk/pg/ourgraduates/
-https://www.cse.ust.hk/pg/research/
-https://www.cse.ust.hk/admin/sitemap/?map=Career
-https://www.cse.ust.hk/ug/internship/
-https://www.cse.ust.hk/ug/internship/forEmployer/
-https://www.cse.ust.hk/ug/career/service/
-https://www.cse.ust.hk/admin/sitemap/?map=Facilities
-https://www.cse.ust.hk/admin/facilities/committee/
-https://www.cse.ust.hk/admin/lab/
+http://www.cse.ust.hk/pg/ourgraduates/
+http://www.cse.ust.hk/pg/research/
+http://www.cse.ust.hk/admin/sitemap/?map=Career
+http://www.cse.ust.hk/ug/internship/
+http://www.cse.ust.hk/ug/internship/forEmployer/
+http://www.cse.ust.hk/ug/career/service/
+http://www.cse.ust.hk/admin/sitemap/?map=Facilities
+http://www.cse.ust.hk/admin/facilities/committee/
+http://www.cse.ust.hk/admin/lab/
 http://cssystem.cse.ust.hk/UGuides/index.html
 http://cssystem.cse.ust.hk/
-https://www.cse.ust.hk/admin/sitemap/?map=Links
+http://www.cse.ust.hk/admin/sitemap/?map=Links
 https://imail.cse.ust.hk/sqmail/
-https://www.cse.ust.hk/Restricted/
+http://www.cse.ust.hk/Restricted/
 http://my.ust.hk
-https://www.cse.ust.hk/acm/
+http://www.cse.ust.hk/acm/
 http://ihome.ust.hk/~su_csess/
 https://www.facebook.com/cseaa.hkust
-https://www.cse.ust.hk/admin/sitemap/
-https://www.cse.ust.hk/pg/courses/
+http://www.cse.ust.hk/admin/sitemap/
+http://www.cse.ust.hk/pg/courses/
 https://w5.ab.ust.hk/wcq/cgi-bin/1530/subject/COMP
 http://publish.ust.hk/prog_crs/pgcourse/
 http://publish.ust.hk/SISCourseCat/ShowPGCourseList.aspx?Subject=COMP&amp;WebSite=Production
 https://sisprod.psft.ust.hk/psp/SISPROD/EMPLOYEE/HRMS/h/?tab=DEFAULT
-https://www.cse.ust.hk/ug/code_conversion/
-https://www.cse.ust.hk/pg/programs/requirements/course.php
-https://www.cse.ust.hk/pg/programs/requirements/course.php#mphil
-https://www.cse.ust.hk/pg/programs/requirements/course.php#phd
-https://www.cse.ust.hk/pg/programs/requirements/thesis_mphil.php
-https://www.cse.ust.hk/pg/programs/requirements/thesis_phd.php
-https://www.cse.ust.hk/pg/programs/requirements/gre_qe.php
-https://www.cse.ust.hk/pg/newStudents/
-https://www.cse.ust.hk/pg/forms/
-https://www.cse.ust.hk/admin/logos/
+http://www.cse.ust.hk/ug/code_conversion/
+http://www.cse.ust.hk/pg/programs/requirements/course.php
+http://www.cse.ust.hk/pg/programs/requirements/course.php#mphil
+http://www.cse.ust.hk/pg/programs/requirements/course.php#phd
+http://www.cse.ust.hk/pg/programs/requirements/thesis_mphil.php
+http://www.cse.ust.hk/pg/programs/requirements/thesis_phd.php
+http://www.cse.ust.hk/pg/programs/requirements/gre_qe.php
+http://www.cse.ust.hk/pg/newStudents/
+http://www.cse.ust.hk/pg/forms/
+http://www.cse.ust.hk/admin/logos/
 http://pg.ust.hk/progcatalog/
 http://www.ust.hk/provost/pg/rpghandbook/
 http://pg.ust.hk/
 http://tl.ust.hk/calendar_dates/dates15-16confirmed.pdf
 http://tl.ust.hk/calendar_dates/dates16-17prov.pdf
-https://www.cse.ust.hk/pg/research/guides/
-https://www.cse.ust.hk/pg/research/links/
-https://www.cse.ust.hk/pg/seminars/
-https://www.cse.ust.hk/pg/defenses/
-https://www.cse.ust.hk/otbox/
-https://www.cse.ust.hk/~huamin/
-https://www.cse.ust.hk/pg/tac/
+http://www.cse.ust.hk/pg/research/guides/
+http://www.cse.ust.hk/pg/research/links/
+http://www.cse.ust.hk/pg/seminars/
+http://www.cse.ust.hk/pg/defenses/
+http://www.cse.ust.hk/otbox/
+http://www.cse.ust.hk/~huamin/
+http://www.cse.ust.hk/pg/tac/
 http://qa.ust.hk/student_feedback.html
 ------------------------------
-[HKUST/CSE, Postgraduate, Student, Recruiting]
+HKUST/CSE Postgraduate Student Recruiting
 http://www.cse.ust.hk/pg/admissions/recruiting/
 2016-04-08 Size:14140
 depart:7; cover:1; ye:1; comput:6; scienc:8; subject:1; engin:3; 8th:1; hkust:6; deadlin:2; äæçé:1; äæçä:1; about:2; welcom:1; us:3; fact:1; sheet:1; new:1; achiev:2; event:1; qualiti:1; assur:1; safeti:1; contact:3; peopl:1; faculti:3; staff:1; commun:1; tutor:1; postgradu:11; student:15; alumni:3; recruit:12; editorinchief:1; appoint:1; undergradu:2; ug:3; week:1; program:3; registr:2; net:4; record:1; 4yr:1; 3yr:1; pg:4; cse:3; admis:5; destin:1; research:2; career:3; internship:1; opportun:1; info:1; employ:1; link:2; servic:1; facil:2; time:1; committe:1; polici:1; lab:1; schedul:1; user:1; guid:1; cs:1; system:3; webmail:1; myport:1; team:1; our:3; societi:1; associ:1; site:2; map:1; 2015:1; 50:1; applic:12; mphil:2; support:1; scholarship:3; award:3; there:1; hkustcs:2; the:8; fall:1; look:1; accord:1; five:2; 40th:1; distribut:1; follow:1; 30:1; 170:1; to:1; mani:1; compani:1; signific:1; suffici:1; excel:3; amount:2; in:1; hkd160000:1; usd20000:1; produc:1; tuition:2; hkd40000:1; usd5000:1; incom:1; global:1; hkpf:5; hkd20000:1; pursu:1; usd2500:1; month:1; travel:1; hkd10000:1; tencent:1; usd1250:1; 9:1; phd:9; 12:1; graduat:3; respect:1; 2010:1; obtain:1; hong:6; enrol:2; kong:6; satisfi:1; phase:3; target:1; onsit:2; preliminari:1; worldwid:1; data:1; shortlist:1; master:1; thi:1; fill:1; notifi:1; after:1; packag:1; excep:1; inform:2; averag:1; relev:1; technologi:3; 85100:1; inquir:1; outstand:1; question:1; feel:1; q:2; soft:1; i:2; toeflielt:1; elig:1; howev:1; admit:1; departmentsâ:1; when:1; pioneer:1; hard:1; soon:1; accept:1; firstcomefirstserv:1; basi:1; 20151116:1; consist:1; artifici:1; intellig:1; googl:1; world:2; department:2; huawei:1; web:2; univers:5; institut:1; 2016:1; past:1; encourag:1; relat:1; includ:1; graphic:1; knowledg:1; we:3; major:1; requir:3; a:2; allow:1; algorithm:1; awarde:2; meet:1; it:1; degre:2; take:1; softwar:1; addition:2; languag:1; process:1; theoret:1; interview:5; last:1; onlin:1; updat:1; email:1; clear:1; water:1; bai:1; kowloon:1; english:3; top:2; grade:1; baidu:1; you:2; class:1; limit:1; mai:1; asia:1; qs:1; free:1; invit:1; prestigi:1; telephon:1; check:1; fellowship:1; page:1; bachelor:1; 10:1; appli:4; person:1; vision:1; govern:1; pleas:2; detail:1; rank:3; academ:1; session:1; start:3; result:1; studi:4; school:1; manag:1; final:1; faq:1; form:1; annual:1; send:1; websit:1; close:2; regular:1; network:1; if:2; select:2; ibm:1; facebook:1; candid:1; 

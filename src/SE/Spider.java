@@ -54,12 +54,22 @@ public class Spider {
                 System.out.println("pagesize :"+pageSize);
                 Vector<String> title = crawler.extractTitle();
                 System.out.println("title: " + title);
+                // convert title vector to String
+                StringBuilder builder = new StringBuilder();
+                String prefix = "";
+                for(String s : title) {
+                    builder.append(prefix);
+                    prefix = " ";    // add a spacebar after each word
+                    builder.append(s);
+                }
+                String titleStr = builder.toString();
+
                 Vector<String> word = crawler.extractWords();
                 System.out.println("word: " + word);
 
                 //indexer--------------------------------------------------------------
                 indexer.insertWords(word);
-                indexer.insertPageProperty(title.toString(), url, lastUpdate, pageSize);
+                indexer.insertPageProperty(titleStr, url, lastUpdate, pageSize);
                 for (String childUrl : links) {
                     indexer.insertChildPage(childUrl);
                 }

@@ -19,7 +19,19 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Test Start");
         try {
-
+            Vector<String> v = new Vector<String>();
+            v.add("d");
+            v.add("peeelpe");
+            v.add("dddds");
+            StringBuilder builder = new StringBuilder();
+            String prefix = "";
+            for(String s : v) {
+                builder.append(prefix);
+                prefix = " ";    // add a spacebar after each word
+                builder.append(s);
+            }
+            System.out.print(builder.toString());
+            System.exit(-1);
             RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
 //
 //            PageProperty p = new PageProperty(recman, "test");
