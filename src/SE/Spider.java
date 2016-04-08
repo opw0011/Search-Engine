@@ -22,7 +22,7 @@ public class Spider {
 
 
         try {
-            fetch("http://www.cs.ust.hk/~dlee/4321/");
+            fetch("http://www.cse.ust.hk/");
         } catch (ParserException e) {
             e.printStackTrace();
         } catch (IOException e) {

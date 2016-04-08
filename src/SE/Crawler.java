@@ -141,8 +141,8 @@ public class Crawler {
 
         String s = sb.getStrings();
         s = s.replaceAll("[,:!/.%|()-+&^#@*']", "");
-
-        //System.out.print(s);
+        System.out.print(s);
+        System.out.print(s);
         StringTokenizer st = new StringTokenizer(s);
 
 
