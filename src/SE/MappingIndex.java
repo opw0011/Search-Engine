@@ -7,6 +7,7 @@ import jdbm.htree.HTree;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  * Created by opw on 3/4/2016.
@@ -105,6 +106,17 @@ public class MappingIndex {
 //        recman.close();
     }
 
+    public Vector<String> getUrlList() throws IOException
+    {
+        FastIterator iter = hashtable.keys();
+        Vector<String> v = new Vector<String>();
+        while( (key = (String)iter.next())!=null)
+        {
+            v.add(key);
+//            System.out.printf("KEY= %s, ID= %s\n" , key, hashtable.get(key));
+        }
+        return v;
+    }
     public void printAll() throws IOException
     {
         // Print all the data in the hashtable

@@ -55,7 +55,7 @@ public class Indexer {
         urlIndex.insert(url);
 //        urlIndex.finalize();
         this.pageID = urlIndex.getValue(url);
-        System.out.printf("Indexer: url:'%s' mapping to '%s' \n", url, urlIndex.getValue(url));
+//        System.out.printf("Indexer: url:'%s' mapping to '%s' \n", url, urlIndex.getValue(url));
     }
 
     /*
