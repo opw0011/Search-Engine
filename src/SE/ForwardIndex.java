@@ -5,15 +5,13 @@ import jdbm.helper.FastIterator;
 import jdbm.htree.HTree;
 
 import java.io.IOException;
-import java.util.Vector;
+import java.util.*;
 
 
 /**
  * Created by opw on 4/6/16.
  */
 
-// ParentPageID -> (ChildPageID1 ... ChildPageIDN)
-// ChildPageID -> (ParentPageID1 ... ParentPageIDN)
 // PageID -> (WordID1 ... wordIDN)
 public class ForwardIndex {
 
@@ -81,6 +79,70 @@ public class ForwardIndex {
         return list;
     }
 
+    public int getTermFrequency(int pageID, int wordID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Vector<Integer> list = new Vector<Integer>();
+        if (hashtable.get(key) != null)
+        {
+            list = (Vector<Integer>) hashtable.get(key);
+        }
+        return Collections.frequency(list, wordID);
+    }
+
+//    public List<Integer> getUniqueTerms(int pageID) throws IOException
+//    {
+//        String key = Integer.toString(pageID);
+//        if(hashtable.get(key) == null)
+//            return null;
+//        Vector<Integer> list = (Vector<Integer>) hashtable.get(key);
+//        List<Integer> uniqueList = new ArrayList<Integer>(list);
+//        System.out.print(uniqueList);
+//        return uniqueList;
+//    }
+
+//    public void printUniqueTermsFrequency(int pageID) throws IOException
+//    {
+//        String key = Integer.toString(pageID);
+//        if(hashtable.get(key) == null)
+//            return;
+//
+//        Vector<Integer> list = (Vector<Integer>) hashtable.get(key);
+//
+//        // wordID, frequency
+//        Map<Integer, Integer> map = new HashMap<>();
+//        for (int wordID : list) {
+//            Integer freq = map.get(wordID);
+//            freq = (freq == null) ? 1 : ++freq;
+//            map.put(wordID, freq);
+//        }
+//
+//        for (int k : map.keySet()) {
+//            System.out.println(k + " " + map.get(k));
+//        }
+//
+//    }
+
+    // get Term Frequency map <wordID, Frequency>, return null is not exist
+    public Map<Integer, Integer> getTermFrequencyMap(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        if(hashtable.get(key) == null)
+            return null;
+
+        Vector<Integer> list = (Vector<Integer>) hashtable.get(key);
+
+        // get wordID, frequency map
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int wordID : list) {
+            Integer freq = map.get(wordID);
+            freq = (freq == null) ? 1 : ++freq;
+            map.put(wordID, freq);
+        }
+
+        return map;
+    }
+
     public void printAll() throws IOException
     {
         // Print all the data in the hashtable
@@ -92,6 +154,7 @@ public class ForwardIndex {
         {
             System.out.printf("PAGEID= %s, WORDIDS= %s\n" , key, hashtable.get(key));
         }
-
     }
+
+
 }

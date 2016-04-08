@@ -5,6 +5,7 @@ import jdbm.RecordManagerFactory;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.Map;
 import java.util.Vector;
 
 /**
@@ -171,7 +172,7 @@ public class Indexer {
     {
         if(properyIndex.get(this.pageID) == null)
             return true;
-        
+
         Properties p = properyIndex.get(this.pageID);
         System.out.println(newDate);
         System.out.println(p.getModDate());
@@ -184,7 +185,7 @@ public class Indexer {
         return (urlIndex.getValue(this.url) > 0);
     }
 
-    // insert child pages to parentChildIndex
+    // insert child pages to parentChildIndex, call by the parent page
     public void insertChildPage(String url) throws IOException
     {
         int childPageId = urlIndex.getValue(url);
@@ -195,15 +196,15 @@ public class Indexer {
         parentChildIndex.insert(this.pageID, childPageId);
     }
 
-    // insert child pages to parentChildIndex
+    // insert parent pages to childParent, call by the child page
     public void insertParentPage(String url) throws IOException
     {
-        int childPageId = urlIndex.getValue(url);
-        if(childPageId < 0) {
+        int parentPageId = urlIndex.getValue(url);
+        if(parentPageId < 0) {
             urlIndex.insert(url);
-            childPageId = urlIndex.getValue(url);
+            parentPageId = urlIndex.getValue(url);
         }
-        parentChildIndex.insert(this.pageID, childPageId);
+        childParentIndex.insert(this.pageID, parentPageId);
     }
 
     public void printWordMappingIndex() throws IOException
@@ -229,6 +230,49 @@ public class Indexer {
     public void printBodyInvertedIndex() throws IOException
     {
         bodyInvertedIndex.printAll();
+    }
+
+    public void printChildPages() throws IOException
+    {
+        System.out.println("----- Child Pages -----");
+        if(parentChildIndex.getList(this.pageID) == null)
+        {
+            System.out.println("ERROR: no child page found");
+            return;
+        }
+        Vector<Integer> list = parentChildIndex.getList(this.pageID);
+        for (int pid : list) {
+            System.out.println(urlIndex.getKey(pid));
+        }
+    }
+
+    public void printParentPages() throws IOException
+    {
+        System.out.println("----- Parent Pages -----");
+        if(childParentIndex.getList(this.pageID) == null)
+        {
+            System.out.println("ERROR: no parent page found");
+            return;
+        }
+        Vector<Integer> list = childParentIndex.getList(this.pageID);
+        for (int pid : list) {
+            System.out.println(urlIndex.getKey(pid));
+        }
+    }
+
+    public void printPageTermFrequency() throws IOException
+    {
+        if(forwardIndex.getTermFrequencyMap(this.pageID) == null)
+        {
+            System.out.println("ERROR: no term frequency map found");
+            return;
+        }
+        Map<Integer, Integer> map = forwardIndex.getTermFrequencyMap(this.pageID);
+
+        for (int k : map.keySet()) {
+            System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
+        }
+        System.out.println();
     }
 
     public void finalize() throws IOException

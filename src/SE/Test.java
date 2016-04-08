@@ -20,7 +20,7 @@ public class Test {
         System.out.println("Test Start");
         try {
 
-            RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
+            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
 //
 //            PageProperty p = new PageProperty(recman, "test");
 //            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
@@ -110,7 +110,7 @@ public class Test {
             */
 
 
-            Indexer indexer = new Indexer("data/database", "www.bing.com.hk");
+            Indexer indexer = new Indexer("data/database", "https://www.google.com.hk");
 //            indexer.insertTitle("HI");
 //            indexer.insertTitle("Working");
 //            indexer.insertTitle("What the fuck");
@@ -135,13 +135,19 @@ public class Test {
 
 
 //            indexer.insertToForwardIndex(txt2);
-
-            Crawler crawler = new Crawler("http://www.cse.ust.hk/");
+//
+            Crawler crawler = new Crawler("https://www.google.com.hk");
             Vector<String> words = crawler.extractWords();
 //            System.out.println(words);
 //            System.out.println(words.get(6));
 
-//            indexer.insertWords(words);
+            indexer.insertWords(words);
+            indexer.insertChildPage("www.google.com");
+            indexer.insertChildPage("www.123.com");
+            indexer.insertChildPage("www.yahoo.com");
+            indexer.insertParentPage("www.parent.com");
+            indexer.insertParentPage("www.parent.123com");
+
 //            Boolean s = indexer.pageIsContains("www.bing.com.hk");
 //            System.out.printf("BOOL: %s", s);
 //            indexer.printUrlMappingIndex();
@@ -149,18 +155,28 @@ public class Test {
 //            indexer.printForwardIndex();
 //            indexer.printTitleInvertedIndex();
 //            indexer.printBodyInvertedIndex();
-            indexer.insertPageProperty("tes", "url", new Date(1), 100);
-            Boolean b = indexer.pageLastModDateIsUpdated(new Date(12));
-            System.out.print(b);
+//            indexer.insertPageProperty("tes", "url", new Date(1), 100);
+//            Boolean b = indexer.pageLastModDateIsUpdated(new Date(12));
+//            System.out.print(b);
 //            indexer.insertWords(words);
 //            indexer.printWordMappingIndex();
 //            indexer.printBodyInvertedIndex();
+            indexer.printForwardIndex();
+
+            ForwardIndex i = new ForwardIndex(recman, "forwardIndex");
+            int s = i.getTermFrequency(1, 1);
+            i.printAll();
+            indexer.printPageTermFrequency();
+            indexer.printChildPages();
+            indexer.printParentPages();
             indexer.finalize(); // must call to write to db
+
+
 
 
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ParserException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
