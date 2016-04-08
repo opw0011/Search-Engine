@@ -33,36 +33,44 @@ public class Spider {
     }
 
     public static void fetch(String url) throws ParserException, IOException {
-        System.out.println("xxxxxxxxxxxxxxxxxxxx" + url);
-        if (DoneList.size() < MAXPAGE - 1) {
+        if (DoneList.size() < MAXPAGE) {
+            System.out.println("***************: " + url);
             Indexer indexer = new Indexer(DB_PATH, url);
             Crawler crawler = new Crawler(url);
 
+            //get lastupdate
             Date lastUpdate = crawler.lastUpdate();
             System.out.println("last update:" + lastUpdate);
+            //check lastupdate
             if (indexer.pageLastModDateIsUpdated(lastUpdate)) {
+
+                //crawlwer----------------------------------------------------
                 Vector<String> links = crawler.extractLinks();
                 for (int i = 0; i < links.size(); i++) {
                     task.add(links.elementAt(i));
                 }
-                System.out.println(links);
+                System.out.println("links: "+links);
                 int pageSize = crawler.getPageSize();
-                System.out.println(pageSize);
+                System.out.println("pagesize :"+pageSize);
                 Vector<String> title = crawler.extractTitle();
-                System.out.println("title:" + title);
+                System.out.println("title: " + title);
                 Vector<String> word = crawler.extractWords();
-                System.out.println("word:" + word);
+                System.out.println("word: " + word);
 
-
+                //indexer--------------------------------------------------------------
                 indexer.insertWords(word);
                 indexer.insertPageProperty(title.toString(), url, lastUpdate, pageSize);
                 for (String childUrl : links) {
                     indexer.insertChildPage(childUrl);
                 }
+
                 DoneList.add(url);
             }
 
+            if (task.peek() != null)
+            {
                 task.remove();
+            }
                 indexer.finalize();
 
             if (task.peek() != null) {
@@ -74,6 +82,6 @@ public class Spider {
                 }
             }
         }
-
     }
+
 }
