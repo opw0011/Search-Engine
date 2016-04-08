@@ -58,6 +58,9 @@ public class Indexer {
 //        System.out.printf("Indexer: url:'%s' mapping to '%s' \n", url, urlIndex.getValue(url));
     }
 
+
+
+
     /*
     // input the title string one by one, insert the word into word mapping index and title inverted index
     public void insertTitle(String word, int wordPos)
@@ -273,6 +276,24 @@ public class Indexer {
             System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
         }
         System.out.println();
+    }
+
+    public void printPageProperty() throws IOException
+    {
+        if(properyIndex.get(this.pageID) == null)
+        {
+            System.out.println("ERROR: no page property found");
+            return;
+        }
+        Properties ppt = (Properties) properyIndex.get(this.pageID);
+        System.out.println(ppt.getUrl());
+        System.out.println(ppt.getModDate() + " Size:" +ppt.getSize());
+
+    }
+
+    public Vector<String> getUrlLinkList() throws IOException
+    {
+        return urlIndex.getUrlList();
     }
 
     public void finalize() throws IOException
