@@ -37,37 +37,11 @@ public class Spider {
         System.out.println("xxxxxxxxxxxxxxxxxxxx"+url);
         if(DoneList.size()<MAXPAGE-1)
         {
-
             Indexer indexer = new Indexer(DB_PATH,url);
             Crawler crawler = new Crawler(url);
 
-
-            if(!indexer.pageIsContains())
-            {
-                Vector<String> links = crawler.extractLinks();
-                for(int i=0; i<links.size(); i++)
-                {
-                    task.add(links.elementAt(i));
-                }
-                System.out.println(links);
-                int pagesize = crawler.getPageSize();
-                System.out.println(pagesize);
-                Date lastupdate = crawler.lastUpdate();
-                System.out.println(lastupdate);
-                Vector<String> title = crawler.extractTitle();
-                System.out.println(title);
-                Vector<String> word = crawler.extractTitle();
-                System.out.println(word);
-                indexer.insertWords(word);
-                indexer.insertPageProperty(title.toString(),url,lastupdate,pagesize);
-                DoneList.add(url);
-            }
-            else
-            {
-                Date lastupdate = crawler.lastUpdate();
-                System.out.println("last updaaaaate:"+lastupdate);
-                if(indexer.pageLastModDateIsUpdated(lastupdate))
-                {
+//                if(indexer.pageLastModDateIsUpdated(lastupdate))
+//                {
                     Vector<String> links = crawler.extractLinks();
                     for(int i=0; i<links.size(); i++)
                     {
@@ -77,21 +51,27 @@ public class Spider {
                     int pagesize = crawler.getPageSize();
                     System.out.println(pagesize);
                     Vector<String> title = crawler.extractTitle();
-                    System.out.println(title);
-                    Vector<String> word = crawler.extractTitle();
-                    System.out.println(word);
+                    System.out.println("title:"+title);
+                    Vector<String> word = crawler.extractWords();
+                    System.out.println("word:"+word);
+                    Date lastupdate = crawler.lastUpdate();
+                    System.out.println("last update:"+lastupdate);
+
                     indexer.insertWords(word);
                     indexer.insertPageProperty(title.toString(),url,lastupdate,pagesize);
+//                    for (String chrildurl : links){
+//                        indexer.insertChildPage(chrildurl);
+//                    }
                     DoneList.add(url);
-                }
-            }
-            task.remove();
+                    task.remove();
+
+//                }
             indexer.finalize();
 
 
           try{
               fetch(task.peek());
-          }catch (Exception e){
+          } catch (Exception e){
               task.remove();
               fetch(task.peek());
           }
