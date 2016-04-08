@@ -128,4 +128,11 @@ public class PageProperty {
             System.out.printf("KEY= %s, ID= %s\n" , key, hashtable.get(key));
         }
     }
+
+    public void printWithPageID(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Properties ppt = (Properties) hashtable.get(key);
+        System.out.println(ppt.getModDate() + " Size:" +ppt.getSize());
+    }
 }

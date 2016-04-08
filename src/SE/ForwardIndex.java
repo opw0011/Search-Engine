@@ -156,5 +156,35 @@ public class ForwardIndex {
         }
     }
 
+    public void printPageTermFrequency(int pageID) throws IOException
+    {
+//        if(forwardIndex.getTermFrequencyMap(pageID) == null)
+//        {
+//            System.out.println("ERROR: no term frequency map found");
+//            return;
+//        }
+        Map<Integer, Integer> map = getTermFrequencyMap(pageID);
+
+        for (int k : map.keySet()) {
+//            System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
+            MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
+            System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
+        }
+        System.out.println();
+    }
+
+    public Vector<Integer> getExistingPageIdList() throws IOException
+    {
+        Vector<Integer> v = new Vector<Integer>();
+        FastIterator iter = hashtable.keys();
+        String key;
+        while( (key = (String)iter.next())!=null)
+        {
+            v.add(Integer.parseInt(key));
+//            System.out.printf("PAGEID= %s, WORDIDS= %s\n" , key, hashtable.get(key));
+        }
+        return v;
+    }
+
 
 }

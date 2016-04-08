@@ -105,4 +105,16 @@ public class ParentChildIndex {
         }
 
     }
+
+    public void printWithPageID(int pageID) throws IOException
+    {
+        // iterate through all keys
+        MappingIndex urlIndex = new MappingIndex(recman, "urlMappingIndex");
+        Vector<Integer> v = getList(pageID);
+        for(Integer i : v)
+        {
+            System.out.println(urlIndex.getKey(i));
+        }
+
+    }
 }
