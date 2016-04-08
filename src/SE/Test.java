@@ -136,7 +136,7 @@ public class Test {
 
 //            indexer.insertToForwardIndex(txt2);
 //
-            Crawler crawler = new Crawler("https://www.google.com.hk");
+            Crawler crawler = new Crawler("http://www.cse.ust.hk");
             Vector<String> words = crawler.extractWords();
 //            System.out.println(words);
 //            System.out.println(words.get(6));
@@ -165,11 +165,20 @@ public class Test {
 
             ForwardIndex i = new ForwardIndex(recman, "forwardIndex");
             int s = i.getTermFrequency(1, 1);
+            System.out.println("Fff");
             i.printAll();
             indexer.printPageTermFrequency();
             indexer.printChildPages();
             indexer.printParentPages();
             indexer.finalize(); // must call to write to db
+//
+            Indexer indexer2 = new Indexer("data/database", "https://www.google123123.com.hk");
+            Crawler crawler2 = new Crawler("http://course.cse.ust.hk/comp4211/");
+            Vector<String> words2 = crawler2.extractWords();
+            indexer2.insertWords(words2);
+            indexer2.printPageTermFrequency();
+
+
 
 
 
