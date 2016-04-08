@@ -20,7 +20,7 @@ public class Test {
         System.out.println("Test Start");
         try {
 
-            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
+            RecordManager recman = RecordManagerFactory.createRecordManager("data/test");
 //
 //            PageProperty p = new PageProperty(recman, "test");
 //            MappingIndex urlIndex = new MappingIndex(recman, "testURLIndex");
@@ -28,6 +28,24 @@ public class Test {
 //            InvertedIndex index = new InvertedIndex(recman, "testInvertedFile");
             ParentChildIndex PCIndex = new ParentChildIndex(recman, "testParentChildFile");
             ForwardIndex wordForwardIndex = new ForwardIndex(recman, "testForwardIndex");
+
+            MappingIndex map = new MappingIndex(recman, "test");
+//            map.insert("hihi");
+//            map.insert("e");
+//            map.insert("o");
+
+//            map.insert("hihi");
+            System.out.println(map.getValue("o"));
+
+//            System.out.println(map.getValue("e"));
+            System.out.println(map.getValue("hihi"));
+            System.out.println(map.getKey(2));
+            System.out.println(map.getKey(3));
+
+            map.printAll();
+            map.finalize();
+
+            System.exit(-1);
 
             // ParentChildIndex Test
 //            wordForwardIndex.insert(2, 8);

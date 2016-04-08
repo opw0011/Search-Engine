@@ -164,10 +164,10 @@ public class ForwardIndex {
 //            return;
 //        }
         Map<Integer, Integer> map = getTermFrequencyMap(pageID);
+        MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
 
         for (int k : map.keySet()) {
 //            System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
-            MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
             System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
         }
         System.out.println();
