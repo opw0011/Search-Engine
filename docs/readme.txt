@@ -8,6 +8,6 @@
 
 4. Right click and run Spider.java 
 
-5. To retrive the result, open Test.java and right click "run"; the 
+5. To retrive the result, open Phase1Test.java and right click "run"; the 
 result will output to spider_result.txt 
 #######################################################################
