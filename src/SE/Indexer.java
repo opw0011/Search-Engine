@@ -296,6 +296,10 @@ public class Indexer {
         return urlIndex.getUrlList();
     }
 
+    public ForwardIndex getForwardIndex() throws IOException{
+        return forwardIndex;
+    }
+
     public void finalize() throws IOException
     {
         recman.commit();

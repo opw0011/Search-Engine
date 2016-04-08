@@ -142,11 +142,11 @@ public class Test {
 //            System.out.println(words.get(6));
 
             indexer.insertWords(words);
-            indexer.insertChildPage("www.google.com");
-            indexer.insertChildPage("www.123.com");
-            indexer.insertChildPage("www.yahoo.com");
-            indexer.insertParentPage("www.parent.com");
-            indexer.insertParentPage("www.parent.123com");
+//            indexer.insertChildPage("www.google.com");
+//            indexer.insertChildPage("www.123.com");
+//            indexer.insertChildPage("www.yahoo.com");
+//            indexer.insertParentPage("www.parent.com");
+//            indexer.insertParentPage("www.parent.123com");
 
 //            Boolean s = indexer.pageIsContains("www.bing.com.hk");
 //            System.out.printf("BOOL: %s", s);
@@ -177,9 +177,6 @@ public class Test {
             Vector<String> words2 = crawler2.extractWords();
             indexer2.insertWords(words2);
             indexer2.printPageTermFrequency();
-
-
-
 
 
 

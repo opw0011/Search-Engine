@@ -24,7 +24,7 @@ public class Phase1Test {
 //            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
 //            MappingIndex urlIndex = new MappingIndex(recman, "urlMappingIndex");
             Indexer initIndex = new Indexer("data/database", "");
-            initIndex.getUrlLinkList();
+//            initIndex.getUrlLinkList();
 //            urlIndex.printAll();
 //            Vector<String> pageList = urlIndex.getUrlList();
             Vector<String> pageList = initIndex.getUrlLinkList();
@@ -36,6 +36,7 @@ public class Phase1Test {
 
                 Indexer index = new Indexer("data/database", url);
                 System.out.println(url);
+
 
                 PrintStream out = new PrintStream(new FileOutputStream("spider_result.txt", true));
                 System.setOut(out);
