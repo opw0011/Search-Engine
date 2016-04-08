@@ -21,10 +21,14 @@ public class Phase1Test {
         System.out.println("test");
         try {
             // load the db
-            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
-            MappingIndex urlIndex = new MappingIndex(recman, "urlMappingIndex");
+//            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
+//            MappingIndex urlIndex = new MappingIndex(recman, "urlMappingIndex");
+            Indexer initIndex = new Indexer("data/database", "");
+            initIndex.getUrlLinkList();
 //            urlIndex.printAll();
-            Vector<String> pageList = urlIndex.getUrlList();
+//            Vector<String> pageList = urlIndex.getUrlList();
+            Vector<String> pageList = initIndex.getUrlLinkList();
+
 
 
 
@@ -33,6 +37,11 @@ public class Phase1Test {
                 Indexer index = new Indexer("data/database", url);
                 System.out.println(url);
                 index.printPageTermFrequency();
+<<<<<<< HEAD
+=======
+                index.finalize();
+            }
+>>>>>>> 8f70ed7bab55cc75b403a425e3979b4e6237a7a6
 
                 PrintStream out = new PrintStream(new FileOutputStream("spider_result.txt", true));
                 System.setOut(out);
