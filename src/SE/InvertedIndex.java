@@ -7,6 +7,7 @@ Email:
 */
 
 import jdbm.RecordManager;
+import jdbm.helper.IntegerComparator;
 import jdbm.htree.HTree;
 import jdbm.helper.FastIterator;
 import jdk.nashorn.internal.ir.IdentNode;
@@ -22,10 +23,12 @@ class Posting implements Serializable
     private int pageID;
     private Vector<Integer> wordPosList;
     private static final long serialVersionUID = 1L;    // define serialVersionUID
+//    private int maxTermFrequency;
 
     public Posting(int pageID) {
         this.pageID = pageID;
         this.wordPosList = new Vector<Integer>();
+//        this.maxTermFrequency = 0;
     }
 
     @Override
@@ -33,7 +36,8 @@ class Posting implements Serializable
         return "Posting{" +
                 "pageID=" + pageID +
                 ", wordPosList=" + wordPosList +
-                '}';
+                '}' ;
+//                " maxtf= " +maxTermFrequency;
     }
 
     public boolean insert(int wordPos) {
@@ -59,9 +63,13 @@ class Posting implements Serializable
         return false;
     }
 
-    public int getWordFrequency() {
+    public int getTermFrequency() {
         return wordPosList.size();
     }
+//
+//    public int getMaxTermFrequency() { return maxTermFrequency;}
+//
+//    public void setMaxtf(int maxtf) { this.maxTermFrequency = maxtf;}
 }
 
 public class InvertedIndex
@@ -195,8 +203,38 @@ public class InvertedIndex
             return -1;
         HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
         Posting posting = map.get(pageID);
-        return posting.getWordFrequency();
+        return posting.getTermFrequency();
     }
+
+    // get page id map with word ID
+    public HashMap<Integer, Posting> get(int wordID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        return (HashMap<Integer, Posting>) hashtable.get(key);
+    }
+
+    /*
+    public void setMaxTermFrequency(int wordID, int pageID, int maxtf) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        posting.setMaxtf(maxtf);
+    }
+    */
+
+    // number of documents containing the term wordID
+    public int getDocumentFrequency(int wordID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return -1;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        return map.size();
+    }
+
 
 
     public void printAll() throws IOException

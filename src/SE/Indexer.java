@@ -149,7 +149,7 @@ public class Indexer {
 
         forwardIndex.delete(this.pageID);   // clear the old content first
 
-        // loop through the input Vector
+        // loop through the input word Vector
         for(int wordPos = 0; wordPos < words.size(); wordPos ++)
         {
             int wordID = insertWordToMappingIndex(words.get(wordPos));    // put new word to mapping index
@@ -162,7 +162,19 @@ public class Indexer {
                 bodyInvertedIndex.insert(wordID, this.pageID, wordPos);
             }
         }
+
+        // calcualte and insert the max tf to forward index
+        forwardIndex.calculateMaxTermFrequency(this.pageID);
     }
+//
+//    public void insertPageMaxTermFrequencyToPageProperty() throws IOException
+//    {
+//        // after inserting all the terms into index
+//        // caculate the maxtf and insert to page property
+//        int maxtf = forwardIndex.getMaxTermFrequency(this.pageID);
+//        properyIndex.setPageMaxTermFrequency(this.pageID, maxtf);
+//    }
+
 
     // insert properties into properyIndex
     public void insertPageProperty(String title, String url, Date modDate, int size) throws IOException

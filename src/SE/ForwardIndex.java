@@ -16,22 +16,28 @@ import java.util.*;
 public class ForwardIndex {
 
     private RecordManager recman;
-    private HTree hashtable;
+    private HTree hashtable, hashtable_mtf;
 
     ForwardIndex(RecordManager recordmanager, String objectname) throws IOException
     {
         recman = recordmanager;
         long recid = recman.getNamedObject(objectname);
+        long recid_mtf = recman.getNamedObject(objectname + "_mtf");    // for storing max term frequency for each page
 
         if (recid != 0)
         {
             // if hashtable exist, load it
             hashtable = HTree.load(recman, recid);
+            hashtable_mtf = HTree.load(recman, recid_mtf);
         }
         else
         {
             hashtable = HTree.createInstance(recman);
             recman.setNamedObject( objectname, hashtable.getRecid() );
+
+            hashtable_mtf = HTree.createInstance(recman);
+            recman.setNamedObject( objectname + "_mtf", hashtable_mtf.getRecid() );
+
         }
     }
 
@@ -79,6 +85,17 @@ public class ForwardIndex {
         return list;
     }
 
+    // get the total number of words inside a page
+    public int getPageSize(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Vector<Integer> list = new Vector<Integer>();
+        list = (Vector<Integer>) hashtable.get(key);
+        if(list != null)
+            return list.size();
+        return 0;
+    }
+
     public int getTermFrequency(int pageID, int wordID) throws IOException
     {
         String key = Integer.toString(pageID);
@@ -88,6 +105,38 @@ public class ForwardIndex {
             list = (Vector<Integer>) hashtable.get(key);
         }
         return Collections.frequency(list, wordID);
+    }
+
+    // calculate the max term frequency and store in db
+    public void calculateMaxTermFrequency(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Vector<Integer> list = new Vector<Integer>();
+        if (hashtable.get(key) == null)
+        {
+            System.out.println("ERROR: calculateMaxTermFrequency");
+            return;
+        }
+
+        list = (Vector<Integer>) hashtable.get(key);
+        Set<Integer> unique = new HashSet<Integer>(list);   // elminate duplicate terms
+        int maxtf = 0;
+        for(int wordID : unique) {
+            int tf = Collections.frequency(list, wordID);
+            if (tf > maxtf)
+                maxtf = tf;
+        }
+        System.out.println("MAX Term Frequency = " + maxtf);
+        hashtable_mtf.put(key, maxtf);  // put the maxtf
+    }
+
+    public int getMaxTermFrequency(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        if(hashtable_mtf.get(key) == null)
+            return 0;
+        else
+            return (Integer) hashtable_mtf.get(key);
     }
 
 //    public List<Integer> getUniqueTerms(int pageID) throws IOException
