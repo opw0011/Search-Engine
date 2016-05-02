@@ -35,11 +35,11 @@ TSUI Ka Wai, 20197524, 30%
 ## Phase 2 ##
 
 ### Prepare db environment ###
-In SearchEngine.java, change the path to the where your db file will locate, e.g. /home/ubuntu/comp4321
+In SearchEngine.java, change the path to the where your db file will locate, e.g. /home/ubuntu/comp4321/database
 ```
 #!java
 // TODO: Change DB_PARAM to your own path
-final String DB_PATH = "/home/ubuntu/comp4321"; // change this the path where database.db located
+final String DB_PATH = "/home/ubuntu/comp4321/database"; // change this the path where database.db located
 
 ```
 
