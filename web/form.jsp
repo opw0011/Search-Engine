@@ -76,6 +76,9 @@
     RecordManager recman = RecordManagerFactory.createRecordManager(SearchEngine.DB_PATH);
     PageProperty ppt = new PageProperty(recman, "pagePropertyIndex");
     ForwardIndex forwardIndex = new ForwardIndex(recman, "forwardIndex");
+    ParentChildIndex parentChildIndex = new ParentChildIndex(recman, "parentChildIndex");
+    MappingIndex urlIndex = new MappingIndex(recman, "urlMappingIndex");
+
     // loop result map
     for (Map.Entry<Integer, Double> entry : resultMap.entrySet()) {
         if( i > 50 )    break;  // get the top 50 results
@@ -86,10 +89,16 @@
         out.println("<br>");
 
         out.println("<a href=\"" + ppt.getUrl(pageID) + "\">" + ppt.getUrl(pageID) + "</a>");
-        out.println("<pre>" + " score:" + score);
+        out.println("<pre>" + "score:" + score);
         out.println("Date: " + ppt.getModDate(pageID));
         out.println("Size: " + ppt.getPageSize(pageID));
         out.println(forwardIndex.getPageTermFrequencyString(pageID));
+
+        // print child pages
+        Vector<Integer> child = parentChildIndex.getList(pageID);
+        for( int pid : child) {
+            out.println( urlIndex.getKey(pid));
+        }
         out.println("</pre> <br>");
         ++i;
     }
