@@ -34,12 +34,19 @@ TSUI Ka Wai, 20197524, 30%
 
 ## Phase 2 ##
 
-
-1. After deploy the project to tomcat server, Copy /data/database.db to the server
-2. Change the file permission to public read write execute 777
-3. In SearchEngine.java, change the path
+### Prepare db environment ###
+In SearchEngine.java, change the path to the where your db file will locate, e.g. /home/ubuntu/comp4321
 ```
 #!java
 // TODO: Change DB_PARAM to your own path
-final String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database";
+final String DB_PATH = "/home/ubuntu/comp4321"; // change this the path where database.db located
+
 ```
+
+### Deploy WAR File ###
+Upload the WAR file using tomcat server admin panel
+![TDc9CsE.png](https://bitbucket.org/repo/j87rBy/images/1654489622-TDc9CsE.png)
+
+### Upload the database.db ###
+1. Copy /data/database.db in project to the server, e.g. /home/ubuntu
+2. Change the file permission to public read write execute 777
