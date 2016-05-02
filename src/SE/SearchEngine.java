@@ -12,16 +12,20 @@ import java.util.*;
 public class SearchEngine {
 
     public static Map<Integer, Double> search(Vector<String> inputQuery) {
-        System.out.println("Test Start");
+        // final String DB_PATH = "data/database";
+        // TODO: Change DB_PARAM to your own path
+        final String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database"; // change this the path where database.db located
         try {
-            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
+
+            // TODO: comment out the sys out to improve the search performance
+            RecordManager recman = RecordManagerFactory.createRecordManager(DB_PATH);
 
             ForwardIndex forwardIndex = new ForwardIndex(recman, "forwardIndex");
             MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
             InvertedIndex bodyInvertedIndex = new InvertedIndex(recman, "bodyInvertedIndex");
             InvertedIndex titleInvertedIndex = new InvertedIndex(recman, "titleInvertedIndex");
             StopStem stopStem = new StopStem("stopwords.txt");
-            final int TOTAL_NUM_PAGES = 30;
+            final int TOTAL_NUM_PAGES = 300;
             final double TITLE_BONUS_WEIGHT = 1.0;
 
 //            Vector<String> input = new Vector<String>();
@@ -95,6 +99,10 @@ public class SearchEngine {
                         double df = (double) bodyInvertedIndex.getDocumentFrequency(wordID);
 
                         double idf = Math.log(TOTAL_NUM_PAGES / df) / Math.log(2);
+
+                        if(max_tf == 0.0) {
+                            continue;
+                        }
                         double weight = (tf / max_tf) * idf;
 
                         // sum of weight

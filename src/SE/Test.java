@@ -29,8 +29,12 @@ public class Test {
             RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
             InvertedIndex titleInvertedIndex = new InvertedIndex(recman, "titleInvertedIndex");
             MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
-            titleInvertedIndex.printAll();
-            wordIndex.printAll();
+            PageProperty properyIndex = new PageProperty(recman, "pagePropertyIndex");
+//            properyIndex.printAll();
+//            titleInvertedIndex.printAll();
+//            wordIndex.printAll();
+            System.out.println(System.getProperty("user.dir"));
+
 
 
         } catch (Exception e) {

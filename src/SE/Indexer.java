@@ -113,7 +113,6 @@ public class Indexer {
             {
                 forwardIndex.insert(this.pageID, wordID);
                 bodyInvertedIndex.insert(wordID, this.pageID, wordPos);
-                // TODO: add to title inverted index
             }
         }
 

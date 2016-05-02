@@ -38,6 +38,7 @@ public class Phase1Test {
 //            System.out.println(urlList);
             for (int pageID : urlList) {
                 Properties p = properyIndex.get(pageID);
+                if(p == null) return;
                 System.out.println(p.getTitle());
                 System.out.println(urlIndex.getKey(pageID));
                 properyIndex.printWithPageID(pageID);

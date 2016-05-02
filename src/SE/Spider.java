@@ -14,12 +14,12 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 30;
+    private static int MAXPAGE = 300;
 
     public static void main(String[] args) {
+
         System.out.println("SPIDER START...");
         final long startTime = System.currentTimeMillis();
-
 
         try {
             fetch("http://www.cse.ust.hk/~ericzhao/COMP4321/TestPages/testpage.htm");
