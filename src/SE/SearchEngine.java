@@ -10,11 +10,12 @@ import java.util.*;
  * Created by opw on 1/5/2016.
  */
 public class SearchEngine {
+    // final String DB_PATH = "data/database";
+    // TODO: Change DB_PARAM to your own path
+    static final public String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database"; // change this the path where database.db located
 
     public static Map<Integer, Double> search(Vector<String> inputQuery) {
-        // final String DB_PATH = "data/database";
-        // TODO: Change DB_PARAM to your own path
-        final String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database"; // change this the path where database.db located
+
         try {
 
             // TODO: comment out the sys out to improve the search performance

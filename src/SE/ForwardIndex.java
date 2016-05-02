@@ -18,7 +18,7 @@ public class ForwardIndex {
     private RecordManager recman;
     private HTree hashtable, hashtable_mtf;
 
-    ForwardIndex(RecordManager recordmanager, String objectname) throws IOException
+    public ForwardIndex(RecordManager recordmanager, String objectname) throws IOException
     {
         recman = recordmanager;
         long recid = recman.getNamedObject(objectname);
@@ -207,19 +207,28 @@ public class ForwardIndex {
 
     public void printPageTermFrequency(int pageID) throws IOException
     {
-//        if(forwardIndex.getTermFrequencyMap(pageID) == null)
-//        {
-//            System.out.println("ERROR: no term frequency map found");
-//            return;
-//        }
         Map<Integer, Integer> map = getTermFrequencyMap(pageID);
         MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
 
         for (int k : map.keySet()) {
-//            System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
             System.out.printf("%s:%s; ", wordIndex.getKey(k), map.get(k));
         }
         System.out.println();
+    }
+
+    public String getPageTermFrequencyString(int pageID) throws IOException
+    {
+        Map<Integer, Integer> map = getTermFrequencyMap(pageID);
+        MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int k : map.keySet()) {
+            stringBuilder.append(wordIndex.getKey(k));
+            stringBuilder.append(':');
+            stringBuilder.append(map.get(k));
+            stringBuilder.append("; ");
+        }
+        return stringBuilder.toString();
     }
 
     public Vector<Integer> getExistingPageIdList() throws IOException

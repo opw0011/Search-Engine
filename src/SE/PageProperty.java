@@ -136,4 +136,32 @@ public class PageProperty {
         Properties ppt = (Properties) hashtable.get(key);
         System.out.println(ppt.getModDate() + " Size:" +ppt.getSize());
     }
+
+    public Date getModDate(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Properties ppt = (Properties) hashtable.get(key);
+        return ppt.getModDate();
+    }
+
+    public int getPageSize(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Properties ppt = (Properties) hashtable.get(key);
+        return ppt.getSize();
+    }
+
+    public String getTitle(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Properties ppt = (Properties) hashtable.get(key);
+        return ppt.getTitle();
+    }
+
+    public String getUrl(int pageID) throws IOException
+    {
+        String key = Integer.toString(pageID);
+        Properties ppt = (Properties) hashtable.get(key);
+        return ppt.getUrl();
+    }
 }
