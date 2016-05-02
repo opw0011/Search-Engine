@@ -34,10 +34,12 @@ TSUI Ka Wai, 20197524, 30%
 
 ## Phase 2 ##
 
-After deploy the project to tomcat server,
-1. Copy /data/database.db to the server
+
+1. After deploy the project to tomcat server, Copy /data/database.db to the server
 2. Change the file permission to public read write execute 777
 3. In SearchEngine.java, change the path
+```
+#!java
 // TODO: Change DB_PARAM to your own path
 final String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database";
-4. Enjoy! :)
+```
