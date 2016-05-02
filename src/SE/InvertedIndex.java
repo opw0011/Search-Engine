@@ -66,10 +66,15 @@ class Posting implements Serializable
     public int getTermFrequency() {
         return wordPosList.size();
     }
-//
-//    public int getMaxTermFrequency() { return maxTermFrequency;}
-//
-//    public void setMaxtf(int maxtf) { this.maxTermFrequency = maxtf;}
+
+    public Vector<Integer> getWordPosList() {
+        return wordPosList;
+    }
+
+    public boolean containsWordPos(int wordPos) {
+        return wordPosList.contains(wordPos);
+    }
+
 }
 
 public class InvertedIndex
@@ -233,6 +238,17 @@ public class InvertedIndex
             return -1;
         HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
         return map.size();
+    }
+
+    // check if input wordId and word pos is exsit in centain page
+    public boolean containsWordPos(int pageID, int wordID, int wordPos) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return false;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        return posting.containsWordPos(wordPos);
     }
 
 
