@@ -18,8 +18,21 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Test Start");
         try {
-            SearchEngine.search();
+            Vector<String> input = new Vector<String>();
+            input.add("play");
+            input.add("movie");
+            input.add("page");
+            SearchEngine.search(input);
+
             System.exit(-1);
+
+            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
+            InvertedIndex titleInvertedIndex = new InvertedIndex(recman, "titleInvertedIndex");
+            MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
+            titleInvertedIndex.printAll();
+            wordIndex.printAll();
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

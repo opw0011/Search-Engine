@@ -69,6 +69,7 @@ public class Spider {
 
                 //indexer--------------------------------------------------------------
                 indexer.insertWords(word);
+                indexer.insertTitle(title);
                 indexer.insertPageProperty(titleStr, url, lastUpdate, pageSize);
                 for (String childUrl : links) {
                     indexer.insertChildPage(childUrl);

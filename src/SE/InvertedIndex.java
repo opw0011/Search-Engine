@@ -251,20 +251,12 @@ public class InvertedIndex
         while( (key = (String)iter.next())!=null)
         {
             // get and print the content of each key
-//            System.out.println(key + " = " + hashtable.get(key));
-//            Posting posting = (Posting) hashtable.get(key);
-//            ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(key);
             HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
             Set<Integer> keys = map.keySet();  //get all keys
             for(Integer i: keys)
             {
-                System.out.println(key + " " + map.get(i));
+                System.out.println("wordID:" + key + " " + map.get(i));
             }
-//            System.out.print(key + " = ");
-//            for(Posting p : postingList){
-//                System.out.print(p + " ");
-//            }
-//            System.out.println();
         }
 
     }

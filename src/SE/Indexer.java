@@ -58,51 +58,6 @@ public class Indexer {
 //        System.out.printf("Indexer: url:'%s' mapping to '%s' \n", url, urlIndex.getValue(url));
     }
 
-
-
-
-    /*
-    // input the title string one by one, insert the word into word mapping index and title inverted index
-    public void insertTitle(String word, int wordPos)
-    {
-        if(word.length() <= 0 || wordPos < 0)
-        {
-            System.out.println("ERROR: Insert Title invalid word/wordPos");
-            return;
-        }
-
-        if (stopStem.isStopWord(word))
-        {
-//            System.out.printf("\"%s\" is a stop word" , word);
-            return;
-        }
-
-        // retrieve the stemmed word
-        String stem = stopStem.stem(word);
-//        System.out.println("stem: \"" + stem +"\"");
-
-        try {
-            // insert into word mapping indexer
-            wordIndex.insert(stem);
-//            wordIndex.finalize();
-
-            int stemWordID = wordIndex.getValue(stem);
-
-            // insert into forward index file
-            forwardIndex.insert(this.pageID, stemWordID);
-
-            // insert into inverted file
-            titleInvertedIndex.insert(stemWordID, 2, wordPos);
-            titleInvertedIndex.printAll();
-//            titleInvertedIndex.finalize();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    */
-
     // Helper function: remove stop words + stemming, insert to mapping index and return word ID, wordID: -1 = stop word
     private int insertWordToMappingIndex(String word)
     {
@@ -141,7 +96,6 @@ public class Indexer {
     }
 
     // Remove stop word, stemming, insert to forward indexer and inverted index
-    // TODO: isert word to title/body db
     public void insertWords(Vector<String> words) throws IOException
     {
         if(words.isEmpty())
@@ -158,23 +112,33 @@ public class Indexer {
             if(wordID > 0)
             {
                 forwardIndex.insert(this.pageID, wordID);
-                // TODO: add to title inverted index
                 bodyInvertedIndex.insert(wordID, this.pageID, wordPos);
+                // TODO: add to title inverted index
             }
         }
 
         // calcualte and insert the max tf to forward index
         forwardIndex.calculateMaxTermFrequency(this.pageID);
     }
-//
-//    public void insertPageMaxTermFrequencyToPageProperty() throws IOException
-//    {
-//        // after inserting all the terms into index
-//        // caculate the maxtf and insert to page property
-//        int maxtf = forwardIndex.getMaxTermFrequency(this.pageID);
-//        properyIndex.setPageMaxTermFrequency(this.pageID, maxtf);
-//    }
 
+    // insert title words to inverted file
+    public void insertTitle(Vector<String> words) throws IOException
+    {
+        if(words.isEmpty())
+            return;
+
+        // loop through the input word Vector
+        for(int wordPos = 0; wordPos < words.size(); wordPos ++)
+        {
+            int wordID = insertWordToMappingIndex(words.get(wordPos));    // put new word to mapping index
+
+            // ignore stop word
+            if(wordID > 0)
+            {
+                titleInvertedIndex.insert(wordID, this.pageID, wordPos);
+            }
+        }
+    }
 
     // insert properties into properyIndex
     public void insertPageProperty(String title, String url, Date modDate, int size) throws IOException
