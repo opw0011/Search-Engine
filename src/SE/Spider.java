@@ -14,7 +14,7 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 100;
+    private static int MAXPAGE = 300;
 
     public static void main(String[] args) {
 
