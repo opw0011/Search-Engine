@@ -12,6 +12,7 @@ import java.util.*;
 public class SearchEngine {
     // final String DB_PATH = "data/database";
     // TODO: Change DB_PARAM to your own path
+//    static final public String DB_PATH = "/home/ubuntu/comp4321/database"; // my remote server
     static final public String DB_PATH = "C:\\Users\\opw\\Documents\\comp4321-project\\data\\database"; // change this the path where database.db located
     static final int TOTAL_NUM_PAGES = 300;    // the total number of page
     static final double TITLE_BONUS_WEIGHT = 1.0;  // the title bonus weight here
@@ -56,7 +57,7 @@ public class SearchEngine {
             //--------------
             // TITLE SEARCH
             //--------------
-            // if query tem is found in title inverted index, add 0.8 weight
+            // if query tem is found in title inverted index, add bonus weight
 
             if (titleInvertedIndex.get(wordID) != null) {
                 HashMap<Integer, Posting> map = titleInvertedIndex.get(wordID);  // hashmap <wordID, Posting>
@@ -196,7 +197,7 @@ public class SearchEngine {
             intersectMap.keySet().retainAll(tmpMap.keySet());   // intersect the map
         }
 
-        System.out.println(intersectMap);
+//        System.out.println(intersectMap);
 
 
         // TODO: now got the intersect  map
