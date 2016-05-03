@@ -14,7 +14,7 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 300;
+    private static int MAXPAGE = 100;
 
     public static void main(String[] args) {
 
@@ -56,6 +56,7 @@ public class Spider {
                 System.out.println("title: " + title);
                 // convert title vector to String
                 StringBuilder builder = new StringBuilder();
+
                 String prefix = "";
                 for(String s : title) {
                     builder.append(prefix);
@@ -75,7 +76,10 @@ public class Spider {
                     indexer.insertChildPage(childUrl);
                 }
 
-                DoneList.add(url);
+                if(!DoneList.contains(url))
+                {
+                    DoneList.add(url);
+                }
             }
 
             if (task.peek() != null)
