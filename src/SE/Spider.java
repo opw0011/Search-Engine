@@ -34,6 +34,11 @@ public class Spider {
 
     public static void fetch(String url) throws ParserException, IOException {
         if (DoneList.size() < MAXPAGE) {
+            if (task.peek() != null)
+            {
+                task.remove();
+            }
+
             System.out.println("***************: " + url);
             Indexer indexer = new Indexer(DB_PATH, url);
             Crawler crawler = new Crawler(url);
@@ -82,10 +87,7 @@ public class Spider {
                 }
             }
 
-            if (task.peek() != null)
-            {
-                task.remove();
-            }
+
                 indexer.finalize();
 
             if (task.peek() != null) {
