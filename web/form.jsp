@@ -20,7 +20,7 @@
 </head>
 <body>
 <div>
-    <a href="../">Back to search page</a>
+    <a href="javascript:history.go(-1)">Back to search page</a>
 </div>
 <%
     // Handle invalid input
@@ -64,15 +64,16 @@
 
 
     SearchEngine se = new SearchEngine();
-    Map<Integer, Double> resultMap = new HashMap<>();
-    Map<Integer, Double> normalResult = new HashMap<>();
-    Map<Integer, Double> extactResult = new HashMap<>();
+    Map<Integer, Double> resultMap = new HashMap<Integer, Double>();
+    Map<Integer, Double> normalResult = new HashMap<Integer, Double>();
+    Map<Integer, Double> extactResult = new HashMap<Integer, Double>();
+
     if (!normalQuery.isEmpty())
         normalResult  = se.search(normalQuery);
     if (!extactQuery.isEmpty()) {
         // for each "Search terms"
         for (Vector<String> v : extactQuery) {
-            Map<Integer, Double> tmp = new HashMap<>();
+            Map<Integer, Double> tmp = new HashMap<Integer, Double>();
             tmp = se.phaseSearch(v);
             // intersect the results, "computer science" && "jump mushroom"
             if(extactResult.isEmpty())

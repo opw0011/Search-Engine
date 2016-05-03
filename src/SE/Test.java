@@ -20,14 +20,17 @@ public class Test {
     public static void main(String[] args) {
         System.out.println("Test Start");
         try {
-            Vector<String> input = new Vector<String>();
-            input.add("test");
-            input.add("page");
-//            SearchEngine.search(input);
-
-            SearchEngine.phaseSearch(input);
-//            RecordManager recman1 = RecordManagerFactory.createRecordManager("data/database");
-//            InvertedIndex bodyInvertedIndex = new InvertedIndex(recman1, "bodyInvertedIndex");
+//            Vector<String> input = new Vector<String>();
+//            input.add("test");
+//            input.add("page");
+////            SearchEngine.search(input);
+//
+//            SearchEngine.phaseSearch(input);
+            RecordManager recman1 = RecordManagerFactory.createRecordManager("data/database");
+            InvertedIndex bodyInvertedIndex = new InvertedIndex(recman1, "bodyInvertedIndex");
+            ForwardIndex fIndex = new ForwardIndex(recman1, "forwardIndex");
+            System.out.println(fIndex.getExistingPageIdList());
+            fIndex.printAll();
 //            boolean aa = bodyInvertedIndex.containsWordPos(5,17,933);
 //                    System.out.print(aa);
             System.exit(1);

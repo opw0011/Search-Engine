@@ -290,8 +290,8 @@ public class SearchEngine {
 
     // intersect two map, if two with same key, sum their values, and sorted
     public static Map intersectSum(Map<Integer, Double> map1, Map<Integer, Double> map2) {
-        Set<Integer> intersectKeySet = new HashSet<>(map1.keySet());
-        Map<Integer, Double> resultMap = new HashMap<>();
+        Set<Integer> intersectKeySet = new HashSet<Integer>(map1.keySet());
+        Map<Integer, Double> resultMap = new HashMap<Integer, Double>();
         intersectKeySet.retainAll(map2.keySet());
         // loop the intersection key
         for(int key : intersectKeySet) {
