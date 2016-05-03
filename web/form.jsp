@@ -64,7 +64,34 @@
 
 
     SearchEngine se = new SearchEngine();
-    Map<Integer, Double> resultMap = se.search(normalQuery);
+    Map<Integer, Double> resultMap = new HashMap<>();
+    Map<Integer, Double> normalResult = new HashMap<>();
+    Map<Integer, Double> extactResult = new HashMap<>();
+    if (!normalQuery.isEmpty())
+        normalResult  = se.search(normalQuery);
+    if (!extactQuery.isEmpty()) {
+        // for each "Search terms"
+        for (Vector<String> v : extactQuery) {
+            Map<Integer, Double> tmp = new HashMap<>();
+            tmp = se.phaseSearch(v);
+            // intersect the results, "computer science" && "jump mushroom"
+            if(extactResult.isEmpty())
+                extactResult = tmp;
+            else
+                extactResult = se.intersectSum(extactResult, tmp);
+        }
+    }
+
+    if(extactResult == null|| extactResult.isEmpty())
+        resultMap = normalResult;   // normal search
+    else if (normalResult == null || normalResult.isEmpty())
+        resultMap = extactResult;   // phrase search
+    else {
+        // normal search + phrase search, all the result must contain the extact phrase, i.e. "KEYWORD"
+        resultMap = se.intersectSum(normalResult, extactResult);
+    }
+
+
     if (resultMap == null || resultMap.isEmpty()) {
         out.println("<p> Sorry, no matched result :( (Please try another query) </p>");
         return;

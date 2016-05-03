@@ -17,8 +17,9 @@ public class SearchEngine {
     static final double TITLE_BONUS_WEIGHT = 1.0;  // the title bonus weight here
     static StopStem stopStem = new StopStem("stopwords.txt");
 
-
+    // ===============================================================
     // Simple Search (Union the query result), e.g. Copmuter Science
+    // ===============================================================
     public static Map<Integer, Double> search(Vector<String> inputQuery) throws IOException{
         // TODO: comment out the sys out to improve the search performance
         RecordManager recman = RecordManagerFactory.createRecordManager(DB_PATH);
@@ -143,19 +144,21 @@ public class SearchEngine {
 
     }
 
-
+    // ====================================================================
     // Phase Search, terms must be exactly match,  e.g. "Computer Science"
-    public static void phaseSearch() throws IOException{
+    // ====================================================================
+    public static Map<Integer, Double> phaseSearch(Vector<String> inputQuery) throws IOException{
         RecordManager recman = RecordManagerFactory.createRecordManager(DB_PATH);
         ForwardIndex forwardIndex = new ForwardIndex(recman, "forwardIndex");
         MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
         InvertedIndex bodyInvertedIndex = new InvertedIndex(recman, "bodyInvertedIndex");
         InvertedIndex titleInvertedIndex = new InvertedIndex(recman, "titleInvertedIndex");
-        Vector<String> inputQuery = new Vector<>();
-        inputQuery.add("AKA");
-        inputQuery.add("Title ");
-        inputQuery.add("Search ");
-
+//        Vector<String> inputQuery = new Vector<>();
+//        inputQuery.add("AKA");
+//        inputQuery.add("Title ");
+//        inputQuery.add("Search ");
+//        inputQuery.add("Test");
+//        inputQuery.add("page");
 
         Vector<String> query = new Vector<String>();
         // process the input Query
@@ -177,34 +180,36 @@ public class SearchEngine {
 
         // for the first search term
         int wordID = wordIndex.getValue(query.get(0));
-        if (bodyInvertedIndex.get(wordID) == null)  return; // phase not found
+        if (bodyInvertedIndex.get(wordID) == null)  return null; // phase not found
 
         // get intersect page maps
         HashMap<Integer, Posting> firstMap = bodyInvertedIndex.get(wordID);
         HashMap<Integer, Posting> intersectMap = new HashMap<Integer, Posting>(firstMap);
-        System.out.println(query.get(0) + "(id:"+ wordID + "): " + firstMap);
+//        System.out.println(query.get(0) + "(id:"+ wordID + "): " + firstMap);
 
         for (String q : query) {
             if (q == query.get(0)) continue;    // skip the first
             wordID = wordIndex.getValue(q);
-            if (bodyInvertedIndex.get(wordID) == null)  return; // phase not found
+            if (bodyInvertedIndex.get(wordID) == null)  return null; // phase not found
             HashMap<Integer, Posting> tmpMap = bodyInvertedIndex.get(wordID);
-            System.out.println(q + "(id:"+ wordID + ": " + tmpMap);
+//            System.out.println(q + "(id:"+ wordID + ": " + tmpMap);
             intersectMap.keySet().retainAll(tmpMap.keySet());   // intersect the map
         }
 
         System.out.println(intersectMap);
 
 
-
         // TODO: now got the intersect  map
         // TODO: loop each page and see the position are consecutive
         // for each pageID, wordID = id of first query
         wordID = wordIndex.getValue(query.get(0));
+        Set<Integer> pagesContainExtactPhase = new HashSet<>();
+        Map<Integer, Double> tfOverMaxtf = new HashMap<>();
         for (Map.Entry<Integer, Posting> entry : intersectMap.entrySet()) {
             int pageID = entry.getKey();
             Posting posting = entry.getValue();
             Vector<Integer> wordPosList = posting.getWordPosList();
+            double tf = 0;
             // for each word postiion
             for (int pos : wordPosList) {
                 int posIncrement = 1;   // check next word pos
@@ -220,16 +225,44 @@ public class SearchEngine {
                     }
                     posIncrement++;
                 }
-
                 if (found) {
                     // match terms found
-                    System.out.println(query + "Found !!!!!!!!!! PageID:" + pageID);
-                    // TODO: cal tf idf
+//                    System.out.println(query + "Found !!!!!!!!!! PageID:" + pageID);
+                    // TODO: cal tf idf,
+                    pagesContainExtactPhase.add(pageID);
+                    ++tf;
                 }
             }
+            // calculate tf/max(tf) for each page
+            if( tf > 0) {
+                double max_tf = (double) forwardIndex.getMaxTermFrequency(pageID);
+                if(max_tf <= 0.0) continue;
+//                System.out.printf("page:%d tf:%f maxtf: %f\n", pageID, tf, max_tf);
+                tfOverMaxtf.put(pageID, tf/max_tf); // store in the map
+            }
+        }
+        // calculate idf
+        double df = pagesContainExtactPhase.size();
+        double idf = Math.log(TOTAL_NUM_PAGES / df) / Math.log(2);
+
+//        System.out.printf("df:%f; idf:%f\n" , df, idf);
+//        System.out.println(pagesContainExtactPhase);
+//        System.out.println(tfOverMaxtf);
+
+        // calculating (tf/tfmax)*idf for each matched term
+        Map<Integer, Double> weightMap = new HashMap<>();
+        for (Map.Entry<Integer, Double> entry : tfOverMaxtf.entrySet()) {
+            int pageID = entry.getKey();
+            double tfOverMaxrf = entry.getValue();
+            double weight = tfOverMaxrf * idf;
+            weightMap.put(pageID, weight);
+//            System.out.printf("page:%d weight:%f\n" , pageID, weight);
         }
 
-        System.exit(-999);
+        // sort the weight
+        Map<Integer, Double> sortedWeightMap = sortByValue(weightMap);
+//        System.out.println(sortedWeightMap);
+        return sortedWeightMap;
     }
 
 
@@ -253,4 +286,19 @@ public class SearchEngine {
         }
         return result;
     }
+
+    // intersect two map, if two with same key, sum their values, and sorted
+    public static Map intersectSum(Map<Integer, Double> map1, Map<Integer, Double> map2) {
+        Set<Integer> intersectKeySet = new HashSet<>(map1.keySet());
+        Map<Integer, Double> resultMap = new HashMap<>();
+        intersectKeySet.retainAll(map2.keySet());
+        // loop the intersection key
+        for(int key : intersectKeySet) {
+            double sumScore = map1.get(key) + map2.get(key);
+            resultMap.put(key, sumScore);
+        }
+        return sortByValue(resultMap);
+    }
+
+
 }

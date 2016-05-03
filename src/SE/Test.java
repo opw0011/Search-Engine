@@ -6,6 +6,8 @@ import org.htmlparser.util.ParserException;
 
 import java.io.IOException;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by opw on 27/3/2016.
@@ -19,23 +21,16 @@ public class Test {
         System.out.println("Test Start");
         try {
             Vector<String> input = new Vector<String>();
-            input.add("play");
-            input.add("movie");
+            input.add("test");
             input.add("page");
-            SearchEngine.search(input);
+//            SearchEngine.search(input);
 
-            System.exit(-1);
-
-            RecordManager recman = RecordManagerFactory.createRecordManager("data/database");
-            InvertedIndex titleInvertedIndex = new InvertedIndex(recman, "titleInvertedIndex");
-            MappingIndex wordIndex = new MappingIndex(recman, "wordMappingIndex");
-            PageProperty properyIndex = new PageProperty(recman, "pagePropertyIndex");
-//            properyIndex.printAll();
-//            titleInvertedIndex.printAll();
-//            wordIndex.printAll();
-            System.out.println(System.getProperty("user.dir"));
-
-
+            SearchEngine.phaseSearch(input);
+//            RecordManager recman1 = RecordManagerFactory.createRecordManager("data/database");
+//            InvertedIndex bodyInvertedIndex = new InvertedIndex(recman1, "bodyInvertedIndex");
+//            boolean aa = bodyInvertedIndex.containsWordPos(5,17,933);
+//                    System.out.print(aa);
+            System.exit(1);
 
         } catch (Exception e) {
             e.printStackTrace();
