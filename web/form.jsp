@@ -15,12 +15,22 @@
 <%@ page import="java.util.regex.Pattern" %>
 
 <html>
+
 <head>
-    <title>Title</title>
+    <title>Result</title>
 </head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
 <body>
 <div>
-    <a href="javascript:history.go(-1)">Back to search page</a>
+    <a href="javascript:history.go(-1) class="waves-effect waves-light btn">Back to search page</a>
+
 </div>
 <%
     // Handle invalid input
