@@ -29,9 +29,10 @@
 
 <body>
 <div>
-    <a href="javascript:history.go(-1) class="waves-effect waves-light btn">Back to search page</a>
+    <a href="javascript:history.go(-1)" class="waves-effect waves-light btn back-btn">Back to search page</a>
 
 </div>
+<container class="con-pad">
 <%
     // Handle invalid input
     if(request.getParameter("q") == null || request.getParameter("q") == "") {
@@ -43,7 +44,7 @@
     // Query Extraction
     // ------------------
     String rawQuery = request.getParameter("q");
-    out.println("Original Query: "+ rawQuery);
+    out.println("Original Query: "+ rawQuery");
 
     Vector<String> normalQuery = new Vector<String>();  // for storing normal query, e.g. Happy Boy
     Vector<Vector<String>> extactQuery = new Vector<Vector<String>>();  // 2d vector for extact phase search, e.g. "Good Day"
@@ -104,7 +105,7 @@
 
 
     if (resultMap == null || resultMap.isEmpty()) {
-        out.println("<p> Sorry, no matched result :( (Please try another query) </p>");
+        out.println("<p class='con-pad'> Sorry, no matched result :( (Please try another query) </p>");
         return;
     }
 
@@ -144,5 +145,6 @@
 
 
 %>
+</container>
 </body>
 </html>
