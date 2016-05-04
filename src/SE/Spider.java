@@ -14,30 +14,39 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 300;
+    private static int MAXPAGE = 10;
 
     public static void main(String[] args) {
 
         System.out.println("SPIDER START...");
         final long startTime = System.currentTimeMillis();
-
-        try {
-            fetch("http://www.cse.ust.hk/~ericzhao/COMP4321/TestPages/testpage.htm");
-        } catch (ParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+//        DoneList.removeAllElements();
+        task.add("http://www.cse.ust.hk/~ericzhao/COMP4321/TestPages/testpage.htm");
+        while(DoneList.size()<MAXPAGE){
+            if(task.peek()!=null&&!DoneList.contains(task.peek())) {
+                try {
+                    fetch(task.peek());
+                } catch (ParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                task.remove();
+            }
         }
+        System.out.print(DoneList.size() + ") Donelist:"+DoneList);
         System.out.printf("PROGRAM RUN FOR %s s\n", (System.currentTimeMillis() - startTime) / 1000d);
         System.out.println("SPIDER END");
     }
 
     public static void fetch(String url) throws ParserException, IOException {
-        if (DoneList.size() < MAXPAGE) {
-            if (task.peek() != null)
-            {
-                task.remove();
-            }
+//        if (DoneList.size() < MAXPAGE) {
+//            if (task.peek() != null)
+//            {
+//                task.remove();
+//            }
 
             System.out.println("***************: " + url);
             Indexer indexer = new Indexer(DB_PATH, url);
@@ -46,13 +55,17 @@ public class Spider {
             //get lastupdate
             Date lastUpdate = crawler.lastUpdate();
             System.out.println("last update:" + lastUpdate);
+
             //check lastupdate
             if (indexer.pageLastModDateIsUpdated(lastUpdate)) {
 
                 //crawlwer----------------------------------------------------
                 Vector<String> links = crawler.extractLinks();
                 for (int i = 0; i < links.size(); i++) {
-                    task.add(links.elementAt(i));
+                    if(!DoneList.contains(links.elementAt(i)))
+                    {
+                        task.add(links.elementAt(i));
+                    }
                 }
                 System.out.println("links: "+links);
                 int pageSize = crawler.getPageSize();
@@ -61,7 +74,6 @@ public class Spider {
                 System.out.println("title: " + title);
                 // convert title vector to String
                 StringBuilder builder = new StringBuilder();
-
                 String prefix = "";
                 for(String s : title) {
                     builder.append(prefix);
@@ -81,23 +93,24 @@ public class Spider {
                     indexer.insertChildPage(childUrl);
                 }
 
-                if(!DoneList.contains(url))
-                {
-                    DoneList.add(url);
-                }
-            }
+//                if(!DoneList.contains(url))
+//                {
+//                    DoneList.add(url);
+//                }
+                DoneList.add(url);
+//            }
 
 
                 indexer.finalize();
 
-            if (task.peek() != null) {
-                try {
-                    fetch(task.peek());
-                } catch (Exception e) {
-                    task.remove();
-                    fetch(task.peek());
-                }
-            }
+//            if (task.peek() != null) {
+//                try {
+//                    fetch(task.peek());
+//                } catch (Exception e) {
+//                    task.remove();
+//                    fetch(task.peek());
+//                }
+//            }
         }
     }
 
