@@ -14,7 +14,7 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 10;
+    private static int MAXPAGE = 20;
 
     public static void main(String[] args) {
 
@@ -32,6 +32,13 @@ public class Spider {
                     e.printStackTrace();
                 } catch (Exception e) {
                     e.printStackTrace();
+
+                    try{
+                        fetch(task.peek());
+                    }catch (Exception Q)
+                    {
+                        Q.printStackTrace();
+                    }
                 }
                 task.remove();
             }
@@ -48,7 +55,7 @@ public class Spider {
 //                task.remove();
 //            }
 
-            System.out.println("***************: " + url);
+            System.out.println("fetching: " + url);
             Indexer indexer = new Indexer(DB_PATH, url);
             Crawler crawler = new Crawler(url);
 
@@ -98,7 +105,7 @@ public class Spider {
 //                    DoneList.add(url);
 //                }
                 DoneList.add(url);
-//            }
+                System.out.println("Doneeeeeeeeeeeeeeeee:"+url);
 
 
                 indexer.finalize();
