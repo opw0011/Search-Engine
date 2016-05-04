@@ -7,6 +7,7 @@ Email:
 */
 
 import jdbm.RecordManager;
+import jdbm.helper.IntegerComparator;
 import jdbm.htree.HTree;
 import jdbm.helper.FastIterator;
 import jdk.nashorn.internal.ir.IdentNode;
@@ -22,10 +23,12 @@ class Posting implements Serializable
     private int pageID;
     private Vector<Integer> wordPosList;
     private static final long serialVersionUID = 1L;    // define serialVersionUID
+//    private int maxTermFrequency;
 
     public Posting(int pageID) {
         this.pageID = pageID;
         this.wordPosList = new Vector<Integer>();
+//        this.maxTermFrequency = 0;
     }
 
     @Override
@@ -33,7 +36,8 @@ class Posting implements Serializable
         return "Posting{" +
                 "pageID=" + pageID +
                 ", wordPosList=" + wordPosList +
-                '}';
+                '}' ;
+//                " maxtf= " +maxTermFrequency;
     }
 
     public boolean insert(int wordPos) {
@@ -59,9 +63,18 @@ class Posting implements Serializable
         return false;
     }
 
-    public int getWordFrequency() {
+    public int getTermFrequency() {
         return wordPosList.size();
     }
+
+    public Vector<Integer> getWordPosList() {
+        return wordPosList;
+    }
+
+    public boolean containsWordPos(int wordPos) {
+        return wordPosList.contains(wordPos);
+    }
+
 }
 
 public class InvertedIndex
@@ -195,8 +208,49 @@ public class InvertedIndex
             return -1;
         HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
         Posting posting = map.get(pageID);
-        return posting.getWordFrequency();
+        return posting.getTermFrequency();
     }
+
+    // get page id map with word ID
+    public HashMap<Integer, Posting> get(int wordID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        return (HashMap<Integer, Posting>) hashtable.get(key);
+    }
+
+    /*
+    public void setMaxTermFrequency(int wordID, int pageID, int maxtf) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        posting.setMaxtf(maxtf);
+    }
+    */
+
+    // number of documents containing the term wordID
+    public int getDocumentFrequency(int wordID) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return -1;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        return map.size();
+    }
+
+    // check if input wordId and word pos is exsit in centain page
+    public boolean containsWordPos(int pageID, int wordID, int wordPos) throws IOException
+    {
+        String key = Integer.toString(wordID);
+        if (hashtable.get(key) == null)
+            return false;
+        HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
+        Posting posting = map.get(pageID);
+        return posting.containsWordPos(wordPos);
+    }
+
 
 
     public void printAll() throws IOException
@@ -213,20 +267,12 @@ public class InvertedIndex
         while( (key = (String)iter.next())!=null)
         {
             // get and print the content of each key
-//            System.out.println(key + " = " + hashtable.get(key));
-//            Posting posting = (Posting) hashtable.get(key);
-//            ArrayList<Posting> postingList = (ArrayList<Posting>) hashtable.get(key);
             HashMap<Integer, Posting> map = (HashMap<Integer, Posting>) hashtable.get(key);
             Set<Integer> keys = map.keySet();  //get all keys
             for(Integer i: keys)
             {
-                System.out.println(key + " " + map.get(i));
+                System.out.println("wordID:" + key + " " + map.get(i));
             }
-//            System.out.print(key + " = ");
-//            for(Posting p : postingList){
-//                System.out.print(p + " ");
-//            }
-//            System.out.println();
         }
 
     }

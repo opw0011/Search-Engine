@@ -14,15 +14,15 @@ public class Spider {
     private static final String DB_PATH = "data/database";
     private static Vector<String> DoneList = new Vector<String>();
     private static Queue<String> task = new LinkedList();
-    private static int MAXPAGE = 30;
+    private static int MAXPAGE = 300;
 
     public static void main(String[] args) {
+
         System.out.println("SPIDER START...");
         final long startTime = System.currentTimeMillis();
 
-
         try {
-            fetch("http://www.cse.ust.hk/");
+            fetch("http://www.cse.ust.hk/~ericzhao/COMP4321/TestPages/testpage.htm");
         } catch (ParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -34,6 +34,11 @@ public class Spider {
 
     public static void fetch(String url) throws ParserException, IOException {
         if (DoneList.size() < MAXPAGE) {
+            if (task.peek() != null)
+            {
+                task.remove();
+            }
+
             System.out.println("***************: " + url);
             Indexer indexer = new Indexer(DB_PATH, url);
             Crawler crawler = new Crawler(url);
@@ -56,6 +61,7 @@ public class Spider {
                 System.out.println("title: " + title);
                 // convert title vector to String
                 StringBuilder builder = new StringBuilder();
+
                 String prefix = "";
                 for(String s : title) {
                     builder.append(prefix);
@@ -69,18 +75,19 @@ public class Spider {
 
                 //indexer--------------------------------------------------------------
                 indexer.insertWords(word);
+                indexer.insertTitle(title);
                 indexer.insertPageProperty(titleStr, url, lastUpdate, pageSize);
                 for (String childUrl : links) {
                     indexer.insertChildPage(childUrl);
                 }
 
-                DoneList.add(url);
+                if(!DoneList.contains(url))
+                {
+                    DoneList.add(url);
+                }
             }
 
-            if (task.peek() != null)
-            {
-                task.remove();
-            }
+
                 indexer.finalize();
 
             if (task.peek() != null) {

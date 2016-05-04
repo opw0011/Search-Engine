@@ -20,7 +20,7 @@ public class ParentChildIndex {
     private RecordManager recman;
     private HTree hashtable;
 
-    ParentChildIndex(RecordManager recordmanager, String objectname) throws IOException
+    public ParentChildIndex(RecordManager recordmanager, String objectname) throws IOException
     {
         recman = recordmanager;
         long recid = recman.getNamedObject(objectname);
@@ -103,8 +103,8 @@ public class ParentChildIndex {
         {
             System.out.printf("KEY= %s, PAGES= %s\n" , key, hashtable.get(key));
         }
-
     }
+
 
     public void printWithPageID(int pageID) throws IOException
     {
