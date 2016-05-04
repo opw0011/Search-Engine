@@ -44,7 +44,7 @@
     // Query Extraction
     // ------------------
     String rawQuery = request.getParameter("q");
-    out.println("Original Query: "+ rawQuery");
+    out.println("Original Query: "+ rawQuery);
 
     Vector<String> normalQuery = new Vector<String>();  // for storing normal query, e.g. Happy Boy
     Vector<Vector<String>> extactQuery = new Vector<Vector<String>>();  // 2d vector for extact phase search, e.g. "Good Day"
